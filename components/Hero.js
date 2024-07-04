@@ -13,13 +13,13 @@ const Hero = ({
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
-      name: "Locations",
-      number: "8",
+      name: "Countries",
+      number: "9",
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
-      name: "Continents",
-      number: "6",
+      name: "Cities",
+      number: "23",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
   ],
