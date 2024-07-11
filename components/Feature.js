@@ -75,13 +75,23 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
 const EmailForm = () => {
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [confirmEmail, setConfirmEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!name || !email || !confirmEmail || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    if (email !== confirmEmail) {
+      alert("Emails do not match. Please enter the same email twice.");
+      return;
+    }
 
     const serviceId = "service_hizq2mc";
     const templateId = "template_obvqisx";
@@ -93,32 +103,33 @@ const EmailForm = () => {
       to_name: "GV outbound",
       message: message,
     };
-  
-  emailjs.send(serviceId, templateId, templateParams, publicKey)
-    .then((response) => {
-      console.log("SUCCESS!", response.status, response.text);
-      setName("");
-      setEmail("");
-      setMessage("");
-      alert("Email sent successfully!");
-    })
-    .catch((error) => {
-      console.log("FAILED...", error);
-      alert("Email failed to send!");
-    });
-  }
+
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        setName("");
+        setEmail("");
+        setConfirmEmail("");
+        setMessage("");
+        alert("Email sent successfully!");
+      })
+      .catch((error) => {
+        console.log("FAILED...", error);
+        alert("Email failed to send!");
+      });
+  };
 
   return (
     <div className="max-w-screen-sm mx-auto mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16">
       <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
         <div>
-          <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
             Name
           </label>
           <input
             type="text"
-            name="name"
             id="name"
+            name="name"
             autoComplete="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -132,11 +143,26 @@ const EmailForm = () => {
           </label>
           <input
             type="email"
-            name="email"
             id="email"
+            name="email"
             autoComplete="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
+            className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+          />
+        </div>
+        <div>
+          <label htmlFor="confirmEmail" className="block text-sm font-medium text-gray-700">
+            Confirm Email
+          </label>
+          <input
+            type="email"
+            id="confirmEmail"
+            name="confirmEmail"
+            autoComplete="no-confirm-email"
+            value={confirmEmail}
+            onChange={(e) => setConfirmEmail(e.target.value)}
             required
             className="mt-1 p-2 border border-gray-300 rounded-md w-full"
           />
@@ -166,6 +192,7 @@ const EmailForm = () => {
       </form>
     </div>
   );
-}
+};
 
 export default EmailForm;
+
