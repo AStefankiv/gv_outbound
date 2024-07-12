@@ -62,7 +62,7 @@ const Header = () => {
             >
               Contact Us
             </LinkScroll>
-            <LinkScroll
+            {/* <LinkScroll
               activeClass="active"
               to="pricing"
               spy={true}
@@ -79,7 +79,7 @@ const Header = () => {
               }
             >
               Pricing
-            </LinkScroll>
+            </LinkScroll> */}
             <LinkScroll
               activeClass="active"
               to="testimoni"
