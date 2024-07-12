@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import gv_image from '../public/assets/global_village.png';
 
 
 // Default value for some meta data
@@ -14,7 +15,7 @@ const defaultMeta = {
   robots: 'follow, index',
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status 
-  image: 'https://next-landing-vpn.vercel.app/assets/card-image.png',
+  image: 'gv_image',
   author: 'Lorem Ipsum'
 };
 
