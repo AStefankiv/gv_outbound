@@ -16,7 +16,7 @@ const defaultMeta = {
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status 
   image: 'gv_image',
-  author: 'Lorem Ipsum'
+  author: 'Andrew Stefankiv'
 };
 
 /**
