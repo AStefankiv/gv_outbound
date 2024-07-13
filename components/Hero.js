@@ -19,7 +19,7 @@ const Hero = ({
     },
     {
       name: "Cities",
-      number: "23",
+      number: "20",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
   ],
