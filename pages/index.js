@@ -1,4 +1,4 @@
-import Feature from "../components/Feature";
+import ContactForm from "../components/ContactForm";
 import Pricing from "../components/Pricing";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
@@ -10,7 +10,7 @@ export default function Home() {
       <SeoHead title='Work learn travel' />
       <Layout>
         <Hero />
-        <Feature />
+        <ContactForm />
         {/* <Pricing /> */}
       </Layout>
     </>

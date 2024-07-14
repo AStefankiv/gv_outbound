@@ -70,11 +70,18 @@
 // export default Feature;
 
 
-
+import { useMemo } from "react";
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
-const EmailForm = () => {
+import { motion } from "framer-motion";
+import getScrollAnimation from "../utils/getScrollAnimation";
+import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+
+const ContactForm = () => {
+
+  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [confirmEmail, setConfirmEmail] = useState("");
@@ -121,7 +128,10 @@ const EmailForm = () => {
 
   return (
     <div className="max-w-screen-sm mx-auto mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16">
-      <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
+
+      <ScrollAnimationWrapper className="flex w-full justify-end">
+        <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
+      <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6" id='contact'>
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700">
             Name
@@ -190,9 +200,10 @@ const EmailForm = () => {
           </button>
         </div>
       </form>
+        </motion.div>
+      </ScrollAnimationWrapper>
     </div>
   );
 };
 
-export default EmailForm;
-
+export default ContactForm;
