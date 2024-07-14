@@ -5,10 +5,10 @@ import gv_image from '../public/assets/global_village.png';
 
 // Default value for some meta data
 const defaultMeta = {
-  title: 'GV outbound',
-  siteName: 'GV outbound',
+  title: 'Work learn travel',
+  siteName: 'Work learn travel',
   description:
-    'GV outbound - your best travel guide',
+    'Work learn travel - your best travel guide',
   // change base url of your web (without '/' at the end)
   url: 'https://gvenglish.com/',
   type: 'website',

@@ -100,7 +100,7 @@ const EmailForm = () => {
     const templateParams = {
       from_name: name,
       from_email: email,
-      to_name: "GV outbound",
+      to_name: "Work learn travel",
       message: message,
     };
 
