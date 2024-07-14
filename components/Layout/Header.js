@@ -83,7 +83,9 @@ const Header = () => {
             >
               Pricing
             </LinkScroll> */}
-            <LinkScroll
+
+
+            {/* <LinkScroll
               activeClass="active"
               to="testimoni"
               spy={true}
@@ -100,7 +102,7 @@ const Header = () => {
               }
             >
               Testimonial
-            </LinkScroll>
+            </LinkScroll> */}
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             {/* <Link href="/">
