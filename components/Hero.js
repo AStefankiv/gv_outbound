@@ -5,6 +5,11 @@ import {motion} from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import Link from "next/link";
+
 const Hero = ({
   listUser = [
     {
@@ -26,6 +31,26 @@ const Hero = ({
 }) => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
+  const images = [
+    "/assets/city_1.jpg",
+    "/assets/city_2.jpg",
+    "/assets/city_3.jpg",
+    "/assets/city_4.jpg",
+    "/assets/city_5.jpg",
+    "/assets/city_6.jpg",
+  ];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+  };
+
   return (
     <div
       className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto"
@@ -42,20 +67,39 @@ const Hero = ({
               <p className="text-black-500 mt-4 mb-6">
                 Go anywhere you want and discover the world around you today.
               </p>
-              <ButtonPrimary>Get Started</ButtonPrimary>
+              <Link href="/get_started" passHref>
+                <ButtonPrimary>Get Started</ButtonPrimary>
+              </Link>
             </div>
+
+
+
             <div className="flex w-full">
+            <Slider {...settings} className="h-full w-full">
+              {images.map((image, index) => (
+                <div key={index} className="relative w-full h-96 overflow-hidden">
+                  <img
+                    src={image}
+                    alt={`Slide ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
+
+            {/* <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
                 <Image
                   src="/assets/Illustration1.png"
-                  alt="VPN Illustrasi"
+                  alt="illustration"
                   quality={100}
                   width={612}
                   height={383}
                   layout="responsive"
                 />
               </motion.div>
-            </div>
+            </div> */}
           </motion.div>
       </ScrollAnimationWrapper>
       <div className="relative w-full flex">

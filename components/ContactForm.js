@@ -131,6 +131,16 @@ const ContactForm = () => {
 
       <ScrollAnimationWrapper className="flex w-full justify-end">
         <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
+
+      <div className="my-12 text-center">
+        <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-4">
+          Send us a message
+        </h1>
+        <p className="text-lg text-black-500 mb-8 text-center">
+          We are here to help and answer any question you might have. We look forward to hearing from you.
+        </p>
+      </div>
+
       <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6" id='contact'>
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700">
