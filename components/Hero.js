@@ -13,18 +13,18 @@ import Link from "next/link";
 const Hero = ({
   listUser = [
     {
-      name: "Customers",
-      number: "190",
+      name: "year helping young people",
+      number: "25",
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
-      name: "Countries",
-      number: "9",
+      name: "countries",
+      number: "5+",
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
       name: "Cities",
-      number: "20",
+      number: "20+",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
   ],
@@ -35,9 +35,7 @@ const Hero = ({
     { src: "/assets/city_1.jpg", name: "Tokyo" },
     { src: "/assets/city_2.jpg", name: "Seoul" },
     { src: "/assets/city_3.jpg", name: "Sydney" },
-    { src: "/assets/city_4.jpg", name: "Mexico City" },
-    { src: "/assets/city_5.jpg", name: "Kuala Lumpur" },
-    { src: "/assets/city_6.jpg", name: "Madrid" },
+    { src: "/assets/city_4.jpg", name: "Madrid" },
   ];
 
   const settings = {
@@ -62,7 +60,7 @@ const Hero = ({
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                Reveal the limits with <strong>Global Village</strong>.
+              Become a part of the <strong>Global Village</strong> with Work Learn Travel!
               </h1>
               <p className="text-black-500 mt-4 mb-6">
                 Go anywhere you want and discover the world around you today.
@@ -122,7 +120,7 @@ const Hero = ({
                 </div>
                 <div className="flex flex-col">
                   <p className="text-xl text-black-600 font-bold">
-                    {listUsers.number}+
+                    {listUsers.number}
                   </p>
                   <p className="text-lg text-black-500">{listUsers.name}</p>
                 </div>
