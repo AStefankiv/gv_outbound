@@ -32,12 +32,12 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   const images = [
-    "/assets/city_1.jpg",
-    "/assets/city_2.jpg",
-    "/assets/city_3.jpg",
-    "/assets/city_4.jpg",
-    "/assets/city_5.jpg",
-    "/assets/city_6.jpg",
+    { src: "/assets/city_1.jpg", name: "Tokyo" },
+    { src: "/assets/city_2.jpg", name: "Seoul" },
+    { src: "/assets/city_3.jpg", name: "Sydney" },
+    { src: "/assets/city_4.jpg", name: "Mexico City" },
+    { src: "/assets/city_5.jpg", name: "Kuala Lumpur" },
+    { src: "/assets/city_6.jpg", name: "Madrid" },
   ];
 
   const settings = {
@@ -74,15 +74,18 @@ const Hero = ({
 
 
 
-            <div>
+            <div className="w-full">
             <Slider {...settings}>
               {images.map((image, index) => (
-                <div key={index} className="relative w-full h-96 overflow-hidden">
-                  <img
-                    src={image}
-                    alt={`Slide ${index + 1}`}
-                    className="w-full h-full object-cover"
-                  />
+                <div>
+                  <div key={index} className="relative w-full h-96 overflow-hidden flex flex-col items-center">
+                    <img
+                      src={image.src}
+                      alt={`Slide ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                    <p className="text-center mt-2 text-lg text-black-600">{image.name}</p>
+                  </div>
                 </div>
               ))}
             </Slider>
