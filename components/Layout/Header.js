@@ -183,7 +183,7 @@ const Header = () => {
               </svg>
               Contact Us
             </LinkScroll>
-            <LinkScroll
+            {/* <LinkScroll
               activeClass="active"
               to="pricing"
               spy={true}
@@ -246,7 +246,7 @@ const Header = () => {
                 />
               </svg>
               Testimonial
-            </LinkScroll>
+            </LinkScroll> */}
           </ul>
         </div>
       </nav>
