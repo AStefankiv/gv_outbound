@@ -8,7 +8,7 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Link from "next/link";
+import { Link as LinkScroll } from "react-scroll";
 
 const Hero = ({
   listUser = [
@@ -65,9 +65,15 @@ const Hero = ({
               <p className="text-black-500 mt-4 mb-6">
                 Go anywhere you want and discover the world around you today.
               </p>
-              <Link href="/get_started" passHref>
+              <LinkScroll
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                offset={-500}
+              >
                 <ButtonPrimary>Get Started</ButtonPrimary>
-              </Link>
+              </LinkScroll>
             </div>
 
 
