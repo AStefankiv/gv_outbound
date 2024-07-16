@@ -126,7 +126,7 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">
           <ul className="text-black-500">
             <li className="my-8 hover:text-orange-500 cursor-pointer transition-all">
-              Contact Us{" "}
+            outbound@gvenglish.com{" "}
             </li>
             <li className="my-8 hover:text-orange-500 cursor-pointer transition-all">
               About Us{" "}
