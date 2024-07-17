@@ -202,18 +202,9 @@ const ContactForm = () => {
             className="mt-1 p-2 border border-gray-300 rounded-md w-full"
           />
         </div>
-        {/* <div>
-          <button
-            type="submit"
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
-          >
-            Send
-          </button>
-        </div> */}
         <div className="flex justify-center">
           <ButtonPrimary addClass="px-8" type="submit">Send</ButtonPrimary>
         </div>
-
       </form>
         </motion.div>
       </ScrollAnimationWrapper>
