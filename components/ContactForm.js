@@ -210,7 +210,7 @@ const ContactForm = () => {
             Send
           </button>
         </div> */}
-        <div>
+        <div className="flex justify-center">
           <ButtonPrimary addClass="px-8" type="submit">Send</ButtonPrimary>
         </div>
 
