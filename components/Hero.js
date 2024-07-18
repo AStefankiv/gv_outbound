@@ -23,7 +23,7 @@ const Hero = ({
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
-      name: "Cities",
+      name: "cities",
       number: "20+",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
@@ -60,10 +60,10 @@ const Hero = ({
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-              Become a part of the <strong>Global Village</strong> with Work Learn Travel!
+              <strong>Work Learn Travel</strong> helps Canadians find work and culture experiences overseas
               </h1>
               <p className="text-black-500 mt-4 mb-6">
-                Go anywhere you want and discover the world around you today.
+                Explore the world with a new job and a new perspective.
               </p>
               <LinkScroll
                 to="contact"
@@ -72,7 +72,7 @@ const Hero = ({
                 duration={1000}
                 offset={-500}
               >
-                <ButtonPrimary>Get Started</ButtonPrimary>
+                <ButtonPrimary>Yes, I want an exciting international experience!</ButtonPrimary>
               </LinkScroll>
             </div>
 
