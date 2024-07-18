@@ -33,8 +33,8 @@ const CountryLinks = () => {
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
           <Link href="/korea">
-            <a className="relative h-0 pb-56">
-              <div>
+            <a>
+              <div className="relative h-0 pb-56">
                 <img
                   src="/assets/korea-image.jpeg" // Replace with your actual image path
                   alt="Korea"
