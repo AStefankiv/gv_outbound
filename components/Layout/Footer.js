@@ -126,7 +126,7 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">
           <ul className="text-black-500">
             <li className="my-8 hover:text-orange-500 cursor-pointer transition-all">
-              <a href="mailto:stefankif35@gmail.com">
+              <a href="mailto:outbound@gvenglish.com">
                 Contact us{" "}
               </a>
             </li>
