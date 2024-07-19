@@ -22,19 +22,21 @@ const KoreaPage = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {/* TEACH ENGLISH Button */}
         <motion.div
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
           <Link href="/korea/teach-english">
-            <a className="relative h-0 pb-56">
-              <img
-                src="/assets/teaching_button.jpg" // Replace with your actual image path
-                alt="TEACH ENGLISH"
-                className="w-full h-auto rounded-lg"
-              />
+            <a>
+              <div className="relative h-0 pb-56">
+                <img
+                  src="/assets/teaching_button.jpg" // Replace with your actual image path
+                  alt="TEACH ENGLISH"
+                  className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                />
+              </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-2xl font-bold" style={{color: "white"}}>
                 TEACH ENGLISH
               </div>
@@ -47,14 +49,18 @@ const KoreaPage = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
-          <Link href="/korea/internship">
-            <a className="relative h-0 pb-56">
-              <img
-                src="/assets/internship_button.jpg" // Replace with your actual image path
-                alt="INTERNSHIP"
-                className="w-full h-auto rounded-lg"
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-2xl font-bold" style={{color: "white"}}>
+          <Link href="/korea/k_internship_form">
+            <a>
+              <div className="relative h-0 pb-56">
+                <img
+                  src="/assets/internship_button.jpg" // Replace with your actual image path
+                  alt="INTERNSHIP"
+                  className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <div className="absolute inset-0 flex items-center
+              justify-center bg-black bg-opacity-50 text-white text-2xl
+              font-bold" style={{color: "white"}}>
                 INTERNSHIP
               </div>
             </a>
