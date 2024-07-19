@@ -3,21 +3,21 @@ import nodemailer from 'nodemailer';
 
 export default async (req, res) => {
   if (req.method === 'POST') {
-    const { email, name, phone, message_text } = req.body;
+    const { email, name, phone, message_text, subject } = req.body;
 
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
-        user: 'stefankif35@gmail.com',
-        pass: 'fipj eyiv iedo iesw',
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
     const mailOptions = {
-      from: 'stefankif35@gmail.com',
-      to: 'stefankif35@gmail.com',
-      subject: 'New Form Submission',
-      text: `Email: ${email}\nName: ${name}\nPhone: ${phone}\nMessage: ${message_text}`,
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
+      subject: subject || 'New Email from Website',
+      text: `Email: ${email}\nName: ${name}\nPhone: ${phone}`,
     };
 
     try {

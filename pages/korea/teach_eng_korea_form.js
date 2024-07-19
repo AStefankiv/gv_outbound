@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import ButtonPrimary from '../../components/misc/ButtonPrimary';
 
-const KoreaInternForm = () => {
+const TeachEngForm = () => {
   const [formData, setFormData] = useState({
     email: '',
     name: '',
@@ -26,7 +26,7 @@ const KoreaInternForm = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ ...formData, subject: 'Korea Internship Inquiry' }),
+      body: JSON.stringify({ ...formData, subject: 'Teach English Korea Inquiry' }),
     });
 
     if (response.ok) {
@@ -47,7 +47,7 @@ const KoreaInternForm = () => {
       {/* Header Section */}
       <div className="text-center mb-12">
         <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-4">
-          Yes! I want to know how I can take part in an internship in Korea!
+          Yes! I want to know how I can teach English in Korea!
         </h1>
         {/* <p className="text-lg text-black-500 mb-8">
           Fill out the form below to apply for the internship program in Korea.
@@ -124,4 +124,4 @@ const KoreaInternForm = () => {
   );
 };
 
-export default KoreaInternForm;
+export default TeachEngForm;

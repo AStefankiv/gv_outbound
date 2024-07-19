@@ -4,7 +4,6 @@ import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
 import CountryLinks from "../components/CountryLinks";
-import Form from "../components/Form";
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
         <CountryLinks />
         {/* <ContactForm /> */}
         {/* <Pricing /> */}
-        <Form />
       </Layout>
     </>
   );
