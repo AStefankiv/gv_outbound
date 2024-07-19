@@ -11,7 +11,7 @@ const CountryLinks = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
-          <Link href="/japan">
+          <Link href="/teach_eng_japan_form">
             <a>
               <div className="relative h-0 pb-56">
                 <img
