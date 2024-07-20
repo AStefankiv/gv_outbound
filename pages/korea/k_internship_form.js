@@ -1,6 +1,10 @@
 // pages/korea/k_internship_form.js
 import { useState } from 'react';
 import ButtonPrimary from '../../components/misc/ButtonPrimary';
+import Link from 'next/link';
+import LogoGV from '../../public/assets/Logo.svg';
+import Footer from '../../components/Layout/Footer';
+import Header from '../../components/Layout/Header';
 
 const KoreaInternForm = () => {
   const [formData, setFormData] = useState({
@@ -43,6 +47,11 @@ const KoreaInternForm = () => {
   };
 
   return (
+
+    <div className="flex flex-col min-h-screen">
+    <Header />
+
+    <main className="flex-grow mt-24 mb-6 px-4 sm:px-6 lg:px-8">
     <div className="max-w-screen-lg mx-auto mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16">
       {/* Header Section */}
       <div className="text-center mb-12">
@@ -121,6 +130,9 @@ const KoreaInternForm = () => {
         </form>
       </div>
     </div>
+    </main>
+    <Footer />
+  </div>
   );
 };
 
