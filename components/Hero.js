@@ -84,6 +84,7 @@ const Hero = ({
                 <div>
                   <div key={index} className="relative w-full h-96 overflow-hidden flex flex-col items-center">
                     <img
+                      key={index} //added
                       src={image.src}
                       alt={`Slide ${index + 1}`}
                       className="w-full h-full object-cover"

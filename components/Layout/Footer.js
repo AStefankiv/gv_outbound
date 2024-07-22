@@ -111,7 +111,7 @@ const Footer = () => {
             <strong className="font-bold">Work learn travel</strong> helps Canadians aged 18 to 35 to work and travel around the world.
           </p>
           <div className="flex w-full mt-2 mb-4 sm:mb-8 -mx-2">
-            <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
+            <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md transition-transform transform hover:scale-110">
               <Facebook className="h-6 w-6" />
             </div>
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
