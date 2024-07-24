@@ -53,6 +53,8 @@ const JoinWLT = () => {
     autoplaySpeed: 3000,
     arrows: false,
     vertical: true,
+    swipe: true,
+    draggable: true,
   };
 
   return (
@@ -61,7 +63,7 @@ const JoinWLT = () => {
         <motion.div className="w-full py-6 sm:py-16" variants={scrollAnimation}>
           <Slider {...settings} className="w-full">
             {carouselItems.map((item, index) => (
-              <div key={index} className="flex justify-center items-center min-h-[20vh] h-auto bg-gray-100 p-6">
+              <div key={index} className="flex justify-center items-center min-h-[35vh] lg:min-h-[20vh] h-auto bg-gray-100 p-6">
                 <div className="text-center flex flex-col justify-center items-center w-full">
                   <h2 className="text-4xl lg:text-2xl xl:text-4xl font-medium text-black-600 leading-normal">
                     {item.title}
