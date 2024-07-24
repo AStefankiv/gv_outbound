@@ -46,7 +46,7 @@ const JoinWLT = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 3500,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -58,18 +58,15 @@ const JoinWLT = () => {
   return (
     <div className="w-full mt-24 px-0 mx-auto" id="join-wlt">
       <ScrollAnimationWrapper>
-        <motion.div
-          className="w-full py-6 sm:py-16"
-          variants={scrollAnimation}
-        >
+        <motion.div className="w-full py-6 sm:py-16" variants={scrollAnimation}>
           <Slider {...settings} className="w-full">
             {carouselItems.map((item, index) => (
-              <div key={index} className="flex justify-center items-center min-h-[15vh] h-auto bg-gray-100 p-6">
-                <div className="text-center flex flex-col justify-center items-center min-h-[1vh] w-full">
-                  <h2 className="text-4xl lg:text-5xl xl:text-6xl font-medium text-black-600 leading-normal">
+              <div key={index} className="flex justify-center items-center min-h-[20vh] h-auto bg-gray-100 p-6">
+                <div className="text-center flex flex-col justify-center items-center w-full">
+                  <h2 className="text-4xl lg:text-2xl xl:text-4xl font-medium text-black-600 leading-normal">
                     {item.title}
                   </h2>
-                  <p className="text-black-500 mt-4 mb-6 text-lg lg:text-xl">
+                  <p className="text-black-500 mt-4 mb-0 text-lg lg:text-xl">
                     {item.description}
                   </p>
                 </div>
