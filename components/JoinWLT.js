@@ -60,7 +60,7 @@ const JoinWLT = () => {
   return (
     <div className="w-full mt-24 px-0 mx-auto" id="join-wlt">
       <ScrollAnimationWrapper>
-        <motion.div className="w-full py-6 sm:py-16" variants={scrollAnimation}>
+        <motion.div className="w-full lg:py-6 sm:py-16" variants={scrollAnimation}>
           <Slider {...settings} className="w-full">
             {carouselItems.map((item, index) => (
               <div key={index} className="flex justify-center items-center min-h-[35vh] lg:min-h-[20vh] h-auto bg-gray-100 p-6">
