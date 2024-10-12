@@ -40,9 +40,9 @@ const SeoHead = (props) => {
       <meta property='og:site_name' content={meta.siteName} />
       <meta property='og:description' content={meta.description} />
       <meta property='og:title' content={meta.title} />
-      <meta name='image' property='og:image' content='../public/assets/global_village.jpg' />
+      <meta name='image' property='og:image' content='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc4oTpJemT0SIRPxJf09k_eb5Sqz5AmuQ3gQ&s' />
       {/* Twitter */}
-      <meta name='twitter:card' content='summary_large_image' />
+      <meta name='twitter:card' content={meta.image} />
       <meta name='twitter:site' content='@F2aldi' />
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
