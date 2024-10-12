@@ -40,7 +40,7 @@ const SeoHead = (props) => {
       <meta property='og:site_name' content={meta.siteName} />
       <meta property='og:description' content={meta.description} />
       <meta property='og:title' content={meta.title} />
-      <meta name='image' property='og:image' content='public/assets/global_village.JPG' />
+      <meta name='image' property='og:image' content='/public/assets/global_village.JPG' />
       {/* Twitter */}
       <meta name='twitter:card' content={meta.image} />
       <meta name='twitter:site' content='@F2aldi' />
