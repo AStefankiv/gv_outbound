@@ -81,8 +81,8 @@ const Hero = ({
             <div className="w-full">
             <Slider {...settings}>
               {images.map((image, index) => (
-                <div>
-                  <div key={index} className="relative w-full h-96 overflow-hidden flex flex-col items-center">
+                <div key={index}>
+                  <div className="relative w-full h-96 overflow-hidden flex flex-col items-center">
                     <img
                       key={index} //added
                       src={image.src}
