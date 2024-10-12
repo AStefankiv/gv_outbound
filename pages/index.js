@@ -9,7 +9,7 @@ import JoinWLT from "../components/JoinWLT";
 export default function Home() {
   return (
     <>
-      <SeoHead title='Work learn travel' />
+      <SeoHead />
       <Layout>
         <JoinWLT />
         <Hero />

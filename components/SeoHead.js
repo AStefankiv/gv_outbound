@@ -1,16 +1,13 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import gv_image from '../public/assets/global_village.png';
+import gv_image from '../public/assets/global_village.jpg';
 
 
-// Default value for some meta data
 const defaultMeta = {
   title: 'Work learn travel',
   siteName: 'Work learn travel',
-  description:
-    'Work learn travel - your best travel guide',
-  // change base url of your web (without '/' at the end)
-  url: 'https://gvenglish.com/',
+  description: 'Work learn travel - your best travel guide',
+  url: 'https://www.worklearntravel.ca/',
   type: 'website',
   robots: 'follow, index',
   // change with url of your image (recommended dimension = 1.91:1)
@@ -19,23 +16,7 @@ const defaultMeta = {
   author: 'Andrew Stefankiv'
 };
 
-/**
- * Next Head component populated with necessary SEO tags and title
- * props field used:
- * - title
- * - siteName
- * - description
- * - url
- * - type
- * - robots
- * - image
- * - date
- * - author
- * - templateTitle
- * all field are optional (default value defined on defaultMeta)
- * @example
- * <SeoHead title="Page's Title" />
- */
+
 const SeoHead = (props) => {
   const router = useRouter();
   const meta = {
