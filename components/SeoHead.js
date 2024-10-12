@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import gv_image from '../public/assets/global_village.jpg';
+import gv_image from '../public/assets/gv_square.png';
 
 
 const defaultMeta = {

@@ -13,7 +13,7 @@ import { Link as LinkScroll } from "react-scroll";
 const Hero = ({
   listUser = [
     {
-      name: "year helping young people",
+      name: "years helping young people",
       number: "25",
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },

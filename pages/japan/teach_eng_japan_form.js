@@ -147,11 +147,11 @@
 
 
 import { useState } from 'react';
-import ButtonPrimary from '../components/misc/ButtonPrimary';
+import ButtonPrimary from '../../components/misc/ButtonPrimary';
 import Link from 'next/link';
-import LogoGV from '../public/assets/Logo.svg';
-import Footer from '../components/Layout/Footer';
-import Header from '../components/Layout/Header';
+// import LogoGV from '../public/assets/Logo.svg';
+import Footer from '../../components/Layout/Footer';
+import Header from '../../components/Layout/Header';
 
 const TeachEngForm = () => {
   const [formData, setFormData] = useState({
