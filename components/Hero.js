@@ -51,7 +51,7 @@ const Hero = ({
 
   return (
     <div
-      className="max-w-screen-xl mt-0 px-8 xl:px-16 mx-auto"
+      className="w-full mt-0 px-8 xl:px-16 mx-auto"//was: max-w-screen-xl
       id="about"
     >
       <ScrollAnimationWrapper>

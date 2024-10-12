@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const CountryLinks = () => {
   return (
-    <div className="max-w-screen-xl mx-auto mt-8 mb-6 px-6 sm:px-8 lg:px-16">
+    <div className="w-full mx-auto mt-8 mb-6 px-6 sm:px-8 lg:px-16">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {/* Japan Link */}
         <motion.div
