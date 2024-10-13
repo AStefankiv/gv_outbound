@@ -14,7 +14,7 @@ export default function Home() {
         <JoinWLT />
         <Hero />
         <CountryLinks />
-        {/* <ContactForm /> */}
+        <ContactForm />
         {/* <Pricing /> */}
       </Layout>
     </>

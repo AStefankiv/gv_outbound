@@ -13,11 +13,16 @@ export default async (req, res) => {
       },
     });
 
+    let emailText = `Email: ${email}\nName: ${name}\nPhone: ${phone}\nMessage: ${message_text}`;
+    if (!message_text) {
+      emailText = `Email: ${email}\nName: ${name}\nPhone: ${phone}`;
+    }
+
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
       subject: subject || 'New Email from Website',
-      text: `Email: ${email}\nName: ${name}\nPhone: ${phone}`,
+      text: emailText,
     };
 
     try {
