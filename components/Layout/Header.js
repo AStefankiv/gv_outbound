@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { Link as LinkScroll } from "react-scroll";
 import LogoGV from "../../public/assets/Logo.svg";
+import Link from "next/link";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -40,9 +41,9 @@ const Header = () => {
       >
         <nav className="w-full px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4"> {/* was: max-w-screen-xl */}
           <div className="col-start-1 col-end-2 flex items-center">
-            <a href="/">
+            <Link href="/">
               <LogoGV className="h-16 w-auto" />
-            </a>
+            </Link>
           </div>
           {!hideLinks && (
             <ul className="hidden lg:flex col-start-13 col-end-13 text-black-500 items-center"> {/* col-start-4 col-end-4 */}
