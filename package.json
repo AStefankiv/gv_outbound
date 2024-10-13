@@ -15,12 +15,12 @@
     "axios": "^1.7.2",
     "emailjs-com": "^3.2.0",
     "framer-motion": "6.0.0",
-    "next": "^12.3.4",
+    "next": "^14.2.15",
     "nodemailer": "^6.9.14",
     "postcss": "^8.4.17",
     "postcss-import": "^13.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scroll": "^1.8.1",
     "react-slick": "^0.27.14",
     "sharp": "^0.33.4",
@@ -29,6 +29,8 @@
     "tailwindcss": "^3.1.8"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.25.7",
+    "@babel/preset-env": "^7.25.8",
     "babel-plugin-inline-react-svg": "^1.1.2",
     "eslint": "^9.6.0"
   },
