@@ -3,6 +3,7 @@ import LogoGV from "../../public/assets/Logo.svg";
 import Facebook from "../../public/assets/Icon/facebook.svg";
 import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -32,7 +33,8 @@ const Footer = () => {
               <a href="mailto:outbound@gvenglish.com">Contact us</a>
             </li>
             <li className="my-8 hover:text-orange-500 cursor-pointer transition-all">
-              About Us
+              {/* About Us */}
+              <Link href="/about" target="_blank" rel="noopener noreferrer">About Us</Link>
             </li>
             <li className="my-8 hover:text-orange-500 cursor-pointer transition-all">
               <a href="https://gvenglish.com/" target="_blank" rel="noopener noreferrer">

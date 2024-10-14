@@ -26,23 +26,6 @@ const KoreaPage = () => {
 
             {/* Right Section - Links */}
             <div className="flex flex-col gap-4">
-              
-              {/* TEACH ENGLISH Button */}
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
-              >
-                <Link href="/korea/teach_eng_korea_form" className="relative h-0 pb-56 block">
-                  <img
-                    src="/assets/teaching_button.jpg"
-                    alt="TEACH ENGLISH"
-                    className="absolute inset-0 w-full h-full object-cover rounded-lg"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold" style={{ color: "rgba(241,163,52,255)" }}>
-                    TEACH ENGLISH
-                  </div>
-                </Link>
-              </motion.div>
 
               {/* INTERNSHIP Button */}
               <motion.div
@@ -61,6 +44,23 @@ const KoreaPage = () => {
                 </Link>
               </motion.div>
               
+              {/* TEACH ENGLISH Button */}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
+              >
+                <Link href="/korea/teach_eng_korea_form" className="relative h-0 pb-56 block">
+                  <img
+                    src="/assets/teaching_button.jpg"
+                    alt="TEACH ENGLISH"
+                    className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold" style={{ color: "rgba(241,163,52,255)" }}>
+                    TEACH ENGLISH
+                  </div>
+                </Link>
+              </motion.div>
+
             </div>
           </div>
         </div>
