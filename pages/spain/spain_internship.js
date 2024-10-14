@@ -4,7 +4,7 @@ import ButtonPrimary from '../../components/misc/ButtonPrimary';
 import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
 
-const KoreaInternForm = () => {
+const SpainInternship = () => {
   const [formData, setFormData] = useState({
     email: '',
     name: '',
@@ -27,7 +27,7 @@ const KoreaInternForm = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ ...formData, subject: 'Korea Internship Inquiry' }),
+      body: JSON.stringify({ ...formData, subject: 'Spain Internship Inquiry' }),
     });
 
     if (response.ok) {
@@ -52,10 +52,10 @@ const KoreaInternForm = () => {
             {/* Left Section - Information */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Internships in Korea
+                Internships in Spain
               </h1>
               <ul className="text-lg text-black-500 space-y-4">
-                <li><strong>Location:</strong> Varies</li>
+                <li><strong>Location:</strong> All over Spain</li>
                 <li><strong>Length of stay:</strong> 3 months+</li>
                 <li><strong>Requirements:</strong> Minimum 18 years old; high school diploma</li>
                 <li><strong>Cost:</strong> Contact for details</li>
@@ -67,7 +67,7 @@ const KoreaInternForm = () => {
               <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
                 <div>
                 <h1 className="text-4xl text-center lg:text-5xl font-medium leading-relaxed text-black-600 mb-4">
-          Yes! I want to know how I can take part in an internship in Korea!
+          Yes! I want to know how I can take part in an internship in Spain!
         </h1>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                     Email
@@ -124,4 +124,4 @@ const KoreaInternForm = () => {
   );
 };
 
-export default KoreaInternForm;
+export default SpainInternship;

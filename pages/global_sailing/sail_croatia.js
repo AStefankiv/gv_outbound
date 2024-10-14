@@ -1,14 +1,17 @@
 // pages/korea/k_internship_form.js
 import { useState } from 'react';
 import ButtonPrimary from '../../components/misc/ButtonPrimary';
+import Link from 'next/link';
+import LogoGV from '../../public/assets/Logo.svg';
 import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
 
-const KoreaInternForm = () => {
+const SailCroatia = () => {
   const [formData, setFormData] = useState({
     email: '',
     name: '',
     phone: '',
+    // message_text: '',
   });
 
   const handleChange = (e) => {
@@ -27,7 +30,7 @@ const KoreaInternForm = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ ...formData, subject: 'Korea Internship Inquiry' }),
+      body: JSON.stringify({ ...formData, subject: 'Global Sail Croatia Inquiry' }),
     });
 
     if (response.ok) {
@@ -36,6 +39,7 @@ const KoreaInternForm = () => {
         email: '',
         name: '',
         phone: '',
+        // message_text: '',
       });
     } else {
       alert('Failed to send email.');
@@ -43,20 +47,21 @@ const KoreaInternForm = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen w-full">
-      <Header />
 
-      <main className="flex-grow mt-24 mb-6 w-full">
-        <div className="w-full mt-8 mb-6 px-6 sm:px-4 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Left Section - Information */}
-            <div className="flex flex-col justify-center">
-              <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Internships in Korea
+    <div className="flex flex-col min-h-screen w-full">
+    <Header />
+
+    <main className="flex-grow mt-24 mb-6 w-full">
+      <div className="w-full mt-8 mb-6 px-6 sm:px-4 lg:px-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        {/* Header Section */}
+        <div className="flex flex-col justify-center">
+        <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
+                Sail Croatia
               </h1>
               <ul className="text-lg text-black-500 space-y-4">
-                <li><strong>Location:</strong> Varies</li>
-                <li><strong>Length of stay:</strong> 3 months+</li>
+                <li><strong>Location:</strong> Croatia (training) and worldwide (yacht crew)</li>
+                <li><strong>Length of stay:</strong> 6 months+</li>
                 <li><strong>Requirements:</strong> Minimum 18 years old; high school diploma</li>
                 <li><strong>Cost:</strong> Contact for details</li>
               </ul>
@@ -67,8 +72,8 @@ const KoreaInternForm = () => {
               <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
                 <div>
                 <h1 className="text-4xl text-center lg:text-5xl font-medium leading-relaxed text-black-600 mb-4">
-          Yes! I want to know how I can take part in an internship in Korea!
-        </h1>
+                Yes! I want to know how I can sail Croatia!
+                </h1>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                     Email
                   </label>
@@ -124,4 +129,4 @@ const KoreaInternForm = () => {
   );
 };
 
-export default KoreaInternForm;
+export default SailCroatia;

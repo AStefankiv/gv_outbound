@@ -44,7 +44,7 @@ const Hero = ({
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     arrows: false,
   };
@@ -66,11 +66,11 @@ const Hero = ({
                 Explore the world with a new job and a new perspective.
               </p>
               <LinkScroll
-                to="contact"
+                to="countryLinks"
                 spy={true}
                 smooth={true}
                 duration={1000}
-                offset={-500}
+                offset={-100}
               >
                 <ButtonPrimary>Yes, I want an exciting international experience!</ButtonPrimary>
               </LinkScroll>
@@ -89,7 +89,6 @@ const Hero = ({
                       alt={`Slide ${index + 1}`}
                       className="w-full h-full object-cover"
                     />
-                    <p className="text-center mt-2 text-lg text-black-600">{image.name}</p>
                   </div>
                 </div>
               ))}

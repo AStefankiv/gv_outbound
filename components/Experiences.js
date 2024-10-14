@@ -2,11 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const CountryLinks = () => {
+const Experiences = () => {
   return (
-    <div className="w-full mx-auto mt-20 mb-6 px-6 sm:px-8 lg:px-16" id="countryLinks">
+    <div className="w-full mx-auto mt-8 mb-6 px-6 sm:px-8 lg:px-16" id="experiences">
       <div className="text-4xl text-center lg:text-5xl font-medium leading-relaxed text-black-600 mb-10">
-      <h1>Destinations</h1>
+        <br />
+      <h1>Experiences</h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Japan Link */}
@@ -143,7 +144,7 @@ const CountryLinks = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
-          <Link href="/global_sailing">
+          <Link href="/global">
             <div>
               <div className="relative h-0 pb-56">
                 <img
@@ -163,4 +164,4 @@ const CountryLinks = () => {
   );
 };
 
-export default CountryLinks;
+export default Experiences;
