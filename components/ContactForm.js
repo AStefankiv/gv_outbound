@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";

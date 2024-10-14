@@ -9,19 +9,18 @@
     "export": "next build && next export"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.3.3",
+    "@babel/runtime": "^7.25.7",
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "autoprefixer": "^10.4.12",
     "axios": "^1.7.2",
-    "emailjs-com": "^3.2.0",
     "framer-motion": "6.0.0",
     "jiti": "^1.21.6",
     "next": "^14.2.15",
     "nodemailer": "^6.9.14",
     "postcss": "^8.4.17",
     "postcss-import": "^13.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-scroll": "^1.8.1",
     "react-slick": "^0.27.14",
     "sharp": "^0.33.4",
@@ -36,6 +35,11 @@
     "eslint": "^9.6.0"
   },
   "eslintConfig": {
-    "extends": "eslint:recommended"
+    "extends": "eslint:recommended",
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2021": true
+    }
   }
 }
