@@ -4,7 +4,7 @@ import ButtonPrimary from '../../components/misc/ButtonPrimary';
 import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
 
-const TeachingCostaRicaForm = () => {
+const TeachingCostaRica = () => {
   const [formData, setFormData] = useState({
     email: '',
     name: '',
@@ -27,7 +27,7 @@ const TeachingCostaRicaForm = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ ...formData, subject: 'Teaching in Costa Rica' }),
+      body: JSON.stringify({ ...formData, subject: 'Teaching in Costa Rica Inquiry' }),
     });
 
     if (response.ok) {
@@ -123,4 +123,4 @@ const TeachingCostaRicaForm = () => {
   );
 };
 
-export default TeachingCostaRicaForm;
+export default TeachingCostaRica;

@@ -4,7 +4,7 @@ import ButtonPrimary from '../../components/misc/ButtonPrimary';
 import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
 
-const GreenLifeConservationForm = () => {
+const GreenLifeConservation = () => {
   const [formData, setFormData] = useState({
     email: '',
     name: '',
@@ -27,7 +27,7 @@ const GreenLifeConservationForm = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ ...formData, subject: 'Nature Conservation Internship Costa Rica' }),
+      body: JSON.stringify({ ...formData, subject: 'Nature Conservation Internship Costa Rica Inquiry' }),
     });
 
     if (response.ok) {
@@ -52,7 +52,7 @@ const GreenLifeConservationForm = () => {
             {/* Left Section - Information */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Nature Conservation Internship
+                Green Life Conservation Internship
               </h1>
               <ul className="text-lg text-black-500 space-y-4">
                 <li><strong>Location:</strong> Southern Costa Rica</li>
@@ -67,8 +67,8 @@ const GreenLifeConservationForm = () => {
               <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
                 <div>
                 <h1 className="text-4xl text-center lg:text-5xl font-medium leading-relaxed text-black-600 mb-4">
-          Yes! I want to know how I can take part in an internship in Costa Rica!
-        </h1>
+                  Yes! I want to know how I can take part in an internship in Costa Rica!
+                </h1>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                     Email
                   </label>
@@ -124,4 +124,4 @@ const GreenLifeConservationForm = () => {
   );
 };
 
-export default GreenLifeConservationForm;
+export default GreenLifeConservation;

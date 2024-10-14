@@ -4,7 +4,7 @@ import ButtonPrimary from '../../components/misc/ButtonPrimary';
 import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
 
-const GreenLifeCommunityForm = () => {
+const GreenLifeCommunity = () => {
   const [formData, setFormData] = useState({
     email: '',
     name: '',
@@ -27,7 +27,7 @@ const GreenLifeCommunityForm = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ ...formData, subject: 'Green Life Community in Costa Rica' }),
+      body: JSON.stringify({ ...formData, subject: 'Green Life Community in Costa Rica Inquiry' }),
     });
 
     if (response.ok) {
@@ -124,4 +124,4 @@ const GreenLifeCommunityForm = () => {
   );
 };
 
-export default GreenLifeCommunityForm;
+export default GreenLifeCommunity;

@@ -23,7 +23,8 @@ const Header = () => {
 
   const hiddenPaths = [
     "/japan",
-    "/teach_eng_japan_form",
+    "/japan/j_internship_form",
+    "/japan/teach_eng_japan_form",
     "/korea",
     "/korea/teach_eng_korea_form",
     "/korea/k_internship_form",
@@ -42,6 +43,9 @@ const Header = () => {
     "/global_sailing",
     "/global_sailing/sail_croatia",
     "/experiences/cultural_exchange",
+    "/experiences/international_internship",
+    "/experiences/job_placement",
+    "/experiences/volunteering_and_conservation",
   ];
 
   const hideLinks = hiddenPaths.includes(router.pathname);
@@ -65,9 +69,12 @@ const Header = () => {
             <div className="hidden sm:block">
               <Link
                 href='/about'
-                className={"text-lg px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative font-bold text-center ml-20"}>
+                className="text-lg px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative font-bold text-center ml-20">
                 About
               </Link>
+            </div>
+            <div className="text-lg px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative font-bold text-center ml-0 hidden sm:block">
+            <a href="mailto:outbound@gvenglish.com">Contact us</a>
             </div>
           </div>
 
@@ -341,6 +348,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={1000}
+                offset={-300}
                 onSetActive={() => {
                   setActiveLink("contact");
                 }}
