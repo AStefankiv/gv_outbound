@@ -20,8 +20,8 @@
     "nodemailer": "^6.9.14",
     "postcss": "^8.4.17",
     "postcss-import": "^13.0.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-scroll": "^1.8.1",
     "react-slick": "^0.27.14",
     "sharp": "^0.33.4",
@@ -35,7 +35,12 @@
     "babel-plugin-inline-react-svg": "^1.1.2",
     "eslint": "^9.6.0"
   },
-  "eslintConfig": {
-    "extends": "eslint:recommended"
+"eslintConfig": {
+  "extends": "eslint:recommended",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
   }
+}
 }
