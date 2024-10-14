@@ -22,6 +22,7 @@ const Header = () => {
   }, []);
 
   const hiddenPaths = [
+    "/japan",
     "/teach_eng_japan_form",
     "/korea",
     "/korea/teach_eng_korea_form",
@@ -40,6 +41,7 @@ const Header = () => {
     "/spain/spain_internship",
     "/global_sailing",
     "/global_sailing/sail_croatia",
+    "/experiences/cultural_exchange",
   ];
 
   const hideLinks = hiddenPaths.includes(router.pathname);
