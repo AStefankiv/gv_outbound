@@ -27,7 +27,8 @@ const CulturalExchange = () => {
               alt="TEACH IN FRANCE"
               className="absolute inset-0 w-full h-full object-cover rounded-lg"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-center" style={{ color: "rgba(241,163,52,255)" }}>
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+            style={{ color: "rgba(241,163,52,255)" }}>
               <span>LANGUAGE ASSISTANT</span>
               <span className="text-2xl mt-2">France</span>
             </div>
@@ -45,7 +46,8 @@ const CulturalExchange = () => {
                 alt="TEACH IN ITALY"
                 className="absolute inset-0 w-full h-full object-cover rounded-lg"
               />
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-center" style={{ color: "rgba(241,163,52,255)" }}>
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+            style={{ color: "rgba(241,163,52,255)" }}>
               <span>LANGUAGE ASSISTANT</span>
               <span className="text-2xl mt-2">Italy</span>
               </div>
@@ -63,7 +65,8 @@ const CulturalExchange = () => {
                 alt="TEACH ALIORE SPAIN"
                 className="absolute inset-0 w-full h-full object-cover rounded-lg"
               />
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-center" style={{ color: "rgba(241,163,52,255)" }}>
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+            style={{ color: "rgba(241,163,52,255)" }}>
               <span>LANGUAGE ASSISTANT</span>
               <span className="text-2xl mt-2">Spain</span>
               </div>
