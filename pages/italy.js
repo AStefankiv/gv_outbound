@@ -35,12 +35,20 @@ const ItalyPage = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/italy/teach_aliore_italy" className="relative h-0 pb-56 block">
+                <Link href="/italy/teach_aliore_italy"
+                className="relative h-0 pb-56 block"
+                >
+                  <picture className="absolute inset-0 w-full h-full">
+                  <source
+                    srcSet="/assets/italy_language_assistant-desktop.jpeg"
+                    media="(min-width: 1024px)"
+                  />
                   <img
-                    src="/assets/teaching_button.jpg"
+                    src="/assets/italy_language_assistant-mobile.jpeg"
                     alt="TEACH IN ITALY"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
+                  </picture>
                   <div
                     className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-4xl font-bold text-outline-white text-center"
                     style={{ color: "rgba(241,163,52,255)" }}

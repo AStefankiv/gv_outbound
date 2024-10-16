@@ -34,7 +34,7 @@ const FrancePage = () => {
               >
                 <Link href="/france/teach_aliore_france" className="relative h-0 pb-56 block">
                   <img
-                    src="/assets/teaching_button.jpg"
+                    src="/assets/france_language_assistant.png"
                     alt="TEACH IN FRANCE"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />

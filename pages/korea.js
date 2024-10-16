@@ -54,7 +54,7 @@ const KoreaPage = () => {
               >
                 <Link href="/korea/teach_eng_korea_form" className="relative h-0 pb-56 block">
                   <img
-                    src="/assets/teaching_button.jpg"
+                    src="/assets/teach_korea.jpeg"
                     alt="TEACH ENGLISH"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />

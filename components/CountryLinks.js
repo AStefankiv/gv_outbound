@@ -44,7 +44,8 @@ const CountryLinks = () => {
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold" style={{ color: "rgba(241,163,52,255)" }}>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+              style={{ color: "rgba(241,163,52,255)" }}>
                 Korea
               </div>
             </div>
@@ -65,7 +66,8 @@ const CountryLinks = () => {
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold" style={{ color: "rgba(241,163,52,255)" }}>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+              style={{ color: "rgba(241,163,52,255)" }}>
                 Costa Rica
               </div>
             </div>
@@ -86,7 +88,8 @@ const CountryLinks = () => {
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold" style={{ color: "rgba(241,163,52,255)" }}>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+              style={{ color: "rgba(241,163,52,255)" }}>
                 France
               </div>
             </div>
@@ -107,7 +110,8 @@ const CountryLinks = () => {
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold" style={{ color: "rgba(241,163,52,255)" }}>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+              style={{ color: "rgba(241,163,52,255)" }}>
                 Italy
               </div>
             </div>
@@ -128,7 +132,8 @@ const CountryLinks = () => {
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold" style={{ color: "rgba(241,163,52,255)" }}>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+              style={{ color: "rgba(241,163,52,255)" }}>
                 Spain
               </div>
             </div>
@@ -152,7 +157,8 @@ const CountryLinks = () => {
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold" style={{ color: "rgba(241,163,52,255)" }}>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+              style={{ color: "rgba(241,163,52,255)" }}>
                 Global
               </div>
             </div>

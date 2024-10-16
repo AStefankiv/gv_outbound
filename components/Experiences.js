@@ -24,7 +24,8 @@ const Experiences = () => {
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-center" style={{ color: "rgba(241,163,52,255)" }}>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+              style={{ color: "rgba(241,163,52,255)" }}>
                 CULTURAL EXCHANGE
               </div>
             </div>
@@ -45,7 +46,8 @@ const Experiences = () => {
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-center" style={{ color: "rgba(241,163,52,255)" }}>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+              style={{ color: "rgba(241,163,52,255)" }}>
                 INTERNATIONAL INTERNSHIP
               </div>
             </div>
@@ -66,7 +68,8 @@ const Experiences = () => {
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-center" style={{ color: "rgba(241,163,52,255)" }}>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+              style={{ color: "rgba(241,163,52,255)" }}>
                 JOB PLACEMENT
               </div>
             </div>
@@ -90,7 +93,8 @@ const Experiences = () => {
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-center" style={{ color: "rgba(241,163,52,255)" }}>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+              style={{ color: "rgba(241,163,52,255)" }}>
                 VOLUNTEERING AND CONSERVATION
               </div>
             </div>
