@@ -16,6 +16,10 @@ module.exports = {
       t: "0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
       orange: "0px 20px 20px -15px rgba(245,56,56,0.81) ",
       "orange-md": "0px 20px 40px -15px rgba(245,56,56,0.81) ",
+
+      "dark-grey": "0 4px 6px rgba(0, 0, 0, 0.5)",
+      "dark-grey-md": "0 6px 8px rgba(0, 0, 0, 0.5)",
+      "dark-grey-lg": "0 8px 12px rgba(0, 0, 0, 0.5)",
       none: "none",
     },
     colors: {

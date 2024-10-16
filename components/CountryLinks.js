@@ -10,7 +10,7 @@ const CountryLinks = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Japan Link */}
-        <motion.div
+        {/* <motion.div
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
@@ -28,7 +28,7 @@ const CountryLinks = () => {
               </div>
             </div>
           </Link>
-        </motion.div>
+        </motion.div> */}
 
         {/* Korea Link */}
         <motion.div
@@ -136,7 +136,7 @@ const CountryLinks = () => {
         </motion.div>
 
         {/* Empty Link */}
-        <motion.div className="relative overflow-hidden rounded-lg shadow-md cursor-pointer invisible"></motion.div>
+        {/* <motion.div className="relative overflow-hidden rounded-lg shadow-md cursor-pointer invisible"></motion.div> */}
 
         {/* Global Link */}
         <motion.div

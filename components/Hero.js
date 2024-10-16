@@ -32,10 +32,12 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   const images = [
-    { src: "/assets/city_1.jpg", name: "Tokyo" },
+    { src: "https://res.cloudinary.com/vacationscostarica-com/image/upload/v1650823626/tamarindo_diria_beachfront_overview_guanacaste_7945a0a8c0.jpg", name: "Costa Rica - Tamarindo" },
     { src: "/assets/city_2.jpg", name: "Seoul" },
-    { src: "/assets/city_3.jpg", name: "Sydney" },
-    { src: "/assets/city_4.jpg", name: "Madrid" },
+    { src: "https://www.francecomfort.com/l/en/library/download/urn:uuid:4744970e-a11a-4ad1-b94c-76c3f3f7a251/marseille+1+zuid+frankrijk+middellandse+zee+strand+vakantie+villa+oude+haven+vieux+port.jpg?scaleType=3&width=1600&height=1000", name: "France - Marseille" },
+    { src: "https://cdn.prod.website-files.com/6551f8b152816a8f57a9bfb5/6598156104acc4f9d71e4c27_barcelona.webp", name: "Madrid" },
+    { src: "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_4000,h_2670/https://www.yourownitaly.com/wp-content/uploads/images/excursions/the-colosseum-ancient-roman-forum.jpg", name: "Italy - Rome" },
+    { src: "https://cdn.britannica.com/15/194815-050-08B5E7D1/Nativity-facade-Sagrada-Familia-cathedral-Barcelona-Spain.jpg", name: "Spain - Barcelona" },
   ];
 
   const settings = {

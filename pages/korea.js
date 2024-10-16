@@ -38,7 +38,10 @@ const KoreaPage = () => {
                     alt="INTERNSHIP"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold" style={{ color: "rgba(241,163,52,255)" }}>
+                  <div
+                    className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-4xl font-bold text-outline-white text-center"
+                    style={{ color: "rgba(241,163,52,255)" }}
+                  >
                     INTERNSHIPS
                   </div>
                 </Link>
@@ -55,7 +58,10 @@ const KoreaPage = () => {
                     alt="TEACH ENGLISH"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold" style={{ color: "rgba(241,163,52,255)" }}>
+                  <div
+                    className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-4xl font-bold text-outline-white text-center"
+                    style={{ color: "rgba(241,163,52,255)" }}
+                  >
                     TEACH ENGLISH
                   </div>
                 </Link>

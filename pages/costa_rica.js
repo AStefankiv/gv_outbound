@@ -41,7 +41,10 @@ const CostaRica = () => {
                     alt="nature_conservation"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-center" style={{ color: "rgba(241,163,52,255)" }}>
+                  <div
+                    className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-4xl font-bold text-outline-white text-center"
+                    style={{ color: "rgba(241,163,52,255)" }}
+                  >
                     NATURE CONSERVATION
                   </div>
                 </Link>
@@ -58,7 +61,10 @@ const CostaRica = () => {
                     alt="INTERNSHIP"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-center" style={{ color: "rgba(241,163,52,255)" }}>
+                  <div
+                    className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-4xl font-bold text-outline-white text-center"
+                    style={{ color: "rgba(241,163,52,255)" }}
+                  >
                     COMMUNITY DEVELOPMENT
                   </div>
                 </Link>
@@ -75,7 +81,10 @@ const CostaRica = () => {
                     alt="TEACHING"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-center" style={{ color: "rgba(241,163,52,255)" }}>
+                  <div
+                    className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-4xl font-bold text-outline-white text-center"
+                    style={{ color: "rgba(241,163,52,255)" }}
+                  >
                     TEACHING
                   </div>
                 </Link>
