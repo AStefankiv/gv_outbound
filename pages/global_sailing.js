@@ -45,7 +45,7 @@ const GlobalSailing = () => {
                   />
                   <img
                     src="/assets/yacht-mobile.jpeg"
-                    alt="TEACH IN FRANCE"
+                    alt="CROATIA YACHT CREW"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
                   </picture>

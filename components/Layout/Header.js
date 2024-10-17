@@ -7,6 +7,7 @@ import Link from "next/link";
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -50,6 +51,32 @@ const Header = () => {
 
   const hideLinks = hiddenPaths.includes(router.pathname);
 
+  const dropDownCountries = [
+    {
+      name: "Korea",
+      link: "/korea",
+    },
+    {
+      name: "Costa Rica",
+      link: "/costa_rica",
+    },
+    {
+      name: "France",
+      link: "/france",
+    },
+    {
+      name: "Italy",
+      link: "/italy",
+    },
+    {
+      name: "Spain",
+      link: "/spain",
+    },
+    {
+      name: "Global",
+      link: "/global_sailing",
+    },
+  ]
 
   return (
     <>
@@ -80,6 +107,12 @@ const Header = () => {
 
           {!hideLinks && (
             <ul className="hidden lg:flex col-start-13 col-end-13 text-black-500 items-center"> {/* col-start-4 col-end-4 */}
+            {/* Destinations link with dropdown */}
+            <div
+              onMouseEnter={() => setShowDropdown(true)}
+              onMouseLeave={() => setShowDropdown(false)}
+              className="relative"
+            >
               <LinkScroll
                 activeClass="active"
                 to="emptyComponent" // Updated to match the EmptyComponent ID
@@ -115,6 +148,24 @@ const Header = () => {
                   </svg>
                 </div>
               </LinkScroll>
+              {showDropdown && (
+                <div className="absolute top-full left-0 w-full bg-white-500 shadow-md z-20">
+                  <ul className="flex flex-col items-center">
+                    {dropDownCountries.map((country, index) => (
+                      <Link
+                        key={index}
+                        href={country.link}
+                        className="w-full"
+                      >
+                        <li className="w-full px-4 py-2 cursor-pointer text-black-500 hover:text-orange-500">
+                          {country.name}
+                        </li>
+                      </Link>
+                    ))}
+                  </ul>
+                  </div>
+                )}
+              </div> 
 
               <LinkScroll
                 activeClass="active"
@@ -171,7 +222,7 @@ const Header = () => {
                 About
               </LinkScroll> */}
 
-              <LinkScroll
+              {/* <LinkScroll
                 activeClass="active"
                 to="contact"
                 spy={true}
@@ -205,7 +256,7 @@ const Header = () => {
                     />
                   </svg>
                 </div>
-              </LinkScroll>
+              </LinkScroll> */}
 
               {/* Add other links if necessary */}
             </ul>
@@ -342,7 +393,7 @@ const Header = () => {
                 About
               </LinkScroll> */}
 
-              <LinkScroll
+              {/* <LinkScroll
                 activeClass="active"
                 to="contact"
                 spy={true}
@@ -374,7 +425,7 @@ const Header = () => {
                   />
                 </svg>
                 Contact Us
-              </LinkScroll>
+              </LinkScroll> */}
               {/* Add other mobile links if necessary */}
             </ul>
           )}

@@ -40,12 +40,20 @@ const JobPlacement = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
         >
-          <Link href="/global_sailing/sail_croatia" className="relative h-0 pb-56 block">
+          <Link href="/global_sailing/sail_croatia"
+          className="relative h-0 pb-56 block"
+          >
+            <picture className="absolute inset-0 w-full h-full">
+              <source
+              srcSet="/assets/yacht-desktop.jpeg"
+              media="(min-width: 1024px)"
+            />
             <img
-              src="/assets/global_sailing_button.jpg"
-              alt="TEACH IN FRANCE"
+              src="/assets/yacht-mobile.jpeg"
+              alt="CROATIA YACHT CREW"
               className="absolute inset-0 w-full h-full object-cover rounded-lg"
             />
+            </picture>
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
             style={{ color: "rgba(241,163,52,255)" }}>
               <span>YACHT CREW</span>

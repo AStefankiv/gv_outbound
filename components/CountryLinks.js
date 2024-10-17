@@ -30,28 +30,6 @@ const CountryLinks = () => {
           </Link>
         </motion.div> */}
 
-        {/* Korea Link */}
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
-        >
-          <Link href="/korea">
-            <div>
-              <div className="relative h-0 pb-56">
-                <img
-                  src="/assets/korea-image.jpeg"
-                  alt="Korea"
-                  className="absolute inset-0 w-full h-full object-cover rounded-lg"
-                />
-              </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
-              style={{ color: "rgba(241,163,52,255)" }}>
-                Korea
-              </div>
-            </div>
-          </Link>
-        </motion.div>
-
         {/* Costa Rica Link */}
         <motion.div
           whileHover={{ scale: 1.05 }}
@@ -113,6 +91,28 @@ const CountryLinks = () => {
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
               style={{ color: "rgba(241,163,52,255)" }}>
                 Italy
+              </div>
+            </div>
+          </Link>
+        </motion.div>
+
+        {/* Korea Link */}
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+        >
+          <Link href="/korea">
+            <div>
+              <div className="relative h-0 pb-56">
+                <img
+                  src="/assets/korea-image.jpeg"
+                  alt="Korea"
+                  className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+              style={{ color: "rgba(241,163,52,255)" }}>
+                Korea
               </div>
             </div>
           </Link>

@@ -9,7 +9,7 @@ import Header from '../../components/Layout/Header';
 const FranceTeachEngForm = () => {
   const [formData, setFormData] = useState({
     email: '',
-    name: '',
+    first_name: '',
     phone: '',
     // message_text: '',
   });
@@ -37,7 +37,7 @@ const FranceTeachEngForm = () => {
       alert('Email sent successfully!');
       setFormData({
         email: '',
-        name: '',
+        first_name: '',
         phone: '',
         // message_text: '',
       });
@@ -88,14 +88,14 @@ const FranceTeachEngForm = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">
                     Name
                   </label>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
+                    id="first_name"
+                    name="first_name"
+                    value={formData.first_name}
                     onChange={handleChange}
                     required
                     className="mt-1 p-2 border border-gray-300 rounded-md w-full"

@@ -61,7 +61,7 @@ const VolunteeringAndConservation = () => {
         >
           <Link href="/costa_rica/teaching_mareas" className="relative h-0 pb-56 block">
             <img
-              src="/assets/teaching_button.jpg"
+              src="/assets/teach_costa_rica.jpeg"
               alt="TEACHING"
               className="absolute inset-0 w-full h-full object-cover rounded-lg"
             />
