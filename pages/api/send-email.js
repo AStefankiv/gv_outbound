@@ -14,8 +14,8 @@ export default async (req, res) => {
     });
 
     let emailText = `Email: ${email}\nFirst name: ${first_name}\nLast name: ${last_name}\nPhone: ${phone}\nMessage: ${message_text}`;
-    if (!message_text && !last_name) {
-      emailText = `Email: ${email}\nName: ${first_name}\nPhone: ${phone}`;
+    if (!message_text) {
+      emailText = `Email: ${email}\nFirst name: ${first_name}\nLast name: ${last_name}\nPhone: ${phone}`;
     }
 
     const mailOptions = {

@@ -39,6 +39,7 @@ const FranceTeachEngForm = () => {
       setFormData({
         email: '',
         first_name: '',
+        last_name: '',
         phone: '',
         // message_text: '',
       });
@@ -94,9 +95,9 @@ const FranceTeachEngForm = () => {
                   </label>
                   <input
                     type="text"
-                    id="last__name"
-                    name="last__name"
-                    value={formData.last__name}
+                    id="last_name"
+                    name="last_name"
+                    value={formData.last_name}
                     onChange={handleChange}
                     required
                     className="mt-1 p-2 border border-gray-300 rounded-md w-full"

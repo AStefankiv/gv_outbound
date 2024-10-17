@@ -9,7 +9,8 @@ import Header from '../../components/Layout/Header';
 const SailCroatia = () => {
   const [formData, setFormData] = useState({
     email: '',
-    name: '',
+    first_name: '',
+    last_name: '',
     phone: '',
     // message_text: '',
   });
@@ -37,7 +38,8 @@ const SailCroatia = () => {
       alert('Email sent successfully!');
       setFormData({
         email: '',
-        name: '',
+        first_name: '',
+        last_name: '',
         phone: '',
         // message_text: '',
       });
@@ -70,10 +72,38 @@ const SailCroatia = () => {
             {/* Right Section - Form */}
             <div className="w-2/3 mx-auto">
               <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
-                <div>
                 <h1 className="text-4xl text-center lg:text-5xl font-medium leading-relaxed text-black-600 mb-4">
                 Yes! I want to know how I can sail Croatia!
                 </h1>
+                <div>
+                  <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    value={formData.first_name}
+                    onChange={handleChange}
+                    required
+                    className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="last_name" className="block text-sm font-medium text-gray-700">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="last_name"
+                    name="last_name"
+                    value={formData.last_name}
+                    onChange={handleChange}
+                    required
+                    className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                  />
+                </div>
+                <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                     Email
                   </label>
@@ -82,20 +112,6 @@ const SailCroatia = () => {
                     id="email"
                     name="email"
                     value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
                     onChange={handleChange}
                     required
                     className="mt-1 p-2 border border-gray-300 rounded-md w-full"
