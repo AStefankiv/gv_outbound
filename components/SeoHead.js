@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Script from 'next/script'; // Import the Script component
 import gv_image from '../public/assets/gv_square.png';
-
 
 const defaultMeta = {
   title: 'Work learn travel',
@@ -14,7 +14,6 @@ const defaultMeta = {
   author: 'Andrew Stefankiv'
 };
 
-
 const SeoHead = (props) => {
   const router = useRouter();
   const meta = {
@@ -22,73 +21,81 @@ const SeoHead = (props) => {
     ...props
   };
 
-  // Use siteName if there is templateTitle
-  // but show full title if there is none
+  // Use siteName if there is templateTitle, but show full title if there is none
   meta.title = props.templateTitle
     ? `${props.templateTitle} | ${meta.siteName}`
     : meta.title;
 
   return (
-    <Head>
-      <title>{meta.title}</title>
-      <meta name='robots' content={meta.robots} />
-      <meta content={meta.description} name='description' />
-      <meta property='og:url' content={`${meta.url}${router.asPath}`} />
-      <link rel='canonical' href={`${meta.url}${router.asPath}`} />
+    <>
+      <Head>
+        <title>{meta.title}</title>
+        <meta name='robots' content={meta.robots} />
+        <meta content={meta.description} name='description' />
+        <meta property='og:url' content={`${meta.url}${router.asPath}`} />
+        <link rel='canonical' href={`${meta.url}${router.asPath}`} />
+
+        {/* Open Graph */}
+        <meta property='og:type' content={meta.type} />
+        <meta property='og:site_name' content={meta.siteName} />
+        <meta property='og:description' content={meta.description} />
+        <meta property='og:title' content={meta.title} />
+        <meta name='image' property='og:image' content='https://github.com/AStefankiv/gv_outbound/blob/main/public/assets/gv_square.png?raw=true' />
+
+        {/* Twitter */}
+        <meta name='twitter:card' content={meta.image} />
+        <meta name='twitter:site' content='@F2aldi' />
+        <meta name='twitter:title' content={meta.title} />
+        <meta name='twitter:description' content={meta.description} />
+        <meta name='twitter:image' content={meta.image} />
+
+        {meta.date && (
+          <>
+            <meta property='article:published_time' content={meta.date} />
+            <meta
+              name='publish_date'
+              property='og:publish_date'
+              content={meta.date}
+            />
+            <meta
+              name='author'
+              property='article:author'
+              content={meta.author}
+            />
+          </>
+        )}
+
+        {/* Favicons */}
+        {favicons.map((linkProps) => (
+          <link key={linkProps.href} {...linkProps} />
+        ))}
+
+        {/* Windows 8 app icon */}
+        <meta name='msapplication-TileColor' content='#F53838' />
+        <meta
+          name='msapplication-TileImage'
+          content='/favicon/ms-icon-144x144.png'
+        />
+
+        {/* Accent color on supported browser */}
+        <meta name='theme-color' content='#F53838' />
+      </Head>
 
       {/* Google Analytics */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-E92RJLF7EE"></script>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-E92RJLF7EE');
-          `,
-        }}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-E92RJLF7EE"
+        strategy="afterInteractive"
       />
 
-      {/* Open Graph */}
-      <meta property='og:type' content={meta.type} />
-      <meta property='og:site_name' content={meta.siteName} />
-      <meta property='og:description' content={meta.description} />
-      <meta property='og:title' content={meta.title} />
-      <meta name='image' property='og:image' content='https://github.com/AStefankiv/gv_outbound/blob/main/public/assets/gv_square.png?raw=true' />
-      {/* Twitter */}
-      <meta name='twitter:card' content={meta.image} />
-      <meta name='twitter:site' content='@F2aldi' />
-      <meta name='twitter:title' content={meta.title} />
-      <meta name='twitter:description' content={meta.description} />
-      <meta name='twitter:image' content={meta.image} />
-      {meta.date && (
-        <>
-          <meta property='article:published_time' content={meta.date} />
-          <meta
-            name='publish_date'
-            property='og:publish_date'
-            content={meta.date}
-          />
-          <meta
-            name='author'
-            property='article:author'
-            content={meta.author}
-          />
-        </>
-      )}
-      {/* Favicons */}
-      {favicons.map((linkProps) => (
-        <link key={linkProps.href} {...linkProps} />
-      ))}
-      {/* Windows 8 app icon */}
-      <meta name='msapplication-TileColor' content='#F53838' />
-      <meta
-        name='msapplication-TileImage'
-        content='/favicon/ms-icon-144x144.png'
-      />
-      {/* Accent color on supported browser */}
-      <meta name='theme-color' content='#F53838' />
-    </Head>
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-E92RJLF7EE');
+        `}
+      </Script>
+    </>
   );
 };
 
