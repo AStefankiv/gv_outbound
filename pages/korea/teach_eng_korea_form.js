@@ -160,6 +160,8 @@ const KoreaTeachEngForm = () => {
               const step2Fields = ['work_situation', 'situation_satisfied', 'what_change', 'other_programs', 'other_programs_consider', 'how_motivated', 'main_goals'];
               const step3Fields = ['are_you_a_canadian_citizen_', 'your_age', 'level_of_education', 'finance'];
 
+              const step2RequiredFields = ['work_situation', 'how_motivated'];
+
               // Function to hide fields by their names
               const hideFields = (fields) => {
                 fields.forEach(fieldName => {
@@ -223,7 +225,7 @@ const KoreaTeachEngForm = () => {
 
               // Insert 'Next' buttons after Step 1 and Step 2 fields
               insertNextButton('phone', 1); // After 'phone' field in Step 1
-              insertNextButton('main_goals', 2); // After 'work_situation' field in Step 2
+              insertNextButton('main_goals', 2); // After 'main_goals' field in Step 2
 
               // Hide the 'Next' button for Step 2 initially
               const step2NextButton = form.querySelector('.step2-next');
@@ -253,7 +255,7 @@ const KoreaTeachEngForm = () => {
               // Attach click event handler to Step 2 'Next' button
               if (step2NextButton) {
                 step2NextButton.addEventListener('click', function() {
-                  if (areFieldsFilled(step2Fields)) {
+                  if (areFieldsFilled(step2RequiredFields)) {
                     // Hide Step 2 fields and 'Next' button
                     hideFields(step2Fields);
                     this.style.display = 'none';
@@ -327,6 +329,3 @@ const KoreaTeachEngForm = () => {
 };
 
 export default KoreaTeachEngForm;
-
-{/* <div class="hs_work_situation hs-work_situation hs-fieldtype-radio field hs-form-field"><label id="label-work_situation-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="" placeholder="Enter your What is your current work situation?" for="work_situation-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac"><span>What is your current work situation?</span></label><legend class="hs-field-desc" style="display: none;"></legend><div class="input"><ul role="checkbox" class="inputs-list multi-container"><li class="hs-form-radio" role="radio"><label for="work_situation0-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="hs-form-radio-display"><input id="work_situation0-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="hs-input" type="radio" name="work_situation" value="In school or training"><span>In school or training</span></label></li><li class="hs-form-radio" role="radio"><label for="work_situation1-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="hs-form-radio-display"><input id="work_situation1-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="hs-input" type="radio" name="work_situation" value="Employed, not looking for work"><span>Employed, not looking for work</span></label></li><li class="hs-form-radio" role="radio"><label for="work_situation2-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="hs-form-radio-display"><input id="work_situation2-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="hs-input" type="radio" name="work_situation" value="Employed, looking for work"><span>Employed, looking for work</span></label></li><li class="hs-form-radio" role="radio"><label for="work_situation3-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="hs-form-radio-display"><input id="work_situation3-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="hs-input" type="radio" name="work_situation" value="Not employed or in training, looking for work"><span>Not employed or in training, looking for work</span></label></li></ul></div></div> */}
-{/* <div class="hs_are_you_a_canadian_citizen_ hs-are_you_a_canadian_citizen_ hs-fieldtype-radio field hs-form-field"><label id="label-are_you_a_canadian_citizen_-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="" placeholder="Enter your Are you a Canadian citizen?" for="are_you_a_canadian_citizen_-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac"><span>Are you a Canadian citizen?</span></label><legend class="hs-field-desc" style="display: none;"></legend><div class="input"><ul role="checkbox" class="inputs-list multi-container"><li class="hs-form-radio" role="radio"><label for="are_you_a_canadian_citizen_0-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="hs-form-radio-display"><input id="are_you_a_canadian_citizen_0-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="hs-input" type="radio" name="are_you_a_canadian_citizen_" value="Yes"><span>Yes</span></label></li><li class="hs-form-radio" role="radio"><label for="are_you_a_canadian_citizen_1-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="hs-form-radio-display"><input id="are_you_a_canadian_citizen_1-4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac" class="hs-input" type="radio" name="are_you_a_canadian_citizen_" value="No"><span>No</span></label></li></ul></div></div> */}
