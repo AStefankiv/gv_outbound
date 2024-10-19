@@ -4,7 +4,7 @@ import Header from '../../components/Layout/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
 
-const FranceTeachEngForm = () => {
+const FranceLanguageAssistant = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -194,4 +194,4 @@ const FranceTeachEngForm = () => {
   );
 };
 
-export default FranceTeachEngForm;
+export default FranceLanguageAssistant;
