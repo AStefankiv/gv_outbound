@@ -3,9 +3,32 @@ import Footer from '../components/Layout/Footer';
 import Header from '../components/Layout/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../components/Layout/ScrollAnimationWrapper";
-import Script from 'next/script'; // Add this import
 
 const Partnership = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://js.hsforms.net/forms/embed/v2.js";
+    script.async = true;
+
+    script.onload = () => {
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          portalId: process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID,
+          formId: process.env.NEXT_PUBLIC_HUBSPOT_FORM_ID,
+          target: "#hubspotForm", // This is 'id' of the form container
+          onFormReady: function (form) {
+            console.log('New HubSpot form is ready');
+          },
+          onFormSubmitted: function () {
+            alert('Form successfully submitted');
+          }
+        });
+      }
+    };
+
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen w-full">
       <Header />
@@ -51,23 +74,6 @@ const Partnership = () => {
       </main>
 
       <Footer />
-
-      {/* HubSpot Script using next/script */}
-      <Script
-        src="https://js.hsforms.net/forms/embed/v2.js"
-        onLoad={() => {
-          if (window.hbspt) {
-            window.hbspt.forms.create({
-              portalId: "7792441",
-              formId: "41e2700c-e829-4b5b-8596-2fcf324b8f41",
-              target: "#hubspotForm",
-              onFormReady: () => console.log('New HubSpot form is ready'),
-              onFormSubmitted: () => alert('Form successfully submitted')
-            });
-          }
-        }}
-        strategy="afterInteractive"
-      />
     </div>
   );
 };
