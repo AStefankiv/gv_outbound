@@ -34,7 +34,6 @@ const SeoHead = (props) => {
         <meta content={meta.description} name='description' />
         <meta property='og:url' content={`${meta.url}${router.asPath}`} />
         <link rel='canonical' href={`${meta.url}${router.asPath}`} />
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7792441.js"></script>
 
         {/* Open Graph */}
         <meta property='og:type' content={meta.type} />
@@ -96,6 +95,14 @@ const SeoHead = (props) => {
           gtag('config', 'G-E92RJLF7EE');
         `}
       </Script>
+
+      {/* HubSpot Script using next/script */}
+      <Script
+        id="hs-script-loader"
+        src="//js.hs-scripts.com/7792441.js"
+        strategy="afterInteractive"
+      />
+
     </>
   );
 };
