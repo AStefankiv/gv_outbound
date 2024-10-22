@@ -6,7 +6,7 @@ import ScrollAnimationWrapper from "../components/Layout/ScrollAnimationWrapper"
 
 const Partnership = () => {
   useEffect(() => {
-    
+
     console.log('Portal ID:', process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID);
     console.log('Form ID:', process.env.NEXT_PUBLIC_HUBSPOT_FORM_ID);
 
@@ -15,6 +15,7 @@ const Partnership = () => {
     script.async = true;
 
     script.onload = () => {
+      console.log('HubSpot script loaded:', !!window.hbspt);
       if (window.hbspt) {
         window.hbspt.forms.create({
           portalId: process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID,
