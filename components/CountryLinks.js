@@ -140,8 +140,30 @@ const CountryLinks = () => {
           </Link>
         </motion.div>
 
+        {/* Hong Kong Link */}
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+        >
+          <Link href="/hong_kong">
+            <div>
+              <div className="relative h-0 pb-56">
+                <img
+                  src="/assets/hong_kong-image.jpg"
+                  alt="Hong Kong"
+                  className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+              style={{ color: "rgba(241,163,52,255)" }}>
+                Hong Kong
+              </div>
+            </div>
+          </Link>
+        </motion.div>
+
         {/* Empty Link */}
-        {/* <motion.div className="relative overflow-hidden rounded-lg shadow-md cursor-pointer invisible"></motion.div> */}
+        <motion.div className="relative overflow-hidden rounded-lg shadow-md cursor-pointer invisible"></motion.div>
 
         {/* Global Link */}
         <motion.div
