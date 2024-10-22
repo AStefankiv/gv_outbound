@@ -73,6 +73,10 @@ const Header = () => {
       link: "/spain",
     },
     {
+      name: "Hong Kong",
+      link: "/hong_kong",
+    },
+    {
       name: "Global",
       link: "/global_sailing",
     },

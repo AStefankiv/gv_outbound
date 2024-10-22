@@ -42,9 +42,14 @@ const Footer = () => {
               </a>
             </li>
             <li className="my-5 hover:text-orange-500 cursor-pointer transition-all">
-              <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadians/international-experience-canada.html" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadians/international-experience-canada.html" target="_blank" rel="noopener noreferrer">
               International Experience Canada
-              </a>
+              </Link>
+            </li>
+            <li className="my-5 hover:text-orange-500 cursor-pointer transition-all">
+              <Link href="/partnership" rel="noopener noreferrer">
+                Partnership
+              </Link>
             </li>
           </ul>
         </div>
