@@ -54,7 +54,7 @@ const Hero = ({
         >
           <div className="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-              <strong>Work Learn Travel</strong> helps Canadians find work and culture experiences overseas
+              <strong>Global Village Work Learn Travel</strong> provides Canadians with work placements and culture exchanges overseas. Explore the world with a new job and a new perspective
             </h1>
             <p className="text-black-500 mt-4 mb-6">
               Explore the world with a new job and a new perspective.

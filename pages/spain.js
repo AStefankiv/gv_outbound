@@ -69,7 +69,7 @@ const SpainPage = () => {
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
                 <Link
-                  href="/spain/language_assistant_aliore_spain"
+                  href="/spain/language_assistant_spain"
                   className="relative h-0 pb-56 block"
                 >
                   <picture className="absolute inset-0 w-full h-full">

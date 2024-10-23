@@ -162,6 +162,11 @@ const GreenLifeCommunity = () => {
                 <li><strong>Location:</strong> Southern Costa Rica</li>
                 <li><strong>Length of stay:</strong> 6 months+</li>
                 <li><strong>Requirements:</strong> Minimum 18 years old; high school diploma</li>
+                <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
+                <a href="https://www.visitcostarica.com/en/costa-rica/planning-your-trip/entry-requirements"
+                className='text-blue-500 underline hover:text-blue-600'>
+                here 
+                </a>{' '}for a summary, and contact us for more details</li>
                 <li><strong>Cost:</strong> Contact for details</li>
               </ul>
             </div>

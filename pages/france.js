@@ -32,7 +32,7 @@ const FrancePage = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/france/teach_aliore_france" className="relative h-0 pb-56 block">
+                <Link href="/france/language_assistant_france" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/france_language_assistant.png"
                     alt="TEACH IN FRANCE"

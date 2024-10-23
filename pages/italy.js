@@ -35,7 +35,7 @@ const ItalyPage = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/italy/teach_aliore_italy"
+                <Link href="/italy/language_assistant_italy"
                 className="relative h-0 pb-56 block"
                 >
                   <picture className="absolute inset-0 w-full h-full">

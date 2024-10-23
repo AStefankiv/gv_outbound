@@ -21,7 +21,7 @@ const CulturalExchange = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
         >
-          <Link href="/france/teach_aliore_france" className="relative h-0 pb-56 block">
+          <Link href="/france/language_assistant_france" className="relative h-0 pb-56 block">
             <img
               src="/assets/france-image.jpg"
               alt="TEACH IN FRANCE"
@@ -40,7 +40,7 @@ const CulturalExchange = () => {
             whileHover={{ scale: 1.05 }}
             className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
           >
-            <Link href="/italy/teach_aliore_italy" className="relative h-0 pb-56 block">
+            <Link href="/italy/language_assistant_italy" className="relative h-0 pb-56 block">
               <img
                 src="/assets/italy-image.jpg"
                 alt="TEACH IN ITALY"
@@ -59,7 +59,7 @@ const CulturalExchange = () => {
             whileHover={{ scale: 1.05 }}
             className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
           >
-            <Link href="/spain/language_assistant_aliore_spain" className="relative h-0 pb-56 block">
+            <Link href="/spain/language_assistant_spain" className="relative h-0 pb-56 block">
               <img
                 src="/assets/spain-image.jpeg"
                 alt="TEACH ALIORE SPAIN"
