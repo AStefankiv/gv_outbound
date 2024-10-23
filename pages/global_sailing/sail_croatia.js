@@ -162,6 +162,11 @@ const SailCroatia = () => {
                 <li><strong>Location:</strong> Croatia (training) and worldwide (yacht crew)</li>
                 <li><strong>Length of stay:</strong> 6 months+</li>
                 <li><strong>Requirements:</strong> Minimum 18 years old; high school diploma</li>
+                <li><strong>Visa requirements:</strong> see {' '}
+                <a href="https://mvep.gov.hr/consular-information-136918/implementation-of-the-memorandum-of-understanding-concerning-youth-mobility/180587"
+                className='text-blue-500 underline hover:text-blue-600'>
+                here 
+                </a>{' '}for a summary; contact us for more details</li>
                 <li><strong>Cost:</strong> Contact for details</li>
               </ul>
             </div>
