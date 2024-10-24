@@ -2,6 +2,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -9,6 +10,14 @@ const About = () => {
       <Header />
       <main className="flex-grow mt-24 mb-6 w-full">
         <div className="w-full mt-8 mb-6 px-4 sm:px-4 lg:px-12">
+          <div className="flex justify-center mb-8">
+            <Image
+            src="/assets/Global-Village-IEC-RO-Banner-lrg.jpg"
+            alt="IEC"
+            width={1000}
+            height={400}
+            />
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
             <div>
               <p className="text-lg mb-4">
