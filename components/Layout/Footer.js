@@ -1,16 +1,23 @@
 import React from "react";
-import LogoGV from "../../public/assets/Logo.svg";
 import Facebook from "../../public/assets/Icon/facebook.svg";
 import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <div className="bg-white-300 pt-6 pb-4 sm:pb-1">
       <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-5 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-12 gap-0">
         <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
-          <LogoGV className="h-16 w-auto" />
+          <Image
+            src="/assets/GV-Work-Learn-Travel-Logo-Full-Logo-smoke.jpg"
+            alt="GV Logo"
+            width={200}
+            height={64}
+            className="h-16 w-auto object-contain"
+            priority
+          />
           <p className="mb-4">
             <strong className="font-bold">GV WORK LEARN TRAVEL</strong> HELPS CANADIAN CITIZENS AGED 18 TO 35 TO WORK AND TRAVEL AROUND THE WORLD.
           </p>
@@ -33,7 +40,6 @@ const Footer = () => {
               <a href="mailto:outbound@gvenglish.com">Contact us</a>
             </li>
             <li className="my-5 hover:text-orange-500 cursor-pointer transition-all">
-              {/* About Us */}
               <Link href="/about" target="_blank" rel="noopener noreferrer">About Us</Link>
             </li>
             <li className="my-5 hover:text-orange-500 cursor-pointer transition-all">

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { Link as LinkScroll } from "react-scroll";
-import LogoGV from "../../public/assets/Logo.svg";
+import LogoGV from "../../public/assets/GV-Work-Learn-Travel-Logo-Full-Logo.svg";
 import Link from "next/link";
 
 const Header = () => {
