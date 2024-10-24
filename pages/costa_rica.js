@@ -75,7 +75,7 @@ const CostaRica = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/costa_rica/teaching_mareas" className="relative h-0 pb-56 block">
+                <Link href="/costa_rica/teaching_costa_rica" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/teach_costa_rica.jpeg"
                     alt="TEACHING"
