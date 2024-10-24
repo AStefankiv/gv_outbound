@@ -14,7 +14,7 @@ const Hero = ({
     },
     {
       name: "countries",
-      number: "5+",
+      number: "7+",
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {

@@ -1,60 +1,52 @@
-import { useMemo } from "react";
-import React, { useState } from "react";
+import React, { useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-import ButtonPrimary from "./misc/ButtonPrimary";
 
 const ContactForm = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
-  const [formData, setFormData] = useState({
-    email: '',
-    first_name: '',
-    last_name: '',
-    phone: '',
-    message_text: '',
-  });
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://js.hsforms.net/forms/embed/v2.js";
+    script.async = true;
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+    script.onload = () => {
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          portalId: process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID,
+          formId: process.env.NEXT_PUBLIC_HUBSPOT_FORM_ID_HOMEFORM,
+          target: "#hubspotForm",
+          onFormReady: function (form) {
+            console.log('New HubSpot form is ready');
+          },
+          onFormSubmitted: function () {
+            alert('Form successfully submitted');
+          }
+        });
+      } else {
+        console.error('HubSpot forms script loaded, but hbspt is not defined.');
+      }
+    };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    script.onerror = () => {
+      console.error('Error loading the HubSpot forms script.');
+    };
 
-    const response = await fetch('/api/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ ...formData, subject: 'General Inquiry' }),
-    });
+    document.body.appendChild(script);
 
-    if (response.ok) {
-      alert('Email sent successfully!');
-      setFormData({
-        email: '',
-        first_name: '',
-        last_name: '',
-        phone: '',
-        message_text: '',
-      });
-    } else {
-      alert('Failed to send email.');
-    }
-  };
+    // Cleanup script when component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="w-full min-h-screen flex items-center mx-auto mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full">
         {/* Left Column - Introductory Text */}
         <div className="flex flex-col justify-center text-center lg:text-left">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-medium text-black-600 mb-10">
             Which experience is the best for me?
           </h2>
           <p className="text-base sm:text-lg lg:text-2xl text-black-600">
@@ -78,83 +70,8 @@ const ContactForm = () => {
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6" id="contact">
-              <div>
-                <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">
-                  First Name
-                </label>
-                <input
-                  type="text"
-                  id="first_name"
-                  name="first_name"
-                  value={formData.first_name}
-                  onChange={handleChange}
-                  required
-                  className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-                />
-              </div>
-              <div>
-                <label htmlFor="last_name" className="block text-sm font-medium text-gray-700">
-                  Last Name
-                </label>
-                <input
-                  type="text"
-                  id="last_name"
-                  name="last_name"
-                  value={formData.last_name}
-                  onChange={handleChange}
-                  required
-                  className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-                />
-              </div>
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                  Phone number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                  className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-                />
-              </div>
-              <div>
-                <label htmlFor="message_text" className="block text-sm font-medium text-gray-700">
-                  Message
-                </label>
-                <textarea
-                  id="message_text"
-                  name="message_text"
-                  rows={4}
-                  value={formData.message_text}
-                  onChange={handleChange}
-                  required
-                  className="mt-1 p-2 border border-gray-300 rounded-md w-full resize-y"
-                />
-              </div>
-              <div className="flex justify-center">
-                <ButtonPrimary addClass="px-8" type="submit">
-                  Send
-                </ButtonPrimary>
-              </div>
-            </form>
+            <div id="hubspotForm"></div>
+
           </motion.div>
         </ScrollAnimationWrapper>
       </div>

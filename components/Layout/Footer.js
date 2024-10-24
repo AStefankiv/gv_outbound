@@ -19,7 +19,7 @@ const Footer = () => {
             priority
           />
           <p className="mb-4">
-            <strong className="font-bold">GV WORK LEARN TRAVEL</strong> HELPS CANADIAN CITIZENS AGED 18 TO 35 TO WORK AND TRAVEL AROUND THE WORLD.
+            <strong className="font-bold">GV WORK LEARN TRAVEL</strong> helps Canadian citizens aged 18 to 35 to work and travel around the world.
           </p>
           <div className="flex w-full mt-2 mb-4 sm:mb-8 -mx-2">
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md transition-transform transform hover:scale-110">

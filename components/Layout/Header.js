@@ -140,7 +140,7 @@ const Header = () => {
                   </div>
                 </LinkScroll>
                 {showDestinationsDropdown && (
-                  <div className="absolute top-full left-0 w-full bg-white-500 shadow-md z-20">
+                  <div className="absolute top-full left-0 w-full bg-white-500 shadow-md z-20 text-center">
                     <ul className="flex flex-col items-center">
                       {dropDownCountries.map((country, index) => (
                         <Link key={index} href={country.link} className="w-full">
@@ -192,7 +192,8 @@ const Header = () => {
                   </div>
                 </LinkScroll>
                 {showExperiencesDropdown && (
-                  <div className="absolute top-full left-0 w-full bg-white-500 text-center shadow-md z-20">
+                  // <div className="absolute top-full left-0 w-full bg-white-500 text-center shadow-md z-20">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-[270px] bg-white-500 shadow-md z-20 text-center">
                     <ul className="flex flex-col items-center">
                       {dropDownExperiences.map((experience, index) => (
                         <Link key={index} href={experience.link} className="w-full">
