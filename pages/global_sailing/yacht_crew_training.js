@@ -4,7 +4,7 @@ import Header from '../../components/Layout/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
 
-const GreenLifeCommunity = () => {
+const YachtCrewTraining = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -156,17 +156,17 @@ const GreenLifeCommunity = () => {
             {/* Header Section */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Green Life Community
+                Sail Croatia
               </h1>
               <ul className="text-lg text-black-500 space-y-4">
-                <li><strong>Location:</strong> Southern Costa Rica</li>
+                <li><strong>Location:</strong> Croatia (training) and worldwide (yacht crew)</li>
                 <li><strong>Length of stay:</strong> 6 months+</li>
                 <li><strong>Requirements:</strong> Minimum 18 years old; high school diploma</li>
-                <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
-                <a href="https://www.visitcostarica.com/en/costa-rica/planning-your-trip/entry-requirements"
+                <li><strong>Visa requirements:</strong> see {' '}
+                <a href="https://mvep.gov.hr/consular-information-136918/implementation-of-the-memorandum-of-understanding-concerning-youth-mobility/180587"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
-                </a>{' '}for a summary, and contact us for more details</li>
+                </a>{' '}for a summary; contact us for more details</li>
                 <li><strong>Cost:</strong> Contact for details</li>
               </ul>
             </div>
@@ -176,9 +176,9 @@ const GreenLifeCommunity = () => {
               <ScrollAnimationWrapper className="w-full justify-end">
                 <motion.div className="h-full w-full p-4">
                   <div className="my-12 text-center">
-                    <h1 className="text-4xl text-center lg:text-5xl font-medium leading-relaxed text-black-600 mb-4">
-                    Yes! I want to know how I can take part in the Green Life Community in Costa Rica!
-                    </h1>
+                  <h1 className="text-4xl text-center lg:text-5xl font-medium leading-relaxed text-black-600 mb-4">
+                    Yes! I want to know how I can sail Croatia!
+                  </h1>
                     <p className="text-lg text-black-500 mb-8">
                       Fill out the form below, and we'll send you all the details.
                     </p>
@@ -199,4 +199,4 @@ const GreenLifeCommunity = () => {
   );
 };
 
-export default GreenLifeCommunity;
+export default YachtCrewTraining;

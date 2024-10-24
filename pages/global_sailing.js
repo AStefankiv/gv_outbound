@@ -35,7 +35,7 @@ const GlobalSailing = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/global_sailing/sail_croatia"
+                <Link href="/global_sailing/yacht_crew_training"
                 className="relative h-0 pb-56 block"
                 >
                   <picture className="absolute inset-0 w-full h-full">
@@ -45,7 +45,7 @@ const GlobalSailing = () => {
                   />
                   <img
                     src="/assets/yacht-mobile.jpeg"
-                    alt="CROATIA YACHT CREW"
+                    alt="YACHT CREW TRAINING"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
                   </picture>

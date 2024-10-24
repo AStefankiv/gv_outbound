@@ -35,7 +35,7 @@ const CostaRica = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/costa_rica/green_life_conservation" className="relative h-0 pb-56 block">
+                <Link href="/costa_rica/nature_conservation" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/nature_conservation.jpg"
                     alt="nature_conservation"
@@ -55,7 +55,7 @@ const CostaRica = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/costa_rica/green_life_community" className="relative h-0 pb-56 block">
+                <Link href="/costa_rica/community_development" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/community_development.png"
                     alt="INTERNSHIP"
