@@ -15,7 +15,7 @@ const GlobalSailing = () => {
             
             {/* Left Section - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-5xl font-bold mb-6 text-center">Experience Global Sailing</h1>
+              <h1 className="text-5xl font-bold mb-6 text-center">Experience Yacht Sailing</h1>
               <p className="text-xl leading-relaxed mb-4">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Becoming a yacht crew member is an exciting and unique career path that offers Canadians a chance to explore the world while working on luxury vessels. For those looking for overseas experiences, the yacht industry provides a gateway to adventure, professional growth, and cultural immersion. Plus, working on a yacht provides remarkable networking, and fosters teamwork, discipline, and responsibility: skills that are transferable to future work in almost any industry. Whether you’re seeking a temporary job or a long-term career, working as a yacht crew member is both challenging and rewarding. 
               </p>
@@ -35,7 +35,7 @@ const GlobalSailing = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/global_sailing/yacht_crew_training"
+                <Link href="/croatia/yacht_crew_training"
                 className="relative h-0 pb-56 block"
                 >
                   <picture className="absolute inset-0 w-full h-full">

@@ -14,8 +14,8 @@ const CommunityDevelopment = () => {
     script.onload = () => {
       if (window.hbspt) {
         window.hbspt.forms.create({
-          portalId: "7792441",
-          formId: "4606ebf8-3709-4d5b-b4ef-93c2bc8b47ac",
+          portalId: process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID,
+          formId: process.env.NEXT_PUBLIC_HUBSPOT_FORM_ID_COUNTRIES,
           target: "#hubspotForm",
           onFormReady: function(form) {
             console.log('onFormReady called');
@@ -156,7 +156,7 @@ const CommunityDevelopment = () => {
             {/* Header Section */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Green Life Community
+                Community Development in Costa Rica
               </h1>
               <ul className="text-lg text-black-500 space-y-4">
                 <li><strong>Location:</strong> Southern Costa Rica</li>
@@ -176,9 +176,6 @@ const CommunityDevelopment = () => {
               <ScrollAnimationWrapper className="w-full justify-end">
                 <motion.div className="h-full w-full p-4">
                   <div className="my-12 text-center">
-                    <h1 className="text-4xl text-center lg:text-5xl font-medium leading-relaxed text-black-600 mb-4">
-                    Yes! I want to know how I can take part in the Green Life Community in Costa Rica!
-                    </h1>
                     <p className="text-lg text-black-500 mb-8">
                       Fill out the form below, and we'll send you all the details.
                     </p>

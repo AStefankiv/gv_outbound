@@ -42,8 +42,8 @@ const Header = () => {
     "/spain",
     "/spain/language_assistant_spain",
     "/spain/spain_internship",
-    "/global_sailing",
-    "/global_sailing/sail_croatia",
+    "/croatia",
+    "/croatia/yacht_crew_training",
     "/experiences/cultural_exchange",
     "/experiences/international_internship",
     "/experiences/job_placement",
@@ -59,7 +59,7 @@ const Header = () => {
     { name: "Italy", link: "/italy" },
     { name: "Spain", link: "/spain" },
     { name: "Hong Kong", link: "/hong_kong" },
-    { name: "Global", link: "/global_sailing" },
+    { name: "Croatia", link: "/croatia" },
   ];
 
   const dropDownExperiences = [
@@ -166,6 +166,7 @@ const Header = () => {
                   spy={true}
                   smooth={true}
                   duration={1000}
+                  offset={-100}
                   className={
                     "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                     (activeLink === "experiences"

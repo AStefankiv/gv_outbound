@@ -37,14 +37,14 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-13 flex flex-col">
           <ul className="text-black-500">
             <li className="my-5 hover:text-orange-500 cursor-pointer transition-all">
-              <a href="mailto:outbound@gvenglish.com">Contact us</a>
-            </li>
-            <li className="my-5 hover:text-orange-500 cursor-pointer transition-all">
               <Link href="/about" target="_blank" rel="noopener noreferrer">About Us</Link>
             </li>
             <li className="my-5 hover:text-orange-500 cursor-pointer transition-all">
+              <a href="mailto:outbound@gvenglish.com">Contact us</a>
+            </li>
+            <li className="my-5 hover:text-orange-500 cursor-pointer transition-all">
               <a href="https://gvenglish.com/" rel="noopener noreferrer">
-                Global Village
+                Global Village English
               </a>
             </li>
             <li className="my-5 hover:text-orange-500 cursor-pointer transition-all">
