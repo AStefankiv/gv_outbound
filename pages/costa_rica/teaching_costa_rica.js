@@ -155,19 +155,24 @@ const TeachingCostaRica = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Header Section */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Teaching in Costa Rica
-              </h1>
+              <h1 className="text-5xl font-bold mb-6 text-center">Costa Rica Teaching</h1>
+              <p className="text-xl leading-relaxed mb-4">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this unique teaching experience, you’ll be working in a community-focused private school in a beautiful beachside town on the Pacific coast of Costa Rica. This locally founded K-6 school has been in operation for more than a decade, and is designed to give an outstanding bilingual educational opportunity to the region’s children so that they can share their learning with the community and live meaningful lives. You’ll bring your skill and knowledge in teaching to the classroom in your area of expertise: designing and delivering lessons, and working with the children in a variety of activities as a teacher.
+              </p>
+              <p className="text-xl leading-relaxed mb-8">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An ideal participant is adventurous, independent, and keen to put their teaching skills to use with children in a cross-cultural environment. Accommodations can be locally arranged as an add-on, and teachers will follow a basic teaching schedule throughout the school year.
+              </p>
               <ul className="text-lg text-black-500 space-y-4">
-                <li><strong>Location:</strong> Western Costa Rica</li>
+                <li><strong>Location:</strong> Samara (western Costa Rica)</li>
                 <li><strong>Length of stay:</strong> 1 year+</li>
-                <li><strong>Requirements:</strong> Minimum 18 years old; high school diploma</li>
+                <li><strong>Dates:</strong> School year starts at the end of October</li>
+                <li><strong>Requirements:</strong> teaching certification or degree</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
                 <a href="https://www.visitcostarica.com/en/costa-rica/planning-your-trip/entry-requirements"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary, and contact us for more details</li>
-                <li><strong>Cost:</strong> Contact for details</li>
+                <li><strong>Cost:</strong> $1,499 CAD</li>
               </ul>
             </div>
 

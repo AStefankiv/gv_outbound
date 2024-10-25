@@ -17,13 +17,10 @@ const GlobalSailing = () => {
             <div className="flex flex-col justify-center">
               <h1 className="text-5xl font-bold mb-6 text-center">Experience Yacht Sailing</h1>
               <p className="text-xl leading-relaxed mb-4">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Becoming a yacht crew member is an exciting and unique career path that offers Canadians a chance to explore the world while working on luxury vessels. For those looking for overseas experiences, the yacht industry provides a gateway to adventure, professional growth, and cultural immersion. Plus, working on a yacht provides remarkable networking, and fosters teamwork, discipline, and responsibility: skills that are transferable to future work in almost any industry. Whether you’re seeking a temporary job or a long-term career, working as a yacht crew member is both challenging and rewarding. 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Croatia is an incredible destination for Canadians looking to expand their horizons. Croatia is known for its stunning Adriatic coastline, vibrant culture, and rich history. Seaside resorts in places like Dubrovnik, Split, and Hvar are popular for seasonal jobs, particularly in hospitality and tourism, giving you the chance to work by the beach while enjoying the Mediterranean lifestyle. 
               </p>
               <p className="text-xl leading-relaxed">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yachts frequently sail to exotic coastal destinations such as the Mediterranean, Caribbean, and South Pacific, allowing crew members to experience different cultures and environments. Living and working on a yacht means you’re always on the move, which adds an element of excitement to everyday life. For adventure-seekers, there’s no better office than the open ocean.
-              </p>
-              <p className="text-xl leading-relaxed mt-3">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We offer comprehensive training to prepare you for your role onboard, including technical and social skills that will help you connect with teammates and guests alike. This training will stand you in good stead as you look ahead: many crew members start in entry-level positions like deckhand or steward, but with the right qualifications and experience, you can work your way up to senior roles like chief stewardess, chef, or even captain.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unlike more crowded destinations, Croatia offers affordable living, a laid-back vibe, and an opportunity to immerse yourself in its natural beauty. Whether you're exploring ancient walled cities or relaxing by crystal-clear waters, a working holiday in Croatia offers Canadians both unique employment opportunities and cultural adventures.
               </p>
             </div>
 

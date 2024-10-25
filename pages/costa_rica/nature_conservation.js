@@ -155,19 +155,25 @@ const NatureConservation = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Header Section */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Nature Conservation Internship
-              </h1>
+
+              <h1 className="text-5xl font-bold mb-6 text-center">Costa Rica Sea Turtle Conservation</h1>
+              <p className="text-xl leading-relaxed mb-4">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this sea turtle conservation project, you’ll take part in the entire experience: patrolling beaches to discourage predators and theft, moving and preparing nests, assisting turtles in distress, getting baby turtles to the ocean, and helping keep records of number of turtles, sand temperatures, and other critical scientific data. You’ll also assist with critical secondary work like clearing beaches so that turtles can get in, and planting trees or aiding in infrastructure projects.
+              </p>
+              <p className="text-xl leading-relaxed mb-8">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An ideal participant in this experience has a passion for animal conservation and biology, enjoys physical labor and loves being outdoors! Room and board are provided in the project dormitory with other participants, and while your weekday schedule (including nights, since that’s when turtles are active) will be busy with the project, your weekends will be typically free to experience all that Costa Rica has to offer!
+              </p>
+              
               <ul className="text-lg text-black-500 space-y-4">
-                <li><strong>Location:</strong> Southern Costa Rica</li>
-                <li><strong>Length of stay:</strong> 3 months+</li>
-                <li><strong>Requirements:</strong> Minimum 18 years old; high school diploma</li>
+                <li><strong>Location:</strong> varies based on time of year and turtle nesting activity</li>
+                <li><strong>Length of stay:</strong> 1 month+</li>
+                <li><strong>Requirements:</strong> some Spanish helpful but not required</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
                 <a href="https://www.visitcostarica.com/en/costa-rica/planning-your-trip/entry-requirements"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary, and contact us for more details</li>
-                <li><strong>Cost:</strong> Contact for details</li>
+                <li><strong>Cost:</strong> $2,799 CAD</li>
               </ul>
             </div>
 

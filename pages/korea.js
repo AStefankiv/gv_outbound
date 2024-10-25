@@ -32,7 +32,7 @@ const KoreaPage = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/korea/k_internship_form" className="relative h-0 pb-56 block">
+                <Link href="/korea/korea_internship" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/internship_button.jpg"
                     alt="INTERNSHIP"
@@ -52,7 +52,7 @@ const KoreaPage = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/korea/teach_eng_korea_form" className="relative h-0 pb-56 block">
+                <Link href="/korea/teach_english_korea" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/teach_korea.jpeg"
                     alt="TEACH ENGLISH"

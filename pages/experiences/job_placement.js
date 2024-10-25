@@ -21,7 +21,7 @@ const JobPlacement = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
         >
-          <Link href="/korea/teach_eng_korea_form" className="relative h-0 pb-56 block">
+          <Link href="/korea/teach_english_korea" className="relative h-0 pb-56 block">
             <img
               src="/assets/korea-image.jpeg"
               alt="TEACH ENGLISH"
@@ -40,7 +40,7 @@ const JobPlacement = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
         >
-          <Link href="/global_sailing/yacht_crew_training"
+          <Link href="/croatia/yacht_crew_training"
           className="relative h-0 pb-56 block"
           >
             <picture className="absolute inset-0 w-full h-full">

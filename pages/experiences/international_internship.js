@@ -40,7 +40,7 @@ const InternationalInternship = () => {
               whileHover={{ scale: 1.05 }}
               className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
             >
-              <Link href="/korea/k_internship_form" className="relative h-0 pb-56 block">
+              <Link href="/korea/korea_internship" className="relative h-0 pb-56 block">
                 <img
                   src="/assets/korea-image.jpeg"
                   alt="INTERNSHIP"

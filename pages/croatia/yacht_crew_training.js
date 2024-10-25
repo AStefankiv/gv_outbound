@@ -155,14 +155,21 @@ const YachtCrewTraining = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Header Section */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Yacht Crew Training in Croatia
-              </h1>
+
+              <h1 className="text-5xl font-bold mb-6 text-center">Yacht Training in Croatia</h1>
+              <p className="text-xl leading-relaxed mb-4">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this job training and placement project, you’ll learn all the skills required to become a valued member of a superyacht crew as a deckhand or a stewardess. For those with special interest, there are also opportunities to train as a skipper. At the yacht crew training school, you’ll be trained in personal and crew safety, including marine, medical, and fire. Before you attend, you’ll also be able to take YCA-certified online training modules dealing with all aspects of your work onboard. When you finish, you will be provided with a full-featured employment assistance package: agency and job access, CV support, reference letters, and program access to help you find the perfect job!
+              </p>
+              <p className="text-xl leading-relaxed mb-8">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ideal participant in this experience is adventurous, fit, and independent, and enjoys making friends and working together with people from all over the world. Accommodations during the training period are available with the deluxe package.
+              </p>
+
               <ul className="text-lg text-black-500 space-y-4">
-                <li><strong>Location:</strong> Croatia (training) and worldwide (yacht crew)</li>
-                <li><strong>Length of stay:</strong> 6 months+</li>
-                <li><strong>Requirements:</strong> Minimum 18 years old; high school diploma</li>
-                <li><strong>Visa requirements:</strong> see {' '}
+                <li><strong>Location:</strong> Split, Croatia (training) and work opportunities worldwide</li>
+                <li><strong>Length of stay:</strong> 10 days’ training, work placements flexible</li>
+                <li><strong>Dates:</strong> year-round; higher demand for April-Oct</li>
+                <li><strong>Requirements:</strong> high school diploma</li>
+                <li><strong>Visa requirements:</strong> Canadian citizen 18-35 years old; see {' '}
                 <a href="https://mvep.gov.hr/consular-information-136918/implementation-of-the-memorandum-of-understanding-concerning-youth-mobility/180587"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 

@@ -155,19 +155,25 @@ const CommunityDevelopment = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Header Section */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Community Development in Costa Rica
-              </h1>
+
+              <h1 className="text-5xl font-bold mb-6 text-center">Costa Rica Community</h1>
+              <p className="text-xl leading-relaxed mb-4">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this community-building project, you’ll be involved in two specific activities: class workshops for local residents (particularly children) on any topic you have skills in, from dance to art to private tutoring. English language skills are especially welcome and appreciated, but anything you come up with is great! The second thing you’ll be doing is working in and around the Puerto Jimenez library and community centre, which always has a variety of needs – organizing, painting, running activities, or manning the desk. Everything you do will contribute in some way to the educational needs of this small and vibrant community.
+              </p>
+              <p className="text-xl leading-relaxed mb-8">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An ideal participant loves to interact with kids and is willing to teach a variety of topics. They should be able to take initiative and be creative, proactive, and energetic! Room and board are provided with a local family living in Puerto Jimenez, likely close to the library. Specific schedules are created based on what’s happening at the time of arrival, but you’ll have flexibility to take in all that Costa Rica has to offer!
+              </p>
+
               <ul className="text-lg text-black-500 space-y-4">
-                <li><strong>Location:</strong> Southern Costa Rica</li>
-                <li><strong>Length of stay:</strong> 6 months+</li>
-                <li><strong>Requirements:</strong> Minimum 18 years old; high school diploma</li>
+                <li><strong>Location:</strong> Puerto Jimenez (southern Costa Rica)</li>
+                <li><strong>Length of stay:</strong> 1 month+</li>
+                <li><strong>Requirements:</strong> basic to intermediate Spanish speaking useful, but not required</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
                 <a href="https://www.visitcostarica.com/en/costa-rica/planning-your-trip/entry-requirements"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary, and contact us for more details</li>
-                <li><strong>Cost:</strong> Contact for details</li>
+                <li><strong>Cost:</strong> Cost: $2,799 CAD</li>
               </ul>
             </div>
 

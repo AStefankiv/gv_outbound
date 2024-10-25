@@ -161,7 +161,7 @@ const FranceLanguageAssistant = () => {
               <ul className="text-lg text-black-500 space-y-4">
                 <li><strong>Location:</strong> Varies</li>
                 <li><strong>Length of stay:</strong> 1-3 months+</li>
-                <li><strong>Requirements:</strong> Minimum 18 years old; high school diploma</li>
+                <li><strong>Requirements:</strong> high school diploma, some knowledge of French, interest in teaching</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; no previous participation in French Working Holiday program; see {' '}
                 <a href="https://france-visas.gouv.fr/web/france-visas/jeune-voyageur-vacances-travail"
                 className='text-blue-500 underline hover:text-blue-600'>

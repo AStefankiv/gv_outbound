@@ -4,7 +4,7 @@ import Header from '../../components/Layout/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
 
-const KoreaTeachEngForm = () => {
+const KoreaTeachEnglish = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -161,7 +161,7 @@ const KoreaTeachEngForm = () => {
               <ul className="text-lg text-black-500 space-y-4">
                 <li><strong>Location:</strong> Varies</li>
                 <li><strong>Length of stay:</strong> 1 year+</li>
-                <li><strong>Requirements:</strong> Minimum 18 years old; high school diploma</li>
+                <li><strong>Requirements:</strong> bachelor’s degree and TESL certification</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
                 <a href="https://whic.mofa.go.kr/contents.do?menuNo=90&contentsNo=38"
                 className='text-blue-500 underline hover:text-blue-600'>
@@ -196,4 +196,4 @@ const KoreaTeachEngForm = () => {
   );
 };
 
-export default KoreaTeachEngForm;
+export default KoreaTeachEnglish;

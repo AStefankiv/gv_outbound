@@ -165,23 +165,23 @@ const CountryLinks = () => {
         {/* Empty Link */}
         <motion.div className="relative overflow-hidden rounded-lg shadow-md cursor-pointer invisible"></motion.div>
 
-        {/* Global Link */}
+        {/* Croatia Link */}
         <motion.div
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
-          <Link href="/global_sailing">
+          <Link href="/croatia">
             <div>
               <div className="relative h-0 pb-56">
                 <img
-                  src="/assets/global-image.jpg"
+                  src="/assets/croatia.jpg"
                   alt="Global"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
               style={{ color: "rgba(241,163,52,255)" }}>
-                Global
+                Croatia
               </div>
             </div>
           </Link>
