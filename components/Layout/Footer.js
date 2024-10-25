@@ -11,10 +11,10 @@ const Footer = () => {
       <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-5 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-12 gap-0">
         <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
           <Image
-            src="/assets/GV-Work-Learn-Travel-Logo-Full-Logo-smoke.jpg"
+            src="/assets/GV-Work-Learn-Travel-Logo-Transparent.png"
             alt="GV Logo"
-            width={200}
-            height={64}
+            width={974}
+            height={213}
             className="h-16 w-auto object-contain"
             priority
           />
@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-13 flex flex-col">
           <ul className="text-black-500">
             <li className="my-5 hover:text-orange-500 cursor-pointer transition-all">
-              <Link href="/about" target="_blank" rel="noopener noreferrer">About Us</Link>
+              <Link href="/about" rel="noopener noreferrer">About Us</Link>
             </li>
             <li className="my-5 hover:text-orange-500 cursor-pointer transition-all">
               <a href="mailto:outbound@gvenglish.com">Contact us</a>

@@ -23,35 +23,6 @@ const Header = () => {
     };
   }, []);
 
-  const hiddenPaths = [
-    "/japan",
-    "/japan/j_internship_form",
-    "/japan/teach_eng_japan_form",
-    "/korea",
-    "/korea/teach_eng_korea_form",
-    "/korea/k_internship_form",
-    "/about",
-    "/france",
-    "/france/language_assistant_france",
-    "/italy",
-    "/italy/language_assistant_italy",
-    "/costa_rica",
-    "/costa_rica/teaching_mareas",
-    "/costa_rica/green_life_community",
-    "/costa_rica/green_life_conservation",
-    "/spain",
-    "/spain/language_assistant_spain",
-    "/spain/spain_internship",
-    "/croatia",
-    "/croatia/yacht_crew_training",
-    "/experiences/cultural_exchange",
-    "/experiences/international_internship",
-    "/experiences/job_placement",
-    "/experiences/volunteering_and_conservation",
-  ];
-
-  const hideLinks = hiddenPaths.includes(router.pathname);
-
   const dropDownCountries = [
     { name: "Korea", link: "/korea" },
     { name: "Costa Rica", link: "/costa_rica" },
@@ -100,7 +71,6 @@ const Header = () => {
             </div>
           </div>
 
-          {!hideLinks && (
             <ul className="hidden lg:flex col-start-13 col-end-13 text-black-500 items-center">
               {/* Destinations link with dropdown */}
               <div
@@ -208,14 +178,12 @@ const Header = () => {
                 )}
               </div>
             </ul>
-          )}
         </nav>
       </header>
 
       {/* Mobile Navigation */}
       <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t">
         <div className="bg-white-500 sm:px-3">
-          {!hideLinks && (
             <ul className="flex w-full justify-between items-center text-black-500">
               <LinkScroll
                 activeClass="active"
@@ -300,7 +268,6 @@ const Header = () => {
                 About
               </Link>
             </ul>
-          )}
         </div>
       </nav>
     </>
