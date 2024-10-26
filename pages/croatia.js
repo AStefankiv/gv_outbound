@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 
-const GlobalSailing = () => {
+const Croatia = () => {
   return (
     <div className="flex flex-col min-h-screen w-full">
       <Header />
@@ -64,4 +64,4 @@ const GlobalSailing = () => {
   );
 };
 
-export default GlobalSailing;
+export default Croatia;
