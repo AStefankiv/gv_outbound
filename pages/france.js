@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 
-const FrancePage = () => {
+const France = () => {
   return (
     <div className="flex flex-col min-h-screen w-full">
       <Header />
@@ -57,4 +57,4 @@ const FrancePage = () => {
   );
 };
 
-export default FrancePage;
+export default France;
