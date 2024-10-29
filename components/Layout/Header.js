@@ -193,6 +193,8 @@ const Header = () => {
       <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t">
         <div className="bg-white-500 sm:px-3">
             <ul className="flex w-full justify-between items-center text-black-500">
+              {router.pathname === "/" ? (
+                <>
               <LinkScroll
                 activeClass="active"
                 to="countryLinks"
@@ -252,10 +254,60 @@ const Header = () => {
                 </svg>
                 Experiences
               </LinkScroll>
-
+              </>
+              ) : (
+                <>
+                <Link
+                  href="/"
+                  className={
+                    "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
+                    (router.pathname === "/"
+                      ? " border-orange-500 text-orange-500"
+                      : " border-transparent")
+                  }
+                >
+                  <svg
+                    className="bi bi-house w-6 h-6"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
+                    />
+                  </svg>
+                  Home Page
+                </Link>
+                <a
+                  href="mailto:outbound@gvenglish.com"
+                  className="mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all"
+                >
+                  <svg
+                    className="bi bi-envelope w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                    />
+                  </svg>
+                  Contact Us
+                </a>
+              </>
+            )}
               <Link
                 href="/about"
-                className="flex flex-col items-center justify-center px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative font-bold text-center"
+                className="flex flex-col items-center justify-center px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative text-center"
               >
                 <svg
                   className="w-6 h-6"
@@ -267,7 +319,7 @@ const Header = () => {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth={2}
+                    strokeWidth={1}
                     d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
