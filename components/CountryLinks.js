@@ -9,26 +9,6 @@ const CountryLinks = () => {
       <h1>Destinations</h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Japan Link */}
-        {/* <motion.div
-          whileHover={{ scale: 1.05 }}
-          className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
-        >
-          <Link href="/japan">
-            <div>
-              <div className="relative h-0 pb-56">
-                <img
-                  src="/assets/japan-image.jpeg"
-                  alt="Japan"
-                  className="absolute inset-0 w-full h-full object-cover rounded-lg"
-                />
-              </div>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold" style={{ color: "rgba(241,163,52,255)" }}>
-                Japan
-              </div>
-            </div>
-          </Link>
-        </motion.div> */}
 
         {/* Costa Rica Link */}
         <motion.div
@@ -43,6 +23,9 @@ const CountryLinks = () => {
                   alt="Costa Rica"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+                  srcSet="/assets/costa_rica-image.jpg?w=400 400w, /assets/costa_rica-image.jpg?w=800 800w, /assets/croatia.jpg?w=1200 1200w"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ transition: 'opacity 2s ease-in-out' }}
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -66,6 +49,9 @@ const CountryLinks = () => {
                   alt="France"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+                  srcSet="/assets/france-image.jpg?w=400 400w, /assets/france-image.jpg?w=800 800w, /assets/croatia.jpg?w=1200 1200w"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ transition: 'opacity 2s ease-in-out' }}
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -89,6 +75,9 @@ const CountryLinks = () => {
                   alt="Italy"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+                  srcSet="/assets/italy-image.jpg?w=400 400w, /assets/italy-image.jpg?w=800 800w, /assets/croatia.jpg?w=1200 1200w"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ transition: 'opacity 2s ease-in-out' }}
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -112,6 +101,9 @@ const CountryLinks = () => {
                   alt="Korea"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+                  srcSet="/assets/korea-image.jpeg?w=400 400w, /assets/korea-image.jpeg?w=800 800w, /assets/croatia.jpg?w=1200 1200w"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ transition: 'opacity 2s ease-in-out' }}
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -135,6 +127,9 @@ const CountryLinks = () => {
                   alt="Spain"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+                  srcSet="/assets/spain-image.jpeg?w=400 400w, /assets/spain-image.jpeg?w=800 800w, /assets/croatia.jpg?w=1200 1200w"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ transition: 'opacity 2s ease-in-out' }}
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -158,6 +153,9 @@ const CountryLinks = () => {
                   alt="Hong Kong"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+                  srcSet="/assets/hong_kong-image.jpg?w=400 400w, /assets/hong_kong-image.jpg?w=800 800w, /assets/croatia.jpg?w=1200 1200w"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ transition: 'opacity 2s ease-in-out' }}
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -181,9 +179,13 @@ const CountryLinks = () => {
               <div className="relative h-0 pb-56">
                 <img
                   src="/assets/croatia.jpg"
-                  alt="Global"
+                  alt="Croatia"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+
+                  srcSet="/assets/croatia.jpg?w=400 400w, /assets/croatia.jpg?w=800 800w, /assets/croatia.jpg?w=1200 1200w"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ transition: 'opacity 2s ease-in-out' }}
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
