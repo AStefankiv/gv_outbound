@@ -24,13 +24,13 @@ const Hero = ({
   ],
 }) => {
   const images = [
-    { src: "/assets/hero/tamarindo.jpg", name: "Costa Rica - Tamarindo" },
-    { src: "/assets/hero/city_2.jpg", name: "Seoul" },
-    { src: "/assets/hero/marseille.jpg", name: "France - Marseille" },
-    { src: "/assets/hero/barcelona.png", name: "Madrid" },
-    { src: "/assets/hero/rome.png", name: "Italy - Rome" },
-    { src: "/assets/hero/carribean.jpg", name: "Caribbean" },
-    { src: "/assets/hero/paris.png", name: "Paris" },
+    { src: "https://res.cloudinary.com/vacationscostarica-com/image/upload/v1650823626/tamarindo_diria_beachfront_overview_guanacaste_7945a0a8c0.jpg", name: "Costa Rica - Tamarindo" },
+    { src: "/assets/city_2.jpg", name: "Seoul" },
+    { src: "https://static.b-europe.com/-/media/MediaRepository/Images_LowRes/Blog/CityGuides/Marseilles/1440x980_vallon_des_auffes_marseille.ashx?h=980&w=1440&hash=31E79FFEE38A5324BB4FC7FF969389D1", name: "France - Marseille" },
+    { src: "https://cdn.prod.website-files.com/6551f8b152816a8f57a9bfb5/6598156104acc4f9d71e4c27_barcelona.webp", name: "Madrid" },
+    { src: "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_4000,h_2670/https://www.yourownitaly.com/wp-content/uploads/images/excursions/the-colosseum-ancient-roman-forum.jpg", name: "Italy - Rome" },
+    { src: "https://lp-cms-production.imgix.net/2021-10/Kayaking%20in%20the%20Caribbean%20Sea%20Antionio%20Busiello%20GettyImages-1167011568%20rfc.jpg", name: "Caribbean" },
+    { src: "https://cdn.prod.website-files.com/63b7026306af943f8e01771f/662c16167f01e72907dd5928_eiffel%20tower.webp", name: "Paris" },
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
