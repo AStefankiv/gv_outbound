@@ -172,7 +172,7 @@ const KoreaTeachEnglish = () => {
             </div>
 
             {/* Right Section - HubSpot Form */}
-            <div className="w-2/3 mx-auto">
+            <div className="w-full sm:w-3/4 md:w-2/3 lg:w-2/3 xl:w-2/3 mx-auto">
               <ScrollAnimationWrapper className="w-full justify-end">
                 <motion.div className="h-full w-full p-4">
                   <div className="my-12 text-center">
