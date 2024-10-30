@@ -42,6 +42,7 @@ const CountryLinks = () => {
                   src="/assets/costa_rica-image.jpg"
                   alt="Costa Rica"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -64,6 +65,7 @@ const CountryLinks = () => {
                   src="/assets/france-image.jpg"
                   alt="France"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -86,6 +88,7 @@ const CountryLinks = () => {
                   src="/assets/italy-image.jpg"
                   alt="Italy"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -108,6 +111,7 @@ const CountryLinks = () => {
                   src="/assets/korea-image.jpeg"
                   alt="Korea"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -130,6 +134,7 @@ const CountryLinks = () => {
                   src="/assets/spain-image.jpeg"
                   alt="Spain"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -152,6 +157,7 @@ const CountryLinks = () => {
                   src="/assets/hong_kong-image.jpg"
                   alt="Hong Kong"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -177,6 +183,7 @@ const CountryLinks = () => {
                   src="/assets/croatia.jpg"
                   alt="Global"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
