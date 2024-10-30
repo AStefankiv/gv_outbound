@@ -1,12 +1,9 @@
-import React, { useMemo, useState, useEffect, lazy } from "react";
-// import ButtonPrimary from "./misc/ButtonPrimary";
+import React, { useMemo, useState, useEffect } from "react";
+import ButtonPrimary from "./misc/ButtonPrimary";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
-// import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { Link as LinkScroll } from "react-scroll";
-
-const ButtonPrimary = lazy(() => import("./misc/ButtonPrimary"));
-const ScrollAnimationWrapper = lazy(() => import("./Layout/ScrollAnimationWrapper"));
 
 const Hero = ({
   listUser = [
@@ -79,9 +76,6 @@ const Hero = ({
                 transition={{ duration: 2 }} // 2 seconds for fade transition
                 className="absolute w-full h-full object-cover"
                 style={{ zIndex: currentImage === index ? 1 : 0 }}
-                loading="lazy"
-                srcSet={`${image.src}?w=400 400w, ${image.src}?w=800 800w, ${image.src}?w=1200 1200w`}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             ))}
           </div>
