@@ -76,6 +76,7 @@ const Hero = ({
                 transition={{ duration: 2 }} // 2 seconds for fade transition
                 className="absolute w-full h-full object-cover"
                 style={{ zIndex: currentImage === index ? 1 : 0 }}
+                loading="lazy"
               />
             ))}
           </div>
