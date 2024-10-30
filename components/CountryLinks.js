@@ -45,6 +45,7 @@ const CountryLinks = () => {
                   alt="Costa Rica"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -68,6 +69,7 @@ const CountryLinks = () => {
                   alt="France"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -91,6 +93,7 @@ const CountryLinks = () => {
                   alt="Italy"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -114,6 +117,7 @@ const CountryLinks = () => {
                   alt="Korea"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -137,6 +141,7 @@ const CountryLinks = () => {
                   alt="Spain"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -160,6 +165,7 @@ const CountryLinks = () => {
                   alt="Hong Kong"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -186,6 +192,7 @@ const CountryLinks = () => {
                   alt="Global"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
