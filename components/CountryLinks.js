@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-import Image from "next/image";
-
 const CountryLinks = () => {
   return (
     <div className="w-full mx-auto mt-20 mb-6 px-6 sm:px-8 lg:px-16" id="countryLinks">
@@ -40,12 +38,11 @@ const CountryLinks = () => {
           <Link href="/costa_rica">
             <div>
               <div className="relative h-0 pb-56">
-                <Image
+                <img
                   src="/assets/costa_rica-image.jpg"
                   alt="Costa Rica"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -64,12 +61,11 @@ const CountryLinks = () => {
           <Link href="/france">
             <div>
               <div className="relative h-0 pb-56">
-                <Image
+                <img
                   src="/assets/france-image.jpg"
                   alt="France"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -88,12 +84,11 @@ const CountryLinks = () => {
           <Link href="/italy">
             <div>
               <div className="relative h-0 pb-56">
-                <Image
+                <img
                   src="/assets/italy-image.jpg"
                   alt="Italy"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -112,12 +107,11 @@ const CountryLinks = () => {
           <Link href="/korea">
             <div>
               <div className="relative h-0 pb-56">
-                <Image
+                <img
                   src="/assets/korea-image.jpeg"
                   alt="Korea"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -136,12 +130,11 @@ const CountryLinks = () => {
           <Link href="/spain">
             <div>
               <div className="relative h-0 pb-56">
-                <Image
+                <img
                   src="/assets/spain-image.jpeg"
                   alt="Spain"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -160,12 +153,11 @@ const CountryLinks = () => {
           <Link href="/hong_kong">
             <div>
               <div className="relative h-0 pb-56">
-                <Image
+                <img
                   src="/assets/hong_kong-image.jpg"
                   alt="Hong Kong"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
@@ -187,12 +179,11 @@ const CountryLinks = () => {
           <Link href="/croatia">
             <div>
               <div className="relative h-0 pb-56">
-                <Image
+                <img
                   src="/assets/croatia.jpg"
                   alt="Global"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
