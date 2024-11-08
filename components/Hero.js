@@ -30,7 +30,7 @@ const Hero = ({
     { src: "https://cdn.prod.website-files.com/6551f8b152816a8f57a9bfb5/6598156104acc4f9d71e4c27_barcelona.webp", name: "Madrid" },
     { src: "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_4000,h_2670/https://www.yourownitaly.com/wp-content/uploads/images/excursions/the-colosseum-ancient-roman-forum.jpg", name: "Italy - Rome" },
     { src: "https://lp-cms-production.imgix.net/2021-10/Kayaking%20in%20the%20Caribbean%20Sea%20Antionio%20Busiello%20GettyImages-1167011568%20rfc.jpg", name: "Caribbean" },
-    { src: "https://cdn.prod.website-files.com/63b7026306af943f8e01771f/662c16167f01e72907dd5928_eiffel%20tower.webp", name: "Paris" },
+    { src: "https://m.media-amazon.com/images/I/71hl5VtcGHL.jpg", name: "Paris" },
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
