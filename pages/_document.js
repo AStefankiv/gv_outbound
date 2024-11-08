@@ -10,9 +10,9 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link rel="preconnect" href="https:fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
+            href="https:fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
             rel="stylesheet"
           />
         </Head>
@@ -23,7 +23,7 @@ class MyDocument extends Document {
               height="1"
               width="1"
               style={{ display: "none" }}
-              src="https://www.facebook.com/tr?id=1111232897010087&ev=PageView&noscript=1"
+              src="https:www.facebook.com/tr?id=1111232897010087&ev=PageView&noscript=1"
               alt="facebook pixel"
             />
           </noscript>

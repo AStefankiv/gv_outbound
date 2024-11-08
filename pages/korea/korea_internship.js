@@ -8,7 +8,7 @@ const KoreaInternship = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = "//js.hsforms.net/forms/embed/v2.js";
+    script.src = "js.hsforms.net/forms/embed/v2.js";
     script.async = true;
 
     script.onload = () => {
@@ -163,7 +163,7 @@ const KoreaInternship = () => {
                 <li><strong>Length of stay:</strong> 3 months+</li>
                 <li><strong>Requirements:</strong> high school diploma</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
-                <a href="https://whic.mofa.go.kr/contents.do?menuNo=90&contentsNo=38"
+                <a href="https:/whic.mofa.go.kr/contents.do?menuNo=90&contentsNo=38"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary; contact us for more details</li>

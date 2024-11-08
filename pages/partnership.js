@@ -8,7 +8,7 @@ const Partnership = () => {
   useEffect(() => {
 
     const script = document.createElement('script');
-    script.src = "https://js.hsforms.net/forms/embed/v2.js";
+    script.src = "https:js.hsforms.net/forms/embed/v2.js";
     script.async = true;
 
     script.onload = () => {
@@ -45,7 +45,7 @@ const Partnership = () => {
               </h1>
               <p className="text-xl leading-relaxed mb-4">
                 Do you represent a company in{' '}
-                <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadians/international-experience-canada.html"
+                <a href="https:www.canada.ca/en/immigration-refugees-citizenship/services/canadians/international-experience-canada.html"
                 className='text-blue-500 underline hover:text-blue-600'>
                 one of the IEC framework nations
                 </a>{' '}

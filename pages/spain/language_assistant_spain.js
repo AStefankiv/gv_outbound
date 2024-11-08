@@ -8,7 +8,7 @@ const SpainLanguageAssistant = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = "//js.hsforms.net/forms/embed/v2.js";
+    script.src = "js.hsforms.net/forms/embed/v2.js";
     script.async = true;
 
     script.onload = () => {
@@ -163,7 +163,7 @@ const SpainLanguageAssistant = () => {
                 <li><strong>Length of stay:</strong> 1-3 months</li>
                 <li><strong>Requirements:</strong> native English speaker, high school diploma, some knowledge of Spanish, interest in teaching</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-35 currently residing in Canada; see {' '}
-                <a href="https://www.exteriores.gob.es/Consulados/toronto/en/ServiciosConsulares/Paginas/Consular/Youth-mobility-visa.aspx"
+                <a href="https:www.exteriores.gob.es/Consulados/toronto/en/ServiciosConsulares/Paginas/Consular/Youth-mobility-visa.aspx"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary; contact us for more details</li>

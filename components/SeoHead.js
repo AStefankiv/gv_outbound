@@ -7,7 +7,7 @@ const defaultMeta = {
   title: 'Work learn travel',
   siteName: 'Work learn travel',
   description: 'Work learn travel - your best travel guide',
-  url: 'https://www.worklearntravel.ca/',
+  url: 'https:/www.worklearntravel.ca/',
   type: 'website',
   robots: 'follow, index',
   image: gv_image,
@@ -40,7 +40,7 @@ const SeoHead = (props) => {
         <meta property='og:site_name' content={meta.siteName} />
         <meta property='og:description' content={meta.description} />
         <meta property='og:title' content={meta.title} />
-        <meta name='image' property='og:image' content='https://github.com/AStefankiv/gv_outbound/blob/main/public/assets/gv_square.png?raw=true' />
+        <meta name='image' property='og:image' content='https:/github.com/AStefankiv/gv_outbound/blob/main/public/assets/gv_square.png?raw=true' />
 
         {/* Twitter */}
         <meta name='twitter:card' content={meta.image} />
@@ -83,7 +83,7 @@ const SeoHead = (props) => {
 
       {/* Google Analytics */}
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-E92RJLF7EE"
+        src="https:/www.googletagmanager.com/gtag/js?id=G-E92RJLF7EE"
         strategy="afterInteractive"
       />
 
@@ -99,7 +99,7 @@ const SeoHead = (props) => {
       {/* HubSpot Script using next/script */}
       <Script
         id="hs-script-loader"
-        src="//js.hs-scripts.com/7792441.js"
+        src="/js.hs-scripts.com/7792441.js"
         strategy="afterInteractive"
       />
 
@@ -113,7 +113,7 @@ const SeoHead = (props) => {
           n.queue=[];t=b.createElement(e);t.async=!0;
           t.src=v;s=b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
+          'https:/connect.facebook.net/en_US/fbevents.js');
           fbq('init', '1111232897010087');
           fbq('track', 'PageView');
         `}

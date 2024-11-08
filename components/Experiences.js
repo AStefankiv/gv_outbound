@@ -19,7 +19,7 @@ const Experiences = () => {
             <div>
               <div className="relative h-0 pb-56">
                 <img
-                  src="https://www.simplypsychology.org/wp-content/uploads/collectivist-culture.jpeg"
+                  src="https:/www.simplypsychology.org/wp-content/uploads/collectivist-culture.jpeg"
                   alt="Japan"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
@@ -41,7 +41,7 @@ const Experiences = () => {
             <div>
               <div className="relative h-0 pb-56">
                 <img
-                  src="https://www.bertelsmann-stiftung.de/fileadmin/files/_processed_/1/c/csm_1607452561shutterstock_1823014877_Premier_ST-CO_a01010db3b.jpg"
+                  src="https:/www.bertelsmann-stiftung.de/fileadmin/files/_processed_/1/c/csm_1607452561shutterstock_1823014877_Premier_ST-CO_a01010db3b.jpg"
                   alt="Korea"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
@@ -63,7 +63,7 @@ const Experiences = () => {
             <div>
               <div className="relative h-0 pb-56">
                 <img
-                  src="https://media.istockphoto.com/id/1365436662/photo/successful-partnership.jpg?s=612x612&w=0&k=20&c=B1xspe9Q5WMsLc7Hc9clR8MWUL4bsK1MfUdDNVNR2Xg="
+                  src="https:/media.istockphoto.com/id/1365436662/photo/successful-partnership.jpg?s=612x612&w=0&k=20&c=B1xspe9Q5WMsLc7Hc9clR8MWUL4bsK1MfUdDNVNR2Xg="
                   alt="Job Placement"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
@@ -88,7 +88,7 @@ const Experiences = () => {
             <div>
               <div className="relative h-0 pb-56">
                 <img
-                  src="https://rs.projects-abroad.ie/v1/hero/product-5b5b1a87cdf25.[1600].jpeg"
+                  src="https:/rs.projects-abroad.ie/v1/hero/product-5b5b1a87cdf25.[1600].jpeg"
                   alt="France"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />

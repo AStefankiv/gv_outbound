@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import Footer from '../../components/Layout/Footer';
-import Header from '../../components//Header';
+import Header from '../../components/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
 
@@ -8,7 +8,7 @@ const KoreaTeachEnglish = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = "//js.hsforms.net/forms/embed/v2.js";
+    script.src = "js.hsforms.net/forms/embed/v2.js";
     script.async = true;
 
     script.onload = () => {
@@ -163,7 +163,7 @@ const KoreaTeachEnglish = () => {
                 <li><strong>Length of stay:</strong> 1 year+</li>
                 <li><strong>Requirements:</strong> bachelor’s degree and TESL certification</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
-                <a href="https://whic.mofa.go.kr/contents.do?menuNo=90&contentsNo=38"
+                <a href="https:/whic.mofa.go.kr/contents.do?menuNo=90&contentsNo=38"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary; contact us for more details</li>
