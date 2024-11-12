@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
+import Footer from '../../components/Layout/Footer';
+import Header from '../../components/Layout/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
 
