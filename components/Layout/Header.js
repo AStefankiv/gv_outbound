@@ -25,13 +25,13 @@ const Header = () => {
   }, []);
 
   const dropDownCountries = [
-    { name: "Korea", link: "/korea" },
     { name: "Costa Rica", link: "/costa_rica" },
-    { name: "France", link: "/france" },
-    { name: "Italy", link: "/italy" },
-    { name: "Spain", link: "/spain" },
-    { name: "Hong Kong", link: "/hong_kong" },
     { name: "Croatia", link: "/croatia" },
+    { name: "France", link: "/france" },
+    { name: "Hong Kong", link: "/hong_kong" },
+    { name: "Italy", link: "/italy" },
+    { name: "Korea", link: "/korea" },
+    { name: "Spain", link: "/spain" },
   ];
 
   const dropDownExperiences = [

@@ -23,7 +23,7 @@ const CountryLinks = () => {
                   alt="Costa Rica"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  srcSet="/assets/costa_rica-image.jpg?w=400 400w, /assets/costa_rica-image.jpg?w=800 800w, /assets/croatia.jpg?w=1200 1200w"
+                  srcSet="/assets/costa_rica-image.jpg?w=400 400w, /assets/costa_rica-image.jpg?w=800 800w, /assets/costa_rica-image.jpg?w=1200 1200w"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ transition: 'opacity 2s ease-in-out' }}
                 />
@@ -49,7 +49,7 @@ const CountryLinks = () => {
                   alt="France"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  srcSet="/assets/france-image.jpg?w=400 400w, /assets/france-image.jpg?w=800 800w, /assets/croatia.jpg?w=1200 1200w"
+                  srcSet="/assets/france-image.jpg?w=400 400w, /assets/france-image.jpg?w=800 800w, /assets/france-image.jpg?w=1200 1200w"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ transition: 'opacity 2s ease-in-out' }}
                 />
@@ -75,7 +75,7 @@ const CountryLinks = () => {
                   alt="Italy"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  srcSet="/assets/italy-image.jpg?w=400 400w, /assets/italy-image.jpg?w=800 800w, /assets/croatia.jpg?w=1200 1200w"
+                  srcSet="/assets/italy-image.jpg?w=400 400w, /assets/italy-image.jpg?w=800 800w, /assets/italy-image.jpg?w=1200 1200w"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ transition: 'opacity 2s ease-in-out' }}
                 />
@@ -101,7 +101,7 @@ const CountryLinks = () => {
                   alt="Korea"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  srcSet="/assets/korea-image.jpeg?w=400 400w, /assets/korea-image.jpeg?w=800 800w, /assets/croatia.jpg?w=1200 1200w"
+                  srcSet="/assets/korea-image.jpeg?w=400 400w, /assets/korea-image.jpeg?w=800 800w, /assets/korea-image.jpeg?w=1200 1200w"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ transition: 'opacity 2s ease-in-out' }}
                 />
@@ -127,7 +127,7 @@ const CountryLinks = () => {
                   alt="Spain"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  srcSet="/assets/spain-image.jpeg?w=400 400w, /assets/spain-image.jpeg?w=800 800w, /assets/croatia.jpg?w=1200 1200w"
+                  srcSet="/assets/spain-image.jpeg?w=400 400w, /assets/spain-image.jpeg?w=800 800w, /assets/spain-image.jpeg?w=1200 1200w"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ transition: 'opacity 2s ease-in-out' }}
                 />
@@ -153,7 +153,7 @@ const CountryLinks = () => {
                   alt="Hong Kong"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  srcSet="/assets/hong_kong-image.jpg?w=400 400w, /assets/hong_kong-image.jpg?w=800 800w, /assets/croatia.jpg?w=1200 1200w"
+                  srcSet="/assets/hong_kong-image.jpg?w=400 400w, /assets/hong_kong-image.jpg?w=800 800w, /assets/hong_kong-image.jpg?w=1200 1200w"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ transition: 'opacity 2s ease-in-out' }}
                 />
