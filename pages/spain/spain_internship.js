@@ -136,7 +136,6 @@ const SpainInternship = () => {
             }, 500); // Adjust the delay if needed
           },
           onFormSubmitted: function() {
-            // Display the alert message after successful submission
             alert('Successfully submitted form');
           }
         });
