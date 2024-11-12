@@ -8,7 +8,7 @@ const FranceLanguageAssistant = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = "/js.hsforms.net/forms/embed/v2.js";
+    script.src = "https:/js.hsforms.net/forms/embed/v2.js";
     script.async = true;
 
     script.onload = () => {
