@@ -19,6 +19,10 @@ const SpainLanguageAssistant = () => {
           target: "#hubspotForm",
           onFormReady: function(form) {
             console.log('onFormReady called');
+            
+            console.log(process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID);
+            console.log(process.env.NEXT_PUBLIC_HUBSPOT_FORM_ID_COUNTRIES);
+
 
             setTimeout(() => {
               // Field internal names
