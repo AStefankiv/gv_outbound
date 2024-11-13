@@ -1,28 +1,14 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
 import { Link as LinkScroll } from "react-scroll";
+import Heroicons from "../public/assets/Icon/heroicons_sm-user.svg";
+import Gridicons from "../public/assets/Icon/gridicons_location.svg";
+import Bxbxsserver from "../public/assets/Icon/bx_bxs-server.svg";
 
 const ButtonPrimary = lazy(() => import("./misc/ButtonPrimary"));
 const ScrollAnimationWrapper = lazy(() => import("./Layout/ScrollAnimationWrapper"));
 
-const Hero = ({
-  listUser = [
-    {
-      name: "years helping young people",
-      number: "25",
-      icon: "/assets/Icon/heroicons_sm-user.svg",
-    },
-    {
-      name: "countries",
-      number: "7+",
-      icon: "/assets/Icon/gridicons_location.svg",
-    },
-    {
-      name: "cities",
-      number: "20+",
-      icon: "/assets/Icon/bx_bxs-server.svg",
-    },
-  ],
-}) => {
+const Hero = () => {
+  
   const images = [
     { src: "https://res.cloudinary.com/vacationscostarica-com/image/upload/v1650823626/tamarindo_diria_beachfront_overview_guanacaste_7945a0a8c0.jpg", name: "Costa Rica - Tamarindo" },
     { src: "/assets/city_2.jpg", name: "Seoul" },
@@ -81,22 +67,52 @@ const Hero = ({
       <div className="relative w-full flex">
         <Suspense fallback={<div>Loading stats...</div>}>
           <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
-            {listUser.map((listUsers, index) => (
+
+              {/* 25 years helping young people */}
               <div
                 className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
-                key={index}
               >
                 <div className="flex mx-auto w-40 sm:w-auto">
                   <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
-                    <img src={listUsers.icon} className="h-6 w-6" alt={listUsers.name} loading="lazy" />
+                    <Heroicons className="h-6 w-6" />
                   </div>
                   <div className="flex flex-col">
-                    <p className="text-xl text-black-600 font-bold">{listUsers.number}</p>
-                    <p className="text-lg text-black-500">{listUsers.name}</p>
+                    <p className="text-xl text-black-600 font-bold">25</p>
+                    <p className="text-lg text-black-500">years helping young people</p>
                   </div>
                 </div>
               </div>
-            ))}
+
+              {/* 7+ countries */}
+              <div
+                className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
+              >
+                <div className="flex mx-auto w-40 sm:w-auto">
+                  <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
+                    <Gridicons className="h-6 w-6" />
+                  </div>
+                  <div className="flex flex-col">
+                    <p className="text-xl text-black-600 font-bold">7+</p>
+                    <p className="text-lg text-black-500">countries</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 20+ cities */}
+              <div
+                className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
+              >
+                <div className="flex mx-auto w-40 sm:w-auto">
+                  <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
+                    <Bxbxsserver className="h-6 w-6" />
+                  </div>
+                  <div className="flex flex-col">
+                    <p className="text-xl text-black-600 font-bold">20+</p>
+                    <p className="text-lg text-black-500">cities</p>
+                  </div>
+                </div>
+              </div>
+
           </ScrollAnimationWrapper>
         </Suspense>
         <div
