@@ -204,7 +204,7 @@ const favicons = [
   },
   {
     rel: 'manifest',
-    href: '/site.webmanifest',
+    href: '/public/favicon/favicon-16x16.png',
   },
 ];
 
