@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Script from 'next/script'; // Import the Script component
-import gv_image from '../public/assets/gv_square.png';
+import gv_image from '../public/favicon/favicon-16x16.png';
 
 const defaultMeta = {
-  title: 'Work learn travel - title',
-  siteName: 'Work learn travel - siteName',
+  title: 'Work learn travel',
+  siteName: 'Work learn travel',
   description: 'Work learn travel - your best travel guide',
   url: 'https:/www.worklearntravel.ca/',
   type: 'website',
@@ -34,6 +34,7 @@ const SeoHead = (props) => {
         <meta content={meta.description} name='description' />
         <meta property='og:url' content={`${meta.url}${router.asPath}`} />
         <link rel='canonical' href={`${meta.url}${router.asPath}`} />
+        <link rel='icon' href='/favicon/favicon-16x16.png' />
 
         {/* Open Graph */}
         <meta property='og:type' content={meta.type} />
