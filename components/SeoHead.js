@@ -1,13 +1,13 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Script from 'next/script'; // Import the Script component
-import gv_image from '../public/assets/gv_square.png';
+import gv_image from '/assets/gv_square.png';
 
 const defaultMeta = {
   title: 'Work learn travel',
   siteName: 'Work learn travel',
   description: 'Work learn travel - your best travel guide',
-  url: 'https:/www.worklearntravel.ca/',
+  url: 'https://www.worklearntravel.ca/',
   type: 'website',
   robots: 'follow, index',
   image: gv_image,
@@ -29,6 +29,8 @@ const SeoHead = (props) => {
   return (
     <>
       <Head>
+        <meta charSet='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <title>{meta.title}</title>
         <meta name='robots' content={meta.robots} />
         <meta content={meta.description} name='description' />
@@ -187,12 +189,12 @@ const favicons = [
     sizes: '16x16',
     href: '/public/favicon/favicon-16x16.png',
   },
-  {
-    rel: 'icon',
-    type: 'image/png',
-    sizes: '32x32',
-    href: '/favicon/favicon-32x32.png',
-  },
+  // {
+  //   rel: 'icon',
+  //   type: 'image/png',
+  //   sizes: '32x32',
+  //   href: '/favicon/favicon-32x32.png',
+  // },
   {
     rel: 'icon',
     type: 'image/png',
