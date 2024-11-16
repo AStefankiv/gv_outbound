@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
@@ -6,8 +7,21 @@ import Header from "../components/Layout/Header";
 const France = () => {
   return (
     <div className="flex flex-col min-h-screen w-full">
-      <Header />
 
+      <Head>
+        <title>Working Holiday in France | Global Village Work Learn Travel</title>
+        <meta
+          name="description"
+          content="Canadians can work abroad in France as a language assistant. Enjoy a working holiday experience in France!"
+        />
+        <meta name="keywords" content="Work Holiday in France" />
+        <meta name="author" content="GVWLT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://worklearntravel.ca/costa_rica" />
+      </Head>
+
+      <Header />
       <main className="flex-grow mt-24 mb-6 w-full">
         {/* Main Content Grid */}
         <div className="w-full mt-8 mb-6 px-4 sm:px-4 lg:px-12">
@@ -15,7 +29,7 @@ const France = () => {
             
             {/* Left Section - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-5xl font-bold mb-6 text-center">Experience France</h1>
+              <h1 className="text-5xl font-bold mb-6 text-center">Working Holiday in France for Canadians</h1>
               <p className="text-xl leading-relaxed mb-4">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;France offers a unique and exciting opportunity for Canadians interested in international experiences. One of the world's leading economies, France also offers a unique cultural heritage and rich lifestyle. Whether you're interested in fashion, technology, hospitality, or international business, France is a hub for many global industries. And culturally, from the bustling streets of Paris to the picturesque villages of Provence, you’ll experience lovely scenery, world-renowned cuisine, and an emphasis on work-life balance that is rare in many other countries. 
               </p>

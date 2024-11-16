@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect } from 'react';
 import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
@@ -148,14 +149,27 @@ const TeachingCostaRica = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full">
-      <Header />
 
+      <Head>
+        <title>Teacher Jobs in Costa Rica | GV Work Learn Travel</title>
+        <meta
+          name="description"
+          content="Looking for a teaching job in Costa Rica? Global Village Work Learn Travel can connect you with the ultimate teaching experience!"
+        />
+        <meta name="keywords" content="Teacher Jobs in Costa Rica" />
+        <meta name="author" content="GVWLT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://worklearntravel.ca/costa_rica" />
+      </Head>
+
+      <Header />
       <main className="flex-grow mt-24 mb-6 w-full">
         <div className="w-full mt-8 mb-6 px-6 sm:px-4 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Header Section */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-5xl font-bold mb-6 text-center">Costa Rica Teaching</h1>
+              <h1 className="text-5xl font-bold mb-6 text-center">Teaching in Costa Rica</h1>
               <p className="text-xl leading-relaxed mb-4">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this unique teaching experience, you’ll be working in a community-focused private school in a beautiful beachside town on the Pacific coast of Costa Rica. This locally founded K-6 school has been in operation for more than a decade, and is designed to give an outstanding bilingual educational opportunity to the region’s children so that they can share their learning with the community and live meaningful lives. You’ll bring your skill and knowledge in teaching to the classroom in your area of expertise: designing and delivering lessons, and working with the children in a variety of activities as a teacher.
               </p>

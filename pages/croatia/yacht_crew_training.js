@@ -148,15 +148,28 @@ const YachtCrewTraining = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full">
-      <Header />
 
+      <Head>
+        <title>Work on a Yacht as part of your Working Holiday</title>
+        <meta
+          name="description"
+          content="Canadian citizens can work on yachts with Global Village Work Learn Travel working holiday visa packages."
+        />
+        <meta name="keywords" content="Work on Yacht" />
+        <meta name="author" content="GVWLT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://worklearntravel.ca/costa_rica" />
+      </Head>
+
+      <Header />
       <main className="flex-grow mt-24 mb-6 w-full">
         <div className="w-full mt-8 mb-6 px-6 sm:px-4 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Header Section */}
             <div className="flex flex-col justify-center">
 
-              <h1 className="text-5xl font-bold mb-6 text-center">Yacht Training in Croatia</h1>
+              <h1 className="text-5xl font-bold mb-6 text-center">Working Holiday Visa Croatia</h1>
               <p className="text-xl leading-relaxed mb-4">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this job training and placement project, you’ll learn all the skills required to become a valued member of a superyacht crew as a deckhand or a stewardess. For those with special interest, there are also opportunities to train as a skipper. At the yacht crew training school, you’ll be trained in personal and crew safety, including marine, medical, and fire. Before you attend, you’ll also be able to take YCA-certified online training modules dealing with all aspects of your work onboard. When you finish, you will be provided with a full-featured employment assistance package: agency and job access, CV support, reference letters, and program access to help you find the perfect job!
               </p>
@@ -174,7 +187,7 @@ const YachtCrewTraining = () => {
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary; contact us for more details</li>
-                <li><strong>Cost:</strong> Contact for details</li>
+                <li><strong>Cost:</strong> $3499</li>
               </ul>
             </div>
 

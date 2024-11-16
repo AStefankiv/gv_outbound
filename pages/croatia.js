@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
@@ -6,8 +7,21 @@ import Header from "../components/Layout/Header";
 const Croatia = () => {
   return (
     <div className="flex flex-col min-h-screen w-full">
-      <Header />
 
+      <Head>
+        <title>Get a Working Holiday Visa for Croatia I GV WLT</title>
+        <meta
+          name="description"
+          content="Canadian looking for a visa for Croatia? Go on a working holiday with Global Village Work Learn Travel!"
+        />
+        <meta name="keywords" content="Visa for Croatia" />
+        <meta name="author" content="GVWLT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://worklearntravel.ca/costa_rica" />
+      </Head>
+
+      <Header />
       <main className="flex-grow mt-24 mb-6 w-full">
         {/* Main Content Grid */}
         <div className="w-full mt-8 mb-6 px-4 sm:px-4 lg:px-12">
@@ -15,7 +29,7 @@ const Croatia = () => {
             
             {/* Left Section - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-5xl font-bold mb-6 text-center">Experience Yacht Sailing</h1>
+              <h1 className="text-5xl font-bold mb-6 text-center">Working Holiday Visa Croatia</h1>
               <p className="text-xl leading-relaxed mb-4">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Croatia is an incredible destination for Canadians looking to expand their horizons. Croatia is known for its stunning Adriatic coastline, vibrant culture, and rich history. Seaside resorts in places like Dubrovnik, Split, and Hvar are popular for seasonal jobs, particularly in hospitality and tourism, giving you the chance to work by the beach while enjoying the Mediterranean lifestyle. 
               </p>

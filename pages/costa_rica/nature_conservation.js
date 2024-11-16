@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect } from 'react';
 import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
@@ -148,8 +149,21 @@ const NatureConservation = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full">
-      <Header />
 
+      <Head>
+        <title>Volunteering for Costa Rica Sea Turtle Conservation | GVWLT</title>
+        <meta
+          name="description"
+          content="Sea Turtle Conservation in Costa Rica needs Canadians to participate! Reach out to find out how you can become a volunteer!"
+        />
+        <meta name="keywords" content="Costa Rica, Sea Turtle Conservation" />
+        <meta name="author" content="GVWLT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://worklearntravel.ca/costa_rica" />
+      </Head>
+
+      <Header />
       <main className="flex-grow mt-24 mb-6 w-full">
         <div className="w-full mt-8 mb-6 px-6 sm:px-4 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
