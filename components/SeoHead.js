@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Script from 'next/script'; // Import the Script component
-import gv_image from '../public/favicon/favicon-16x16.png';
+import gv_image from '../public/assets/gv_square.png';
 
 const defaultMeta = {
   title: 'Work learn travel',
@@ -33,8 +33,10 @@ const SeoHead = (props) => {
         <meta name='robots' content={meta.robots} />
         <meta content={meta.description} name='description' />
         <meta property='og:url' content={`${meta.url}${router.asPath}`} />
+        <meta property='og:image' content={meta.image} />
+        <meta property='og:image:width' content='1200' />
+        <meta property='og:image:height' content='630' />
         <link rel='canonical' href={`${meta.url}${router.asPath}`} />
-        <link rel='icon' href='/favicon/favicon-16x16.png' />
 
         {/* Open Graph */}
         <meta property='og:type' content={meta.type} />
