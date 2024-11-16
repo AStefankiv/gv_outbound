@@ -4,7 +4,7 @@ import Script from 'next/script'; // Import the Script component
 import gv_image from '../public/assets/gv_square.png';
 
 const defaultMeta = {
-  title: 'Work learn travel',
+  title: 'Working Holiday for Canadians | GV Work Learn Travel',
   siteName: 'Work learn travel',
   description: 'Work learn travel - your best travel guide',
   url: 'https://www.worklearntravel.ca/',

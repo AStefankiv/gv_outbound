@@ -51,6 +51,11 @@ const Header = () => {
       >
         <nav className="w-full px-6 sm:px-8 lg:px-1 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center sm:jusitfy-start justify-center">
+
+          <p style={{ display: 'none' }}>
+            Working Holidays for Canadians are available from Global Village Work Learn Travel in a variety of international jobs and experiences.
+          </p>
+
             <Link href="/">
               <Image
               src="/assets/GV-Work-Learn-Travel-Logo-Transparent.png"
