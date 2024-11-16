@@ -176,7 +176,7 @@ const favicons = [
   },
   {
     rel: 'icon',
-    href: '/favicon/favicon.ico',
+    href: '/favicon/favicon.png',
   },
   {
     rel: 'icon',
