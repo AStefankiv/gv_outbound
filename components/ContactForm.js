@@ -50,11 +50,11 @@ const ContactForm = () => {
             Which experience is the best for me?
           </h2>
           <p className="text-base sm:text-lg lg:text-2xl text-black-600">
-            You may not be sure exactly which path to take right now. That’s OK! Our skilled and knowledgeable staff members have plenty of experience living and working in other countries, and they can help you choose an option that will achieve your goals.
+          You may not be sure exactly which path to take right now. That’s OK! Our skilled and knowledgeable staff members have plenty of experience in international work opportunities, and they can help you choose an option that will achieve your goals.
           </p>
           <br />
           <p className="text-base sm:text-lg lg:text-2xl text-black-600">
-            Or maybe you’re interested in a destination or an experience that you don’t see here. We can work with you to find the perfect place to go – just fill out the form and let’s talk.
+          Or maybe you’re interested in a destination or an experience that you don’t see here. We can work with you to find the perfect work abroad programs – just fill out the form and let’s talk.
           </p>
         </div>
 
