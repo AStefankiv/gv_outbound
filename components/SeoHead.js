@@ -35,9 +35,7 @@ const SeoHead = (props) => {
         <meta name='robots' content={meta.robots} />
         <meta content={meta.description} name='description' />
         <meta property='og:url' content={`${meta.url}${router.asPath}`} />
-        <meta property='og:image' content={meta.image} />
-        <meta property='og:image:width' content='1200' />
-        <meta property='og:image:height' content='630' />
+        <meta property='og:image' content='/assets/gv_square.png' />
         <link rel='canonical' href={`${meta.url}${router.asPath}`} />
 
         {/* Open Graph */}
