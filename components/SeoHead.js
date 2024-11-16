@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Script from 'next/script'; // Import the Script component
-import gv_image from '/assets/gv_square.png';
+import gv_image from '../public/assets/gv_square.png';
 
 const defaultMeta = {
   title: 'Work learn travel',
