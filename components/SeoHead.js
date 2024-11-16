@@ -6,7 +6,7 @@ import gv_image from '../public/assets/gv_square.png';
 const defaultMeta = {
   title: 'Working Holiday for Canadians | GV Work Learn Travel',
   siteName: 'Work learn travel',
-  description: 'Work learn travel - your best travel guide',
+  description: 'Working Holidays for Canadians are available from Global Village Work Learn Travel in a variety of international jobs and experiences.',
   url: 'https://www.worklearntravel.ca/',
   type: 'website',
   robots: 'follow, index',
