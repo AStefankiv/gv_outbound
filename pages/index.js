@@ -1,5 +1,4 @@
 import ContactForm from "../components/ContactForm";
-import Pricing from "../components/Pricing";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
@@ -19,7 +18,6 @@ export default function Home() {
         <CountryLinks />
         <Experiences />
         <ContactForm />
-        {/* <Pricing /> */}
       </Layout>
     </>
   );

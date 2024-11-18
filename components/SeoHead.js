@@ -10,6 +10,7 @@ const defaultMeta = {
   url: 'https://www.worklearntravel.ca/',
   type: 'website',
   keywords: 'Working Holiday for Canadians',
+  robots: 'index, follow',
   image: gv_image,
   author: 'GVWLT'
 };
@@ -35,6 +36,7 @@ const SeoHead = (props) => {
         <meta name='description' content={meta.description} />
         <meta name="keywords" content={meta.keywords} />
         <meta name="author" content={meta.author} />
+        <meta name='robots' content={meta.robots} />
         <meta property='og:url' content={`${meta.url}${router.asPath}`} />
         <meta property='og:image' content='/assets/gv_square.png' />
         <link rel='canonical' href={`${meta.url}${router.asPath}`} />
@@ -44,7 +46,7 @@ const SeoHead = (props) => {
         <meta property='og:site_name' content={meta.siteName} />
         <meta property='og:description' content={meta.description} />
         <meta property='og:title' content={meta.title} />
-        <meta name='image' property='og:image' content='https:/github.com/AStefankiv/gv_outbound/blob/main/public/assets/gv_square.png?raw=true' />
+        <meta property='og:image' content={meta.image} />
 
         {/* Twitter */}
         <meta name='twitter:card' content={meta.image} />
