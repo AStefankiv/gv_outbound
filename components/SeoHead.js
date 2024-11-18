@@ -89,7 +89,7 @@ const SeoHead = (props) => {
 
       {/* Google Analytics */}
       <Script
-        src="https:/www.googletagmanager.com/gtag/js?id=G-E92RJLF7EE"
+        src="https://www.googletagmanager.com/gtag/js?id=G-E92RJLF7EE"
         strategy="afterInteractive"
       />
 
