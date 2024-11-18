@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect } from 'react';
 import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
@@ -148,6 +149,20 @@ const HongKongInternship = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full">
+
+      <Head>
+        <title>Hong Kong Internships | Global Village Work Learn Travel</title>
+        <meta
+          name="description"
+          content="Work in a Hong Kong internship - options for recent graduates with Global Village Work Learn Travel."
+        />
+        <meta name="keywords" content="Hong Kong Internship" />
+        <meta name="author" content="GVWLT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://worklearntravel.ca/hong_kong/hong_kong_internship" />
+      </Head>
+
       <Header />
 
       <main className="flex-grow mt-24 mb-6 w-full">
@@ -156,18 +171,25 @@ const HongKongInternship = () => {
             {/* Header Section */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Internships in Hong Kong
+              Internship Opportunities in Hong Kong
               </h1>
+              <p className="text-xl leading-relaxed mb-4">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This paid internship placement experience offers Canadian participants the chance to gain practical experience in Hong Kong’s dynamic hospitality and tourism industry. In this work opportunity in Hong Kong, interns are placed in reputable hotels, travel agencies, and event planning companies, where they engage in hands-on roles that align with their career goals. From guest relations to marketing and event coordination, interns work directly with industry professionals and contribute to real projects, enhancing their skills in a fast-paced, multicultural setting. This experience also provides an inside look at Hong Kong's unique blend of Eastern and Western hospitality practices, making it ideal for those pursuing global careers in tourism and hospitality.
+              </p>
+              <p className="text-xl leading-relaxed mb-8">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An ideal participant is adaptable and interested in Asian culture. Your internship placement could be in a variety of places in Hong Kong, but all internships offer assistance with a working holiday visa in Hong Kong, accommodation, medical insurance, and a range of additional benefits depending on host selection. When off-duty, enjoy the rich multicultural heritage of Hong Kong, and easy travel access to a variety of nearby Asian destinations!
+              </p>
+
               <ul className="text-lg text-black-500 space-y-4">
                 <li><strong>Location:</strong> Hong Kong</li>
                 <li><strong>Length of stay:</strong> 6 months - 1 year</li>
-                <li><strong>Requirements:</strong> graduate or currently enrolled in college or university</li>
+                <li><strong>Requirements:</strong> graduate or currently enrolled in college or university in a related degree</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-30; see {' '}
                 <a href="https:/www.whs.gov.hk/en/hk-working-holiday-guide.php"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary; contact us for more details</li>
-                <li><strong>Cost:</strong> Contact for details</li>
+                <li><strong>Cost:</strong> $2999</li>
               </ul>
             </div>
 

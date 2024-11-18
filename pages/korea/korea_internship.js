@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect } from 'react';
 import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
@@ -148,6 +149,20 @@ const KoreaInternship = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full">
+
+      <Head>
+        <title>Internships in Korea | Global Village Work Learn Travel</title>
+        <meta
+          name="description"
+          content="Internships in Korea through GV Work Learn Travel offer a variety of companies and sectors to fit your goals."
+        />
+        <meta name="keywords" content="Internships in Korea" />
+        <meta name="author" content="GVWLT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://worklearntravel.ca/korea/korea_internship" />
+      </Head>
+
       <Header />
 
       <main className="flex-grow mt-24 mb-6 w-full">
@@ -158,16 +173,23 @@ const KoreaInternship = () => {
               <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
                 Internships in Korea
               </h1>
+              <p className="text-xl leading-relaxed mb-4">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this personalized internship program for a working holiday in Korea, you’ll be getting valuable business insights and building your network as part of a successful South Korean company. We’ll work with you to explore your career goals and interests, and then connect you with a short-term unpaid internship position, selecting the ideal company for you from among hundreds of partners. Whether you want to focus on green tech, finance, media, tourism, design, or one of many other sectors, we can find the perfect professional environment for you to grow relevant skills while experiencing Korean workplace culture! Wherever you’re placed, you’ll have tasks and responsibilities tailored to what you’re looking for, whether it’s administration, public relations, marketing, content creation, or something else. This program is ideal for those eager to broaden their professional horizons and gain valuable insights into South Korea’s business landscape.
+              </p>
+              <p className="text-xl leading-relaxed mb-8">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ideal participant for this internship opportunity is open-minded and ambitious. Your specific internship requests will determine where, when, and what exactly you do, but all participants will be provided with one-to-one consultation and guidance throughout the project, and all necessary information will be provided well in advance. Accommodation is available on request.
+              </p>
+
               <ul className="text-lg text-black-500 space-y-4">
-                <li><strong>Location:</strong> Varies</li>
-                <li><strong>Length of stay:</strong> 3 months+</li>
-                <li><strong>Requirements:</strong> high school diploma</li>
+                <li><strong>Location:</strong> Varies; placement in a major South Korean city</li>
+                <li><strong>Length of stay:</strong> 2-6 months</li>
+                <li><strong>Requirements:</strong> high school diploma; some placements may have additional requirements</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
                 <a href="https:/whic.mofa.go.kr/contents.do?menuNo=90&contentsNo=38"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary; contact us for more details</li>
-                <li><strong>Cost:</strong> Contact for details</li>
+                <li><strong>Cost:</strong> varies based on position; contact us for details</li>
               </ul>
             </div>
 

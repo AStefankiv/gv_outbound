@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect } from 'react';
 import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
@@ -148,6 +149,20 @@ const ItalyLanguageAssistant = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full">
+
+      <Head>
+        <title>Teach English in Italy| Global Village Work Learn Travel</title>
+        <meta
+          name="description"
+          content="Canadians can work in Italy teaching English with Global Village Work Learn Travel."
+        />
+        <meta name="keywords" content="Teach English in Italy" />
+        <meta name="author" content="GVWLT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://worklearntravel.ca/italy/language_assistant_italy" />
+      </Head>
+
       <Header />
 
       <main className="flex-grow mt-24 mb-6 w-full">
@@ -156,7 +171,7 @@ const ItalyLanguageAssistant = () => {
             {/* Header Section */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Language Assistant Program in Italy
+                Canadians Teaching English in Italy
               </h1>
               <ul className="text-lg text-black-500 space-y-4">
 
@@ -177,7 +192,7 @@ const ItalyLanguageAssistant = () => {
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary; contact us for more details</li>
-                <li className="text-xl leading-relaxed mb-4"><strong>Cost:</strong> Contact for details</li>
+                <li className="text-xl leading-relaxed mb-4"><strong>Cost:</strong> $2299</li>
               </ul>
             </div>
 

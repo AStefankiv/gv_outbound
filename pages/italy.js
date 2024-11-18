@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
@@ -6,8 +7,21 @@ import Header from "../components/Layout/Header";
 const Italy = () => {
   return (
     <div className="flex flex-col min-h-screen w-full">
-      <Header />
 
+      <Head>
+        <title>Working Holiday in Italy | Global Village Work Learn Travel</title>
+        <meta
+          name="description"
+          content="Work in Italy as a language assistant! Canadians can travel to Italy for a working holiday while teaching English."
+        />
+        <meta name="keywords" content="Work Holiday in Italy" />
+        <meta name="author" content="GVWLT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://worklearntravel.ca/italy" />
+      </Head>
+
+      <Header />
       <main className="flex-grow mt-24 mb-6 w-full">
         {/* Main Content Grid */}
         <div className="w-full mt-8 mb-6 px-4 sm:px-4 lg:px-12">
@@ -15,7 +29,7 @@ const Italy = () => {
             
             {/* Left Section - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-5xl font-bold mb-6 text-center">Experience Italy</h1>
+              <h1 className="text-5xl font-bold mb-6 text-center">Working Holiday in Italy</h1>
               <p className="text-xl leading-relaxed mb-4">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Italy, a vibrant country rich in history, culture, and culinary delights, is a dream destination for Canadians considering an overseas experience. With its iconic cities like Rome, Florence, Venice, and Milan, Italy offers a unique blend of ancient heritage and modern urban life. Italy provides not only the opportunity to explore stunning architecture and art but also the chance to live and work in a country known for its strong sense of community and passion for "la dolce vita" (the sweet life). 
               </p>
