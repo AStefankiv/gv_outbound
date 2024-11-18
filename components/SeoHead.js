@@ -9,9 +9,9 @@ const defaultMeta = {
   description: 'Working Holidays for Canadians are available from Global Village Work Learn Travel in a variety of international jobs and experiences.',
   url: 'https://www.worklearntravel.ca/',
   type: 'website',
-  robots: 'follow, index',
+  keywords: 'Working Holiday for Canadians',
   image: gv_image,
-  author: 'Andrew Stefankiv'
+  author: 'GVWLT'
 };
 
 const SeoHead = (props) => {
@@ -32,8 +32,9 @@ const SeoHead = (props) => {
         <meta charSet='UTF-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <title>{meta.title}</title>
-        <meta name='robots' content={meta.robots} />
-        <meta content={meta.description} name='description' />
+        <meta name='description' content={meta.description} />
+        <meta name="keywords" content={meta.keywords} />
+        <meta name="author" content={meta.author} />
         <meta property='og:url' content={`${meta.url}${router.asPath}`} />
         <meta property='og:image' content='/assets/gv_square.png' />
         <link rel='canonical' href={`${meta.url}${router.asPath}`} />
