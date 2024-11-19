@@ -182,7 +182,7 @@ const TeachingCostaRica = () => {
                 <li><strong>Dates:</strong> School year starts at the end of October</li>
                 <li><strong>Requirements:</strong> teaching certification or degree</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
-                <a href="https:/www.visitcostarica.com/en/costa-rica/planning-your-trip/entry-requirements"
+                <a href="https://www.visitcostarica.com/en/costa-rica/planning-your-trip/entry-requirements"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary, and contact us for more details</li>

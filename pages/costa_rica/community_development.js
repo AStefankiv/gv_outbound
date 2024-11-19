@@ -168,7 +168,7 @@ const CommunityDevelopment = () => {
                 <li><strong>Length of stay:</strong> 1 month+</li>
                 <li><strong>Requirements:</strong> basic to intermediate Spanish speaking useful, but not required</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
-                <a href="https:/www.visitcostarica.com/en/costa-rica/planning-your-trip/entry-requirements"
+                <a href="https://www.visitcostarica.com/en/costa-rica/planning-your-trip/entry-requirements"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary, and contact us for more details</li>

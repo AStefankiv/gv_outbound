@@ -185,7 +185,7 @@ const HongKongInternship = () => {
                 <li><strong>Length of stay:</strong> 6 months - 1 year</li>
                 <li><strong>Requirements:</strong> graduate or currently enrolled in college or university in a related degree</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-30; see {' '}
-                <a href="https:/www.whs.gov.hk/en/hk-working-holiday-guide.php"
+                <a href="https://www.whs.gov.hk/en/hk-working-holiday-guide.php"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary; contact us for more details</li>

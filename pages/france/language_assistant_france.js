@@ -171,7 +171,7 @@ const FranceLanguageAssistant = () => {
             {/* Header Section */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Language Assistant Program in France
+                Teaching English in France for Canadians
               </h1>
               <ul className="text-lg text-black-500 space-y-4">
 
