@@ -48,9 +48,9 @@ const Footer = () => {
               </a>
             </li>
             <li className="my-5 hover:text-orange-500 cursor-pointer transition-all">
-              <Link href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadians/international-experience-canada.html" target="_blank" rel="noopener noreferrer">
+              <a href="https://canada.ca/en/immigration-refugees-citizenship/services/canadians/international-experience-canada.html" rel="noopener noreferrer">
               International Experience Canada
-              </Link>
+              </a>
             </li>
             <li className="my-5 hover:text-orange-500 cursor-pointer transition-all">
               <Link href="/partnership" rel="noopener noreferrer">
