@@ -9,7 +9,7 @@ const defaultMeta = {
   description: 'Working Holidays for Canadians are available from Global Village Work Learn Travel in a variety of international jobs and experiences.',
   url: 'https://www.worklearntravel.ca/',
   type: 'website',
-  keywords: 'Working Holiday for Canadians',
+  keywords: 'Holiday visa for Canadians, Canada working holiday visa, working holiday for Canadians, iec in Canada, canada work abroad program, working vacation visa canada',
   robots: 'index, follow',
   image: gv_image,
   author: 'GVWLT'
