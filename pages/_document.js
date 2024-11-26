@@ -15,6 +15,11 @@ class MyDocument extends Document {
             href="https:fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
             rel="stylesheet"
           />
+          <link
+            rel="GV-English-Favicon"
+            sizes="128x128"
+            href="/favicon/GV-English-Favicon.ico"
+          />
         </Head>
         <body>
           {/* Facebook Pixel Noscript */}

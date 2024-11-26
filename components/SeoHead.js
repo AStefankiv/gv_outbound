@@ -190,12 +190,12 @@ const favicons = [
     sizes: '16x16',
     href: '/public/favicon/favicon-16x16.png',
   },
-  // {
-  //   rel: 'icon',
-  //   type: 'image/png',
-  //   sizes: '32x32',
-  //   href: '/favicon/favicon-32x32.png',
-  // },
+  {
+    rel: 'icon',
+    type: 'image/png',
+    sizes: '32x32',
+    href: '/favicon/favicon-32x32.png',
+  },
   {
     rel: 'icon',
     type: 'image/png',
