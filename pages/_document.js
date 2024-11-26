@@ -17,7 +17,6 @@ class MyDocument extends Document {
           />
           <link
             rel="GV-English-Favicon"
-            sizes="128x128"
             href="/favicon/GV-English-Favicon.ico"
           />
         </Head>
