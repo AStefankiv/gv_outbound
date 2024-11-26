@@ -212,6 +212,11 @@ const favicons = [
     rel: 'manifest',
     href: '/public/favicon/favicon-16x16.png',
   },
+  {
+    rel: 'icon',
+    type: 'image/icon',
+    href: '/favicon/GV-English-Favicon.ico',
+  }
 ];
 
 export default SeoHead;
