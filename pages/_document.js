@@ -19,6 +19,7 @@ class MyDocument extends Document {
             rel="GV-English-Favicon"
             href="/favicon/GV-English-Favicon.ico"
           />
+          <meta name="apple-mobile-web-app-title" content="Work Learn Travel" />
         </Head>
         <body>
           {/* Facebook Pixel Noscript */}
