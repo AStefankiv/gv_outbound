@@ -19,7 +19,7 @@ const SpainPage = () => {
         <meta name="author" content="GVWLT" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://worklearntravel.ca/spain" />
+        <link rel="canonical" href="https://worklearntravel.ca/work-opportunities-spain" />
       </Head>
 
       <Header />
@@ -54,7 +54,7 @@ const SpainPage = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/spain/spain_internship" className="relative h-0 pb-56 block">
+                <Link href="/work-opportunities-spain/internship" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/internship_button.jpg"
                     alt="INTERNSHIP"
@@ -75,7 +75,7 @@ const SpainPage = () => {
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
                 <Link
-                  href="/spain/language_assistant_spain"
+                  href="/work-opportunities-spain/language_assistant_spain"
                   className="relative h-0 pb-56 block"
                 >
                   <picture className="absolute inset-0 w-full h-full">

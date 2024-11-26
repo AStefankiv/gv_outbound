@@ -21,7 +21,7 @@ const InternationalInternship = () => {
               whileHover={{ scale: 1.05 }}
               className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
             >
-              <Link href="/hong_kong/hong_kong_internship" className="relative h-0 pb-56 block">
+              <Link href="/work-opportunities-hong-kong/internship" className="relative h-0 pb-56 block">
                 <img
                   src="/assets/hongkong_internship.jpg"
                   alt="INTERNSHIP"
@@ -40,7 +40,7 @@ const InternationalInternship = () => {
               whileHover={{ scale: 1.05 }}
               className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
             >
-              <Link href="/korea/korea_internship" className="relative h-0 pb-56 block">
+              <Link href="/working-holiday-korea/korea_internship" className="relative h-0 pb-56 block">
                 <img
                   src="/assets/korea-image.jpeg"
                   alt="INTERNSHIP"
@@ -62,7 +62,7 @@ const InternationalInternship = () => {
               whileHover={{ scale: 1.05 }}
               className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full sm:w-1/2"
             >
-              <Link href="/spain/spain_internship" className="relative h-0 pb-56 block">
+              <Link href="/work-opportunities-spain/internship" className="relative h-0 pb-56 block">
                 <img
                   src="/assets/spain-image.jpeg"
                   alt="INTERNSHIP"

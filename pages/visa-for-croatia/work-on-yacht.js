@@ -5,7 +5,7 @@ import Header from '../../components/Layout/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
 
-const FranceLanguageAssistant = () => {
+const YachtCrewTraining = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -151,61 +151,58 @@ const FranceLanguageAssistant = () => {
     <div className="flex flex-col min-h-screen w-full">
 
       <Head>
-        <title>Teach English in France | Global Village Work Learn Travel</title>
+        <title>Work on a Yacht as part of your Working Holiday</title>
         <meta
           name="description"
-          content="Canadians can work in France teaching English with Global Village Work Learn Travel."
+          content="Canadian citizens can work on yachts with Global Village Work Learn Travel working holiday visa packages."
         />
-        <meta name="keywords" content="Teach English in France" />
+        <meta name="keywords" content="Work on Yacht" />
         <meta name="author" content="GVWLT" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://worklearntravel.ca/france/language_assistant_france" />
+        <link rel="canonical" href="https://worklearntravel.ca/visa-for-croatia/work-on-yacht" />
       </Head>
 
       <Header />
-
       <main className="flex-grow mt-24 mb-6 w-full">
         <div className="w-full mt-8 mb-6 px-6 sm:px-4 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Header Section */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Teaching English in France for Canadians
-              </h1>
+
+              <h1 className="text-5xl font-bold mb-6 text-center">Working Holiday Visa Croatia</h1>
+              <p className="text-xl leading-relaxed mb-4">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this job training and placement project, you’ll learn all the skills required to become a valued member of a superyacht crew as a deckhand or a stewardess. For those with special interest, there are also opportunities to train as a skipper. At the yacht crew training school, you’ll be trained in personal and crew safety, including marine, medical, and fire. Before you attend, you’ll also be able to take YCA-certified online training modules dealing with all aspects of your work onboard. When you finish, you will be provided with a full-featured employment assistance package: agency and job access, CV support, reference letters, and program access to help you find the perfect job!
+              </p>
+              <p className="text-xl leading-relaxed mb-8">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ideal participant in this experience is adventurous, fit, and independent, and enjoys making friends and working together with people from all over the world. Accommodations during the training period are available with the deluxe package.
+              </p>
+
               <ul className="text-lg text-black-500 space-y-4">
-
-              <div className="flex flex-col justify-center">
-              <p className="text-xl leading-relaxed mb-4">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this cultural exchange and learning project, you’ll have the chance to build relationships and immerse yourself in French language and culture. We’ll place you with a host family in France, where you’ll live for the duration of the program, sharing meals and activities with them. At the same time, you’ll be acting as an English tutor for the family members (often the children), using methods and a schedule that you’ll work out with them ahead of time. In your free time, you will be able to enjoy and explore all that France has to offer. Plus, since you’re able to stay in France for the duration of your visa, this project makes it the perfect launching point to set off on your own self-guided French adventure. 
-              </p>
-              <p className="text-xl leading-relaxed mb-4">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An ideal participant is flexible, open-minded, and adaptable! Your key responsibility will be teaching and tutoring, so you’ll need to be well prepared with study tools before you arrive. Previous teaching experience is not a requirement, but is a plus. Room and board are provided with a local family, who might be located anywhere throughout France. Once we match you with a family, you’ll coordinate with them about the specific form and schedule of lessons, but your teaching time will always be about 15 hours/week.
-              </p>
-              </div>
-
-                <li className="text-xl leading-relaxed mb-4"><strong>Location:</strong> Varies</li>
-                <li className="text-xl leading-relaxed mb-4"><strong>Length of stay:</strong> 1-3 months+</li>
-                <li className="text-xl leading-relaxed mb-4"><strong>Requirements:</strong> native English speaker, high school diploma, some knowledge of French, interest in teaching</li>
-                <li className="text-xl leading-relaxed mb-4"><strong>Visa requirements:</strong> Canadian citizen age 18-35; no previous participation in French Working Holiday program; see {' '}
-                <a href="https://france-visas.gouv.fr/web/france-visas/jeune-voyageur-vacances-travail"
+                <li><strong>Location:</strong> Split, Croatia (training) and work opportunities worldwide</li>
+                <li><strong>Length of stay:</strong> 10 days’ training, work placements flexible</li>
+                <li><strong>Dates:</strong> year-round; higher demand for April-Oct</li>
+                <li><strong>Requirements:</strong> high school diploma</li>
+                <li><strong>Visa requirements:</strong> Canadian citizen 18-35 years old; see {' '}
+                <a href="https://mvep.gov.hr/consular-information-136918/implementation-of-the-memorandum-of-understanding-concerning-youth-mobility/180587"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
-                </a>{' '}for a summary, and contact us for more details</li>
-                <li className="text-xl leading-relaxed mb-4"><strong>Cost:</strong> $2299</li>
+                </a>{' '}for a summary; contact us for more details</li>
+                <li><strong>Cost:</strong> $3499</li>
               </ul>
             </div>
 
             {/* Right Section - HubSpot Form */}
             <div className="w-full sm:w-3/4 md:w-2/3 lg:w-2/3 xl:w-2/3 mx-auto">
-            <ScrollAnimationWrapper className="w-full justify-end">
-              <motion.div className="h-full w-full p-4">
+              <ScrollAnimationWrapper className="w-full justify-end">
+                <motion.div className="h-full w-full p-4">
 
-                {/* HubSpot form */}
-                <div id="hubspotForm"></div>
-              </motion.div>
-            </ScrollAnimationWrapper>
-          </div>
+                  {/* HubSpot form */}
+                  <div id="hubspotForm"></div>
+
+                </motion.div>
+              </ScrollAnimationWrapper>
+            </div>
           </div>
         </div>
       </main>
@@ -215,4 +212,4 @@ const FranceLanguageAssistant = () => {
   );
 };
 
-export default FranceLanguageAssistant;
+export default YachtCrewTraining;

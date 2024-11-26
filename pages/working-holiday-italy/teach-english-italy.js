@@ -5,7 +5,7 @@ import Header from '../../components/Layout/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
 
-const SpainLanguageAssistant = () => {
+const ItalyLanguageAssistant = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -20,10 +20,6 @@ const SpainLanguageAssistant = () => {
           target: "#hubspotForm",
           onFormReady: function(form) {
             console.log('onFormReady called');
-            
-            console.log(process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID);
-            console.log(process.env.NEXT_PUBLIC_HUBSPOT_FORM_ID_COUNTRIES);
-
 
             setTimeout(() => {
               // Field internal names
@@ -155,44 +151,48 @@ const SpainLanguageAssistant = () => {
     <div className="flex flex-col min-h-screen w-full">
 
       <Head>
-        <title>Teach English in Spain | Global Village Work Learn Travel</title>
+        <title>Teach English in Italy| Global Village Work Learn Travel</title>
         <meta
           name="description"
-          content="Teach English in Spain with a working holiday job. Global Village Work Learn Travel can help you become a language assistant in Spain!"
+          content="Canadians can work in Italy teaching English with Global Village Work Learn Travel."
         />
-        <meta name="keywords" content="Teach English in Spain" />
+        <meta name="keywords" content="Teach English in Italy" />
         <meta name="author" content="GVWLT" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://worklearntravel.ca/spain/language_assistant_spain" />
+        <link rel="canonical" href="https://worklearntravel.ca/working-holiday-italy/teach-english-italy" />
       </Head>
 
       <Header />
+
       <main className="flex-grow mt-24 mb-6 w-full">
         <div className="w-full mt-8 mb-6 px-6 sm:px-4 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Header Section */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Teach English in Spain
+                Canadians Teaching English in Italy
               </h1>
-              <p className="text-xl leading-relaxed mb-4">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this cultural exchange and learning project, you’ll have the chance to build relationships and immerse yourself in Spanish language and culture. We’ll place you with a host family in Spain, where you’ll live for the duration of the program, sharing meals and activities with them. At the same time, you’ll be acting as an English tutor for the family members (often the children), using methods and a schedule that you’ll work out with them ahead of time. In your free time, you will be able to enjoy and explore all that Spain has to offer.
-              </p>
-              <p className="text-xl leading-relaxed mb-8">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An ideal participant is flexible, open-minded, and adaptable! Your key responsibility will be teaching and tutoring, so you’ll need to be well prepared with study tools before you arrive. Previous teaching experience is not a requirement, but is a plus. Room and board are provided with a local family, who might be located anywhere throughout Spain. Once we match you with a family, you’ll coordinate with them about the specific form and schedule of lessons, but your teaching time will always be about 15 hours/week.
-              </p>
-
               <ul className="text-lg text-black-500 space-y-4">
-                <li><strong>Location:</strong> All over Spain</li>
-                <li><strong>Length of stay:</strong> 1-3 months</li>
-                <li><strong>Requirements:</strong> native English speaker, high school diploma, some knowledge of Spanish, interest in teaching</li>
-                <li><strong>Visa requirements:</strong> Canadian citizen age 18-35 currently residing in Canada; see {' '}
-                <a href="https:www.exteriores.gob.es/Consulados/toronto/en/ServiciosConsulares/Paginas/Consular/Youth-mobility-visa.aspx"
+
+              <div className="flex flex-col justify-center">
+              <p className="text-xl leading-relaxed mb-4">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this cultural exchange and learning project, you’ll have the chance to build relationships and immerse yourself in Italian language and culture. We’ll place you with a host family in Italy, where you’ll live for the duration of the program, sharing meals and activities with them. At the same time, you’ll be acting as an English tutor for the family members (often the children), using methods and a schedule that you’ll work out with them ahead of time. In your free time, you will be able to enjoy and explore all that Italy has to offer. 
+              </p>
+              <p className="text-xl leading-relaxed mb-4">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An ideal participant is flexible, open-minded, and adaptable! Your key responsibility will be teaching and tutoring, so you’ll need to be well prepared with study tools before you arrive. Previous teaching experience is not a requirement, but is a plus. Room and board are provided with a local family, who might be located anywhere throughout Italy. Once we match you with a family, you’ll coordinate with them about the specific form and schedule of lessons, but your teaching time will always be about 15 hours/week.
+              </p>
+              </div>
+
+                <li className="text-xl leading-relaxed mb-4"><strong>Location:</strong> Varies</li>
+                <li className="text-xl leading-relaxed mb-4"><strong>Length of stay:</strong> 1-3 months+</li>
+                <li className="text-xl leading-relaxed mb-4"><strong>Requirements:</strong> native English speaker, high school diploma, some knowledge of Italian, interest in teaching</li>
+                <li className="text-xl leading-relaxed mb-4"><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
+                <a href="https://vistoperitalia.esteri.it/home/en"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary; contact us for more details</li>
-                <li><strong>Cost:</strong> $2299</li>
+                <li className="text-xl leading-relaxed mb-4"><strong>Cost:</strong> $2299</li>
               </ul>
             </div>
 
@@ -216,4 +216,4 @@ const SpainLanguageAssistant = () => {
   );
 };
 
-export default SpainLanguageAssistant;
+export default ItalyLanguageAssistant;

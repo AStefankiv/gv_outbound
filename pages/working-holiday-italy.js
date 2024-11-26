@@ -49,7 +49,7 @@ const Italy = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/italy/language_assistant_italy"
+                <Link href="/working-holiday-italy/teach-english-italy"
                 className="relative h-0 pb-56 block"
                 >
                   <picture className="absolute inset-0 w-full h-full">

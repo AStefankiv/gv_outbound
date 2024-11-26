@@ -18,7 +18,7 @@ const HongKong = () => {
         <meta name="author" content="GVWLT" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://worklearntravel.ca/hong_kong" />
+        <link rel="canonical" href="https://worklearntravel.ca/work-opportunities-hong-kong" />
       </Head>
 
       <Header />
@@ -50,7 +50,7 @@ const HongKong = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/hong_kong/hong_kong_internship" className="relative h-0 pb-56 block">
+                <Link href="/work-opportunities-hong-kong/internship" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/hongkong_internship.jpg"
                     alt=" INTERNSHIP In HONG KONG"

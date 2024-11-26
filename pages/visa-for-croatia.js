@@ -4,59 +4,67 @@ import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 
-const France = () => {
+const Croatia = () => {
   return (
     <div className="flex flex-col min-h-screen w-full">
 
       <Head>
-        <title>Working Holiday in France | Global Village Work Learn Travel</title>
+        <title>Get a Working Holiday Visa for Croatia I GV WLT</title>
         <meta
           name="description"
-          content="Canadians can work abroad in France as a language assistant. Enjoy a working holiday experience in France!"
+          content="Canadian looking for a visa for Croatia? Go on a working holiday with Global Village Work Learn Travel!"
         />
-        <meta name="keywords" content="Work Holiday in France" />
+        <meta name="keywords" content="Visa for Croatia" />
         <meta name="author" content="GVWLT" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://worklearntravel.ca/france" />
+        <link rel="canonical" href="https://worklearntravel.ca/visa-for-croatia" />
       </Head>
 
       <Header />
       <main className="flex-grow mt-24 mb-6 w-full">
-        {/* Main Content Grid */}
+        {/* Main Content Gridd */}
         <div className="w-full mt-8 mb-6 px-4 sm:px-4 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             
             {/* Left Section - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-5xl font-bold mb-6 text-center">Working Holiday in France for Canadians</h1>
+              <h1 className="text-5xl font-bold mb-6 text-center">Working Holiday Visa Croatia</h1>
               <p className="text-xl leading-relaxed mb-4">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;France offers a unique and exciting opportunity for Canadians interested in international experiences. One of the world's leading economies, France also offers a unique cultural heritage and rich lifestyle. Whether you're interested in fashion, technology, hospitality, or international business, France is a hub for many global industries. And culturally, from the bustling streets of Paris to the picturesque villages of Provence, you’ll experience lovely scenery, world-renowned cuisine, and an emphasis on work-life balance that is rare in many other countries. 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Croatia is an incredible destination for Canadians looking to expand their horizons. Croatia is known for its stunning Adriatic coastline, vibrant culture, and rich history. Seaside resorts in places like Dubrovnik, Split, and Hvar are popular for seasonal jobs, particularly in hospitality and tourism, giving you the chance to work by the beach while enjoying the Mediterranean lifestyle. 
               </p>
               <p className="text-xl leading-relaxed">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In addition, living in France provides the chance to improve your French language skills—an asset that can boost your employability at home in Canada or many places around the world. France's central location in Europe makes it easy to travel and explore other countries on weekends, giving you both professional experience and the adventure of a lifetime.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unlike more crowded destinations, Croatia offers affordable living, a laid-back vibe, and an opportunity to immerse yourself in its natural beauty. Whether you're exploring ancient walled cities or relaxing by crystal-clear waters, a working holiday in Croatia offers Canadians both unique employment opportunities and cultural adventures.
               </p>
             </div>
 
             {/* Right Section - Links */}
             <div className="flex flex-col gap-4 justify-center items-center">
               
-              {/* LANGUAGE ASSISTANT Button */}
+              {/* YACHT CREW Button */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/france/language_assistant_france" className="relative h-0 pb-56 block">
+                <Link href="/visa-for-croatia/work-on-yacht"
+                className="relative h-0 pb-56 block"
+                >
+                  <picture className="absolute inset-0 w-full h-full">
+                  <source
+                    srcSet="/assets/yacht-desktop.jpeg"
+                    media="(min-width: 1024px)"
+                  />
                   <img
-                    src="/assets/france_language_assistant.png"
-                    alt="TEACH IN FRANCE"
+                    src="/assets/yacht-mobile.jpeg"
+                    alt="YACHT CREW TRAINING"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
+                  </picture>
                   <div
                     className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-4xl font-bold text-outline-white text-center"
                     style={{ color: "rgba(241,163,52,255)" }}
                   >
-                    LANGUAGE ASSISTANT
+                    YACHT CREW
                   </div>
                 </Link>
               </motion.div>
@@ -65,10 +73,9 @@ const France = () => {
           </div>
         </div>
       </main>
-
       <Footer />
     </div>
   );
 };
 
-export default France;
+export default Croatia;

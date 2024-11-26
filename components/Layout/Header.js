@@ -25,13 +25,13 @@ const Header = () => {
   }, []);
 
   const dropDownCountries = [
-    { name: "Costa Rica", link: "/costa_rica" },
-    { name: "Croatia", link: "/croatia" },
-    { name: "France", link: "/france" },
-    { name: "Hong Kong", link: "/hong_kong" },
-    { name: "Italy", link: "/italy" },
-    { name: "Korea", link: "/korea" },
-    { name: "Spain", link: "/spain" },
+    { name: "Costa Rica", link: "/jobs-in-costa-rica" },
+    { name: "Croatia", link: "/visa-for-croatia" },
+    { name: "France", link: "/work-holiday-france" },
+    { name: "Hong Kong", link: "/work-opportunities-hong-kong" },
+    { name: "Italy", link: "/working-holiday-italy" },
+    { name: "Korea", link: "/working-holiday-korea" },
+    { name: "Spain", link: "/work-opportunities-spain" },
   ];
 
   const dropDownExperiences = [

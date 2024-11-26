@@ -5,7 +5,7 @@ import Header from '../../components/Layout/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
 
-const KoreaInternship = () => {
+const SpainInternship = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -137,7 +137,6 @@ const KoreaInternship = () => {
             }, 500); // Adjust the delay if needed
           },
           onFormSubmitted: function() {
-            // Display the alert message after successful submission
             alert('Successfully submitted form');
           }
         });
@@ -151,16 +150,16 @@ const KoreaInternship = () => {
     <div className="flex flex-col min-h-screen w-full">
 
       <Head>
-        <title>Internships in Korea | Global Village Work Learn Travel</title>
+        <title>Internships in Spain | Global Village Work Learn Travel</title>
         <meta
           name="description"
-          content="Internships in Korea through GV Work Learn Travel offer a variety of companies and sectors to fit your goals."
+          content="Join an internship in Spain via a working holiday with Global Village Work Learn Travel. We work with you to select the perfect company."
         />
-        <meta name="keywords" content="Internships in Korea" />
+        <meta name="keywords" content="Internships in Spain" />
         <meta name="author" content="GVWLT" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://worklearntravel.ca/korea/korea_internship" />
+        <link rel="canonical" href="https://worklearntravel.ca/work-opportunities-spain/internship" />
       </Head>
 
       <Header />
@@ -171,25 +170,25 @@ const KoreaInternship = () => {
             {/* Header Section */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Internships in Korea
+                Internships in Spain
               </h1>
               <p className="text-xl leading-relaxed mb-4">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this personalized internship program for a working holiday in Korea, you’ll be getting valuable business insights and building your network as part of a successful South Korean company. We’ll work with you to explore your career goals and interests, and then connect you with a short-term unpaid internship position, selecting the ideal company for you from among hundreds of partners. Whether you want to focus on green tech, finance, media, tourism, design, or one of many other sectors, we can find the perfect professional environment for you to grow relevant skills while experiencing Korean workplace culture! Wherever you’re placed, you’ll have tasks and responsibilities tailored to what you’re looking for, whether it’s administration, public relations, marketing, content creation, or something else. This program is ideal for those eager to broaden their professional horizons and gain valuable insights into South Korea’s business landscape.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this carefully tailored internship placement program, Canadians are able to take advantage of work opportunities in Spain by being placed into paid or unpaid short-term roles in Spanish businesses. We offer customized positions that match participants' career interests, such as marketing, finance, hospitality, or tech. You’ll gain hands-on experience while working directly with local professionals, contributing to real projects, and immersing yourself in the Spanish work environment. With a strong focus on career development, the program helps participants build practical skills and improve language proficiency. Living and working in Spain provides unique opportunities for cultural exchange and professional growth, making this program ideal for those seeking meaningful work experience abroad and a deeper understanding of Spanish business culture.
               </p>
               <p className="text-xl leading-relaxed mb-8">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ideal participant for this internship opportunity is open-minded and ambitious. Your specific internship requests will determine where, when, and what exactly you do, but all participants will be provided with one-to-one consultation and guidance throughout the project, and all necessary information will be provided well in advance. Accommodation is available on request.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An ideal participant is adaptable and motivated. The specific details of what, where, and when you are working will depend on your final selection, but all information will be clearly communicated well in advance. Spanish language skills are not a requirement, but more placements may be available to those who speak some Spanish. Language courses as well as accommodation, if not provided by the host company, are available on request.
               </p>
 
               <ul className="text-lg text-black-500 space-y-4">
-                <li><strong>Location:</strong> Varies; placement in a major South Korean city</li>
-                <li><strong>Length of stay:</strong> 2-6 months</li>
+                <li><strong>Location:</strong> All over Spain</li>
+                <li><strong>Length of stay:</strong> 3 months+</li>
                 <li><strong>Requirements:</strong> high school diploma; some placements may have additional requirements</li>
-                <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
-                <a href="https://whic.mofa.go.kr/contents.do?menuNo=90&contentsNo=38"
+                <li><strong>Visa requirements:</strong> Canadian citizen age 18-35 currently residing in Canada; see {' '}
+                <a href="https://www.exteriores.gob.es/Consulados/toronto/en/ServiciosConsulares/Paginas/Consular/Youth-mobility-visa.aspx"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary; contact us for more details</li>
-                <li><strong>Cost:</strong> varies based on position; contact us for details</li>
+                <li><strong>Cost:</strong> $2599</li>
               </ul>
             </div>
 
@@ -197,6 +196,11 @@ const KoreaInternship = () => {
             <div className="w-full sm:w-3/4 md:w-2/3 lg:w-2/3 xl:w-2/3 mx-auto">
               <ScrollAnimationWrapper className="w-full justify-end">
                 <motion.div className="h-full w-full p-4">
+                  <div className="my-12 text-center">
+                    <p className="text-lg text-black-500 mb-8">
+                      Fill out the form below, and we'll send you all the details.
+                    </p>
+                  </div>
 
                   {/* HubSpot form */}
                   <div id="hubspotForm"></div>
@@ -213,4 +217,4 @@ const KoreaInternship = () => {
   );
 };
 
-export default KoreaInternship;
+export default SpainInternship;

@@ -5,7 +5,7 @@ import Header from '../../components/Layout/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
 
-const ItalyLanguageAssistant = () => {
+const KoreaInternship = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -151,16 +151,16 @@ const ItalyLanguageAssistant = () => {
     <div className="flex flex-col min-h-screen w-full">
 
       <Head>
-        <title>Teach English in Italy| Global Village Work Learn Travel</title>
+        <title>Internships in Korea | Global Village Work Learn Travel</title>
         <meta
           name="description"
-          content="Canadians can work in Italy teaching English with Global Village Work Learn Travel."
+          content="Internships in Korea through GV Work Learn Travel offer a variety of companies and sectors to fit your goals."
         />
-        <meta name="keywords" content="Teach English in Italy" />
+        <meta name="keywords" content="Internships in Korea" />
         <meta name="author" content="GVWLT" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://worklearntravel.ca/italy/language_assistant_italy" />
+        <link rel="canonical" href="https://worklearntravel.ca/working-holiday-korea/korea_internship" />
       </Head>
 
       <Header />
@@ -171,28 +171,25 @@ const ItalyLanguageAssistant = () => {
             {/* Header Section */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Canadians Teaching English in Italy
+                Internships in Korea
               </h1>
+              <p className="text-xl leading-relaxed mb-4">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this personalized internship program for a working holiday in Korea, you’ll be getting valuable business insights and building your network as part of a successful South Korean company. We’ll work with you to explore your career goals and interests, and then connect you with a short-term unpaid internship position, selecting the ideal company for you from among hundreds of partners. Whether you want to focus on green tech, finance, media, tourism, design, or one of many other sectors, we can find the perfect professional environment for you to grow relevant skills while experiencing Korean workplace culture! Wherever you’re placed, you’ll have tasks and responsibilities tailored to what you’re looking for, whether it’s administration, public relations, marketing, content creation, or something else. This program is ideal for those eager to broaden their professional horizons and gain valuable insights into South Korea’s business landscape.
+              </p>
+              <p className="text-xl leading-relaxed mb-8">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ideal participant for this internship opportunity is open-minded and ambitious. Your specific internship requests will determine where, when, and what exactly you do, but all participants will be provided with one-to-one consultation and guidance throughout the project, and all necessary information will be provided well in advance. Accommodation is available on request.
+              </p>
+
               <ul className="text-lg text-black-500 space-y-4">
-
-              <div className="flex flex-col justify-center">
-              <p className="text-xl leading-relaxed mb-4">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this cultural exchange and learning project, you’ll have the chance to build relationships and immerse yourself in Italian language and culture. We’ll place you with a host family in Italy, where you’ll live for the duration of the program, sharing meals and activities with them. At the same time, you’ll be acting as an English tutor for the family members (often the children), using methods and a schedule that you’ll work out with them ahead of time. In your free time, you will be able to enjoy and explore all that Italy has to offer. 
-              </p>
-              <p className="text-xl leading-relaxed mb-4">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An ideal participant is flexible, open-minded, and adaptable! Your key responsibility will be teaching and tutoring, so you’ll need to be well prepared with study tools before you arrive. Previous teaching experience is not a requirement, but is a plus. Room and board are provided with a local family, who might be located anywhere throughout Italy. Once we match you with a family, you’ll coordinate with them about the specific form and schedule of lessons, but your teaching time will always be about 15 hours/week.
-              </p>
-              </div>
-
-                <li className="text-xl leading-relaxed mb-4"><strong>Location:</strong> Varies</li>
-                <li className="text-xl leading-relaxed mb-4"><strong>Length of stay:</strong> 1-3 months+</li>
-                <li className="text-xl leading-relaxed mb-4"><strong>Requirements:</strong> native English speaker, high school diploma, some knowledge of Italian, interest in teaching</li>
-                <li className="text-xl leading-relaxed mb-4"><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
-                <a href="https://vistoperitalia.esteri.it/home/en"
+                <li><strong>Location:</strong> Varies; placement in a major South Korean city</li>
+                <li><strong>Length of stay:</strong> 2-6 months</li>
+                <li><strong>Requirements:</strong> high school diploma; some placements may have additional requirements</li>
+                <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
+                <a href="https://whic.mofa.go.kr/contents.do?menuNo=90&contentsNo=38"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary; contact us for more details</li>
-                <li className="text-xl leading-relaxed mb-4"><strong>Cost:</strong> $2299</li>
+                <li><strong>Cost:</strong> varies based on position; contact us for details</li>
               </ul>
             </div>
 
@@ -216,4 +213,4 @@ const ItalyLanguageAssistant = () => {
   );
 };
 
-export default ItalyLanguageAssistant;
+export default KoreaInternship;

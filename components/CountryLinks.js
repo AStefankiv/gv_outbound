@@ -15,7 +15,7 @@ const CountryLinks = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
-          <Link href="/costa_rica">
+          <Link href="/jobs-in-costa-rica">
             <div>
               <div className="relative h-0 pb-56">
                 <img
@@ -41,7 +41,7 @@ const CountryLinks = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
-          <Link href="/france">
+          <Link href="/work-holiday-france">
             <div>
               <div className="relative h-0 pb-56">
                 <img
@@ -67,7 +67,7 @@ const CountryLinks = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
-          <Link href="/italy">
+          <Link href="/working-holiday-italy">
             <div>
               <div className="relative h-0 pb-56">
                 <img
@@ -93,7 +93,7 @@ const CountryLinks = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
-          <Link href="/korea">
+          <Link href="/working-holiday-korea">
             <div>
               <div className="relative h-0 pb-56">
                 <img
@@ -119,7 +119,7 @@ const CountryLinks = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
-          <Link href="/spain">
+          <Link href="/work-opportunities-spain">
             <div>
               <div className="relative h-0 pb-56">
                 <img
@@ -145,7 +145,7 @@ const CountryLinks = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
-          <Link href="/hong_kong">
+          <Link href="/work-opportunities-hong-kong">
             <div>
               <div className="relative h-0 pb-56">
                 <img
@@ -174,7 +174,7 @@ const CountryLinks = () => {
           whileHover={{ scale: 1.05 }}
           className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
         >
-          <Link href="/croatia">
+          <Link href="/visa-for-croatia">
             <div>
               <div className="relative h-0 pb-56">
                 <img

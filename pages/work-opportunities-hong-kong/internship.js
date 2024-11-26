@@ -160,7 +160,7 @@ const HongKongInternship = () => {
         <meta name="author" content="GVWLT" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://worklearntravel.ca/hong_kong/hong_kong_internship" />
+        <link rel="canonical" href="https://worklearntravel.ca/work-opportunities-hong-kong/internship" />
       </Head>
 
       <Header />

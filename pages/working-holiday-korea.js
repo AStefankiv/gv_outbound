@@ -18,7 +18,7 @@ const KoreaPage = () => {
         <meta name="author" content="GVWLT" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://worklearntravel.ca/korea" />
+        <link rel="canonical" href="https://worklearntravel.ca/working-holiday-korea" />
       </Head>
 
       <Header />
@@ -47,7 +47,7 @@ const KoreaPage = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/korea/korea_internship" className="relative h-0 pb-56 block">
+                <Link href="/working-holiday-korea/korea_internship" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/internship_button.jpg"
                     alt="INTERNSHIP"
@@ -67,7 +67,7 @@ const KoreaPage = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/korea/teach_english_korea" className="relative h-0 pb-56 block">
+                <Link href="/working-holiday-korea/teach_english_korea" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/teach_korea.jpeg"
                     alt="TEACH ENGLISH"
