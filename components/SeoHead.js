@@ -40,6 +40,7 @@ const SeoHead = (props) => {
         <meta property='og:url' content={`${meta.url}${router.asPath}`} />
         <meta property='og:image' content='/assets/gv_square.png' />
         <link rel='canonical' href={`${meta.url}${router.asPath}`} />
+        <link rel="icon" type="image/svg+xml" href="/favicon/GV-English-Favicon.svg" />
 
         {/* Open Graph */}
         <meta property='og:type' content={meta.type} />
