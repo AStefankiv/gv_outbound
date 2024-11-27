@@ -19,6 +19,7 @@ const KoreaPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://worklearntravel.ca/working-holiday-korea" />
+        <link rel="manifest" href="../public/site.webmanifest" />
       </Head>
 
       <Header />

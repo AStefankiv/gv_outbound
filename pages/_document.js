@@ -16,7 +16,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link
-            rel="GV-English-Favicon"
+            rel="icon"
             href="/favicon/GV-English-Favicon.ico"
           />
           <meta name="apple-mobile-web-app-title" content="Work Learn Travel" />
