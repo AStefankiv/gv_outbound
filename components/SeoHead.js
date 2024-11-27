@@ -41,7 +41,7 @@ const SeoHead = (props) => {
         <meta property='og:image' content='/assets/gv_square.png' />
         <link rel='canonical' href={`${meta.url}${router.asPath}`} />
         <link rel="icon" type="image/svg+xml" href="/favicon/GV-English-Favicon.svg" />
-        <link rel="icon" type="image/x-icon" href="/favicon/GV-English-Favicon-32x32.ico" />
+        <link rel="icon" type="image/x-icon" href="/favicon/GV-English-Favicon-48x48.ico" />
 
         {/* Open Graph */}
         <meta property='og:type' content={meta.type} />
