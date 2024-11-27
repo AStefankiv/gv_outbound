@@ -21,8 +21,7 @@ const KoreaPage = () => {
         <link rel="canonical" href="https://worklearntravel.ca/working-holiday-korea" />
 
         <link rel="apple-touch-icon" href="../public/favicon/GV-English-Favicon.ico" />
-        <link rel="android-touch-icon" href="../public/favicon/GV-English-Favicon.ico" />
-        {/* <link rel="icon" href="../public/favicon/GV-English-Favicon.ico" /> */}
+
       </Head>
 
       <Header />
