@@ -30,6 +30,7 @@ const Header = () => {
     { name: "France", link: "/work-holiday-france" },
     { name: "Hong Kong", link: "/work-opportunities-hong-kong" },
     { name: "Italy", link: "/working-holiday-italy" },
+    { name: "Japan", link: "/working-holiday-japan" },
     { name: "Korea", link: "/working-holiday-korea" },
     { name: "Spain", link: "/work-opportunities-spain" },
   ];
