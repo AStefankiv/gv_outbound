@@ -151,16 +151,16 @@ const JapanTeachEnglish = () => {
     <div className="flex flex-col min-h-screen w-full">
 
       <Head>
-        <title>Teach English in Korea | Global Village Work Learn Travel</title>
+        <title>Teach English in Japan | Global Village Work Learn Travel</title>
         <meta
           name="description"
-          content="Teach English in Korea as a Canadian through GV Work Learn Travel! Job placements and work abroad opportunities available."
+          content="Teach English in Japan as a Canadian through GV Work Learn Travel! Job placements and work abroad opportunities available."
         />
-        <meta name="keywords" content="Teach English in Korea" />
+        <meta name="keywords" content="Teach English in Japan" />
         <meta name="author" content="GVWLT" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://worklearntravel.ca/working-holiday-korea/teach_english_korea" />
+        <link rel="canonical" href="https://worklearntravel.ca/working-holiday-japan/teach_english_japan" />
       </Head>
 
       <Header />
@@ -171,21 +171,21 @@ const JapanTeachEnglish = () => {
             {/* Header Section */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
-                Teach English in Korea
+                Teach English in Japan
               </h1>
               <p className="text-xl leading-relaxed mb-4">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this work placement program, you’ll be participating in a working holiday in Korea, funding your valuable overseas work experience as you gain insight into local culture and make new friends. You will be employed full time teaching English, working in the classroom with a Korean co-teacher to deliver language lessons in a public elementary, middle, or high school. This placement not only provides you with a salaried work position, but also with valuable pre-departure and on-arrival training and orientation that ensures that you get the most out of your work experience. This working holiday in Korea program is ideal for Canadian youths eager to make a difference in students' lives while gaining firsthand experience in a new education system. The supportive environment and structured lesson plans provide a meaningful way to work, learn, and live in South Korea.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This placement program offers young adults the opportunity to teach English in Japanese public schools through paid positions. Participants work as co-teachers, collaborating with Japanese educators to develop engaging lessons and foster students’ language skills. You will be fully supported as you work in an elementary, junior high, or high school in Japan, giving you an outstanding chance to be immersed in a local community while gaining teaching experience. This program offers a rewarding way to live and work in Japan while making a meaningful impact on the lives of young people.
               </p>
               <p className="text-xl leading-relaxed mb-8">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ideal participant for this position is healthy, has strong English language skills, and is curious and adaptable. Applicants who are accepted will be offered a position in one of the administrative regions of South Korea, and all contracts include a salary, medical insurance, a bonus package, and provide accommodations. This full-time position leaves your evenings and weekends free to enjoy the full range of Korean life and culture!
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ideal participant for this position has strong English language skills, and is flexible and resilient. Applicants who are accepted will be offered a position in one of the regions of Japan. All contracts include a salary, medical insurance, and accommodations or accommodation assistance. This full-time position leaves your evenings and weekends free to enjoy the full range of Japanese life and culture!
               </p>
 
               <ul className="text-lg text-black-500 space-y-4">
-                <li><strong>Location:</strong> Varies; placement in one of the 17 administrative regions of South Korea</li>
+                <li><strong>Location:</strong> Varies; placement in one of the 47 prefectures of Japan</li>
                 <li><strong>Length of stay:</strong> 1 year+</li>
-                <li><strong>Requirements:</strong> bachelor’s degree and TESL certification, or bachelor’s degree in education; education received in English</li>
+                <li><strong>Requirements:</strong> bachelor’s degree (education preferred but not required); currently resident in Canada; holds a Canadian drivers’ license</li>
                 <li><strong>Visa requirements:</strong> Canadian citizen age 18-35; see {' '}
-                <a href="https://whic.mofa.go.kr/contents.do?menuNo=90&contentsNo=38"
+                <a href="https://www.ca.emb-japan.go.jp/itpr_en/visa.html"
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary; contact us for more details</li>
