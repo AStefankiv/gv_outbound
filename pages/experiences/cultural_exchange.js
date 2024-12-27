@@ -10,11 +10,12 @@ const CulturalExchange = () => {
     <div className="flex flex-col min-h-screen w-full">
       <Header />
       <main className="flex-grow mt-24 mb-6 w-full">
-    <div className="w-full mx-auto mt-20 px-6 sm:px-8 lg:px-16" id="countryLinks">
+      <div className="w-full mx-auto mt-20 px-6 sm:px-8 lg:px-16" id="countryLinks">
       <div className="text-4xl text-center lg:text-5xl font-medium leading-relaxed text-black-600 mb-10">
       <h1>Cultural exchange</h1>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-20 mb-20">
 
         {/*FRANCE LANGUAGE ASSISTANT Button */}
         <motion.div
@@ -53,11 +54,13 @@ const CulturalExchange = () => {
               </div>
             </Link>
           </motion.div>
+          </div>
 
+          <div className="flex justify-center">
           {/* SPAIN LANGUAGE ASSISTANT Button */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
+            className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full sm:w-1/2"
           >
             <Link href="/work-opportunities-spain/language_assistant_spain" className="relative h-0 pb-56 block">
               <img
@@ -72,8 +75,9 @@ const CulturalExchange = () => {
               </div>
             </Link>
           </motion.div>
+          </div>
+
       </div>
-    </div>
     </main>
     <Footer />
   </div>

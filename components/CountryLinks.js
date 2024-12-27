@@ -167,7 +167,7 @@ const CountryLinks = () => {
         </motion.div>
 
         {/* Empty Link */}
-        <motion.div className="relative overflow-hidden rounded-lg shadow-md cursor-pointer invisible"></motion.div>
+        {/* <motion.div className="relative overflow-hidden rounded-lg shadow-md cursor-pointer invisible"></motion.div> */}
 
         {/* Croatia Link */}
         <motion.div
@@ -195,6 +195,34 @@ const CountryLinks = () => {
             </div>
           </Link>
         </motion.div>
+
+        {/* Japan */}
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+        >
+          <Link href="/working-holiday-japan">
+            <div>
+              <div className="relative h-0 pb-56">
+                <img
+                  src="/assets/japan-image.jpeg"
+                  alt="Japan"
+                  className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                  loading="lazy"
+
+                  srcSet="/assets/japan-image.jpeg?w=400 400w, /assets/japan-image.jpeg?w=800 800w, /assets/japan-image.jpeg?w=1200 1200w"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ transition: 'opacity 2s ease-in-out' }}
+                />
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl font-bold text-outline-white text-center"
+              style={{ color: "rgba(241,163,52,255)" }}>
+                Japan
+              </div>
+            </div>
+          </Link>
+        </motion.div>
+
       </div>
     </div>
   );
