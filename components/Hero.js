@@ -91,7 +91,7 @@ const Hero = () => {
                     <Gridicons className="h-6 w-6" />
                   </div>
                   <div className="flex flex-col">
-                    <p className="text-xl text-black-600 font-bold">7+</p>
+                    <p className="text-xl text-black-600 font-bold">8+</p>
                     <p className="text-lg text-black-500">countries</p>
                   </div>
                 </div>
