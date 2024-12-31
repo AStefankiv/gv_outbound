@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
@@ -6,6 +7,20 @@ import Header from "../components/Layout/Header";
 const CostaRica = () => {
   return (
     <div className="flex flex-col min-h-screen w-full">
+
+      <Head>
+        <title>Volunteering in Costa Rica | Global Village Work Learn Travel</title>
+        <meta
+          name="description"
+          content="Looking to volunteer in Costa Rica? Global Village Work Learn Travel can connect you with the ultimate volunteer experience!"
+        />
+        <meta name="keywords" content="Volunteer in Costa Rica" />
+        <meta name="author" content="GVWLT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://worklearntravel.ca/jobs-in-costa-rica" />
+      </Head>
+
       <Header />
 
       <main className="flex-grow mt-24 mb-6 w-full">
