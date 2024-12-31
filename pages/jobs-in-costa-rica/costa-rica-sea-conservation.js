@@ -151,7 +151,7 @@ const NatureConservation = () => {
     <div className="flex flex-col min-h-screen w-full">
 
       <Head>
-        <title>Volunteering for Costa Rica Sea Turtle Conservation | GVWLT</title>
+        <title>Costa Rica Sea Turtle Conservation</title>
         <meta
           name="description"
           content="Sea Turtle Conservation in Costa Rica needs Canadians to participate! Reach out to find out how you can become a volunteer!"

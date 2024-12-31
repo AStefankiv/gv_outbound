@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect } from 'react';
 import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
@@ -147,6 +148,20 @@ const CommunityDevelopment = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full">
+
+      <Head>
+        <title>Community Volunteering in Costa Rica | GVWLT</title>
+        <meta
+          name="description"
+          content="Volunteer to help build up in Costa Rica communities! Global Village Work Learn Travel can connect you."
+        />
+        <meta name="keywords" content="Community Volunteer Costa Rica" />
+        <meta name="author" content="GVWLT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://worklearntravel.ca/costa_rica" />
+      </Head>
+
       <Header />
 
       <main className="flex-grow mt-24 mb-6 w-full">
@@ -155,7 +170,7 @@ const CommunityDevelopment = () => {
             {/* Header Section */}
             <div className="flex flex-col justify-center">
 
-              <h1 className="text-5xl font-bold mb-6 text-center">Costa Rica Community</h1>
+              <h1 className="text-5xl font-bold mb-6 text-center">Costa Rica Community Volunteer</h1>
               <p className="text-xl leading-relaxed mb-4">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this community-building project, you’ll be involved in two specific activities: class workshops for local residents (particularly children) on any topic you have skills in, from dance to art to private tutoring. English language skills are especially welcome and appreciated, but anything you come up with is great! The second thing you’ll be doing is working in and around the Puerto Jimenez library and community centre, which always has a variety of needs – organizing, painting, running activities, or manning the desk. Everything you do will contribute in some way to the educational needs of this small and vibrant community.
               </p>
