@@ -43,6 +43,11 @@ const countries = [
     image: "/assets/japan-image.jpeg",
     link: "/working-holiday-japan",
   },
+  {
+    name: "GV Snow",
+    image: "/assets/snow-image.jpeg",
+    link: "/gv-snow",
+  },
 ];
 
 const CountryCard = ({ name, image, link }) => (

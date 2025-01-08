@@ -28,6 +28,7 @@ const Header = () => {
     { name: "Costa Rica", link: "/jobs-in-costa-rica" },
     { name: "Croatia", link: "/visa-for-croatia" },
     { name: "France", link: "/work-holiday-france" },
+    { name: "GV Snow", link: "/gv-snow" },
     { name: "Hong Kong", link: "/work-opportunities-hong-kong" },
     { name: "Italy", link: "/working-holiday-italy" },
     { name: "Japan", link: "/working-holiday-japan" },
