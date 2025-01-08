@@ -4,21 +4,21 @@ import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 
-const CostaRica = () => {
+const GV_Snow = () => {
   return (
     <div className="flex flex-col min-h-screen w-full">
 
       <Head>
-        <title>Volunteering in Costa Rica | Global Village Work Learn Travel</title>
+        <title>Work Overseas as a Ski Instructor | GV WLT</title>
         <meta
           name="description"
-          content="Looking to volunteer in Costa Rica? Global Village Work Learn Travel can connect you with the ultimate volunteer experience!"
+          content="Canadian looking for overseas work as a ski instructor? We can help you find the perfect experience!"
         />
-        <meta name="keywords" content="Volunteer in Costa Rica" />
+        <meta name="keywords" content="Skiing Working Holiday" />
         <meta name="author" content="GVWLT" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://worklearntravel.ca/jobs-in-costa-rica" />
+        <link rel="canonical" href="https://worklearntravel.ca/gv-snow" />
       </Head>
 
       <Header />
@@ -30,27 +30,21 @@ const CostaRica = () => {
             
             {/* Left Section - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-5xl font-bold mb-6 text-center">Experience Costa Rica</h1>
+              <h1 className="text-5xl font-bold mb-6 text-center">GV Snow</h1>
               <p className="text-xl leading-relaxed mb-4">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Costa Rica is an exceptional destination for Canadians seeking international opportunities,offering a unique combination of environmental conservation, vibrant culture, and adventure. Known for its lush rainforests, stunning beaches, and rich biodiversity, Costa Rica provides a dynamic backdrop for people interested in making a positive impact while exploring one of the most eco-conscious countries in the world. Costa Ricans, or "Ticos," are known for their friendliness, and for the national ethos of "pura vida," which translates to "pure life" or "simple life." This laid-back and positive attitude permeates daily life, making it easy for new arrivals to feel at home while experiencing authentic cultural immersion.
-              </p>
-              <p className="text-xl leading-relaxed">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As one of the most biodiverse countries on Earth, Costa Rica is well known for its deep commitment to sustainability and conservation. It offers numerous opportunities for Canadians to contribute to vital environmental projects from wildlife rehabilitation to reforestation efforts. If you are passionate about protecting nature, you will find Costa Rica an ideal place for your international experience.
-              </p>
-              <p className="text-xl leading-relaxed">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As part of your international experience, Costa Rica offers plenty of opportunities for adventure and leisure. The country’s diverse landscape provides a wealth of locations to explore, whether you are keen to hike active volcanoes, zip-line through cloud forests, or surf along its Pacific and Caribbean coasts. Costa Rica is a perfect destination for those eager to balance meaningful work with adventure and fun.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GV SNOW provides work placements for certified ski and snowboard instructors in beautiful destinations around the world. Each option is a world-class ski destination, and each offers unique benefits. Click through to see the opportunities, requirements, and inclusions/exclusions of the programs in each area. All placements include job guarantees, assistance with accommodation, and opportunities for further education, along with the cultural experiences each country offers.
               </p>
             </div>
 
             {/* Right Section - Links */}
             <div className="flex flex-col gap-4">
 
-              {/* NATURE CONSERVATION Button */}
+              {/* GV SNOW - Spain */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/jobs-in-costa-rica/costa-rica-sea-conservation" className="relative h-0 pb-56 block">
+                <Link href="/gv-snow/gv-snow-spain" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/nature_conservation.jpg"
                     alt="nature_conservation"
@@ -60,17 +54,17 @@ const CostaRica = () => {
                     className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-4xl font-bold text-outline-white text-center"
                     style={{ color: "rgba(241,163,52,255)" }}
                   >
-                    NATURE CONSERVATION
+                    GV SNOW - Spain
                   </div>
                 </Link>
               </motion.div>
 
-              {/* COMMUNITY DEVELOPMENT Button */}
+              {/* GV SNOW - Japan */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/jobs-in-costa-rica/community_development" className="relative h-0 pb-56 block">
+                <Link href="/gv-snow/gv-snow-japan" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/community_development.png"
                     alt="INTERNSHIP"
@@ -80,17 +74,17 @@ const CostaRica = () => {
                     className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-4xl font-bold text-outline-white text-center"
                     style={{ color: "rgba(241,163,52,255)" }}
                   >
-                    COMMUNITY DEVELOPMENT
+                    GV SNOW - Japan
                   </div>
                 </Link>
               </motion.div>
               
-              {/* TEACHING Button */}
+              {/* GV SNOW - Switzerland */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/jobs-in-costa-rica/costa-rica-teacher-jobs" className="relative h-0 pb-56 block">
+                <Link href="/gv-snow/cgv-snow-switzerland" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/teach_costa_rica.jpeg"
                     alt="TEACHING"
@@ -100,7 +94,27 @@ const CostaRica = () => {
                     className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-4xl font-bold text-outline-white text-center"
                     style={{ color: "rgba(241,163,52,255)" }}
                   >
-                    TEACHING
+                    GV SNOW - Switzerland
+                  </div>
+                </Link>
+              </motion.div>
+
+              {/* GV SNOW - Austria */}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
+              >
+                <Link href="/gv-snow/gv-snow-austria" className="relative h-0 pb-56 block">
+                  <img
+                    src="/assets/teach_costa_rica.jpeg"
+                    alt="TEACHING"
+                    className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                  />
+                  <div
+                    className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-4xl font-bold text-outline-white text-center"
+                    style={{ color: "rgba(241,163,52,255)" }}
+                  >
+                    GV SNOW - Austria
                   </div>
                 </Link>
               </motion.div>
@@ -115,4 +129,4 @@ const CostaRica = () => {
   );
 };
 
-export default CostaRica;
+export default GV_Snow;
