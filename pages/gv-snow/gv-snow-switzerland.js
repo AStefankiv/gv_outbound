@@ -150,7 +150,7 @@ const CommunityDevelopment = () => {
     <div className="flex flex-col min-h-screen w-full">
 
       <Head>
-        <title>Community Volunteering in Costa Rica | GVWLT</title>
+        <title>GV Snow | GVWLT</title>
         <meta
           name="description"
           content="Volunteer to help build up in Costa Rica communities! Global Village Work Learn Travel can connect you."
