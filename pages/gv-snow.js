@@ -46,8 +46,8 @@ const GV_Snow = () => {
               >
                 <Link href="/gv-snow/gv-snow-spain" className="relative h-0 pb-56 block">
                   <img
-                    src="/assets/nature_conservation.jpg"
-                    alt="nature_conservation"
+                    src="/assets/ski-spain.jpeg"
+                    alt="SKI-SPAIN"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
                   <div
@@ -66,8 +66,8 @@ const GV_Snow = () => {
               >
                 <Link href="/gv-snow/gv-snow-japan" className="relative h-0 pb-56 block">
                   <img
-                    src="/assets/community_development.png"
-                    alt="INTERNSHIP"
+                    src="/assets/ski-japan.jpg"
+                    alt="SKI_JAPAN"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
                   <div
@@ -86,8 +86,8 @@ const GV_Snow = () => {
               >
                 <Link href="/gv-snow/cgv-snow-switzerland" className="relative h-0 pb-56 block">
                   <img
-                    src="/assets/teach_costa_rica.jpeg"
-                    alt="TEACHING"
+                    src="/assets/ski-switzerland.jpg"
+                    alt="SKI-SWITZERLAND"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
                   <div
@@ -106,8 +106,8 @@ const GV_Snow = () => {
               >
                 <Link href="/gv-snow/gv-snow-austria" className="relative h-0 pb-56 block">
                   <img
-                    src="/assets/teach_costa_rica.jpeg"
-                    alt="TEACHING"
+                    src="/assets/ski-austria.jpeg"
+                    alt="SKI-AUSTRIA"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
                   <div
