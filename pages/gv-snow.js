@@ -46,7 +46,7 @@ const GV_Snow = () => {
               >
                 <Link href="/gv-snow/gv-snow-spain" className="relative h-0 pb-56 block">
                   <img
-                    src="/assets/ski-spain.jpeg"
+                    src="/assets/ski-spain.jpg"
                     alt="SKI-SPAIN"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                   />
