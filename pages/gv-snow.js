@@ -84,7 +84,7 @@ const GV_Snow = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative overflow-hidden rounded-lg shadow-md cursor-pointer w-full"
               >
-                <Link href="/gv-snow/cgv-snow-switzerland" className="relative h-0 pb-56 block">
+                <Link href="/gv-snow/gv-snow-switzerland" className="relative h-0 pb-56 block">
                   <img
                     src="/assets/ski-switzerland.jpg"
                     alt="SKI-SWITZERLAND"
