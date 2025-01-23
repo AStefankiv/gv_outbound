@@ -4,6 +4,7 @@ import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
+import ERQuizProgramCTA from '../../components/ERQuizProgramCTA';
 
 const KoreaTeachEnglish = () => {
 
@@ -179,7 +180,12 @@ const KoreaTeachEnglish = () => {
               <p className="text-xl leading-relaxed mb-8">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ideal participant for this position is healthy, has strong English language skills, and is curious and adaptable. Applicants who are accepted will be offered a position in one of the administrative regions of South Korea, and all contracts include a salary, medical insurance, a bonus package, and provide accommodations. This full-time position leaves your evenings and weekends free to enjoy the full range of Korean life and culture!
               </p>
-
+              <ERQuizProgramCTA  
+              heading="Is a Travel/Work Experience Teaching English in Korea Right for You?"
+              subHeading="Take the Global Village English “Teaching English in Korea Readiness Quiz”"
+              quizUrl="https://cr-gve.virtualadviser.com/?lead_src=w-body&heading2=Take%20the%20Global%20Village%20English%20%E2%80%9CTeaching%20English%20in%20Korea%20Readiness%20Quiz%E2%80%9D&heading=Is%20a%20Travel%2FWork%20Experience%20Teaching%20English%20in%20Korea%20Right%20for%20You%3F&sectionwrapper-bg=SV0b3z1bQyPa4l0KF2QA"
+              linkText="Get Your Teaching English in Korea Readiness Score Now >>"
+              />
               <ul className="text-lg text-black-500 space-y-4">
                 <li><strong>Location:</strong> Varies; placement in one of the 17 administrative regions of South Korea</li>
                 <li><strong>Length of stay:</strong> 1 year+</li>

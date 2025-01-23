@@ -3,6 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
+import ERQuizProgramCTA from "../components/ERQuizProgramCTA";
 
 const GV_Snow = () => {
   return (
@@ -31,9 +32,15 @@ const GV_Snow = () => {
             {/* Left Section - Text */}
             <div className="flex flex-col justify-center">
               <h1 className="text-5xl font-bold mb-6 text-center">GV Snow</h1>
-              <p className="text-xl leading-relaxed mb-4">
+              <p className="text-xl leading-relaxed mb-10">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GV SNOW provides work placements for certified ski and snowboard instructors in beautiful destinations around the world. Each option is a world-class ski destination, and each offers unique benefits. Click through to see the opportunities, requirements, and inclusions/exclusions of the programs in each area. All placements include job guarantees, assistance with accommodation, and opportunities for further education, along with the cultural experiences each country offers.
               </p>
+              <ERQuizProgramCTA  
+              heading="Is a Travel/Work Experience as a Ski/Snowboard Instructor Right for You?"
+              subHeading="Take the Global Village English “Ski/Snowboard Instructor Readiness Quiz”"
+              quizUrl="https://cr-gve.virtualadviser.com/?lead_src=w-body&heading2=Take%20the%20Global%20Village%20English%20%E2%80%9CSki%2FSnowboard%20Instructor%20Readiness%20Quiz%E2%80%9D&heading=Is%20a%20Travel%2FWork%20Experience%20as%20a%20Ski%2FSnowboard%20Instructor%20Right%20for%20You%3F&sectionwrapper-bg=r2ncDU5lQl6yOqh9cdIu"
+              linkText="Get Your Ski/Snowboard Instructor Readiness Score Now >>"
+              />
             </div>
 
             {/* Right Section - Links */}
