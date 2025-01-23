@@ -6,6 +6,7 @@ import CountryLinks from "../components/CountryLinks";
 import JoinWLT from "../components/JoinWLT";
 import Experiences from "../components/Experiences";
 import EmptyComponent from "../components/EmptyComponent";
+import ERQuizHomepageCTA from "../components/ERQuizHomepageCTA";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <JoinWLT />
         <Hero />
         <EmptyComponent />
+        <ERQuizHomepageCTA />
         <CountryLinks />
         <Experiences />
         <ContactForm />
