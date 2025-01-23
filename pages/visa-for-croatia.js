@@ -22,7 +22,7 @@ const Croatia = () => {
       </Head>
 
       <Header />
-      <main className="flex-grow mt-24 mb-6 w-full">
+      <main className="flex-grow mt-40 mb-6 w-full">
         {/* Main Content Gridd */}
         <div className="w-full mt-8 mb-6 px-4 sm:px-4 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

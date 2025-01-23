@@ -55,7 +55,7 @@ const JoinWLT = () => {
   };
 
   return (
-    <div className="w-full mt-24 px-0 mx-auto" id="join-wlt">
+    <div className="w-full mt-24 px-0 mx-auto pt-24" id="join-wlt">
 
       {/* <div style={{ display: 'none' }}>
       <p>Working Holidays for Canadians are available from Global Village Work Learn Travel in a variety of international jobs and experiences.</p>
@@ -65,7 +65,7 @@ const JoinWLT = () => {
         <motion.div className="w-full lg:py-0 sm:py-16" variants={scrollAnimation}>
           <Slider {...settings} className="w-full">
             {carouselItems.map((item, index) => (
-              <div key={index} className="flex justify-center items-center min-h-[35vh] lg:min-h-[20vh] h-auto bg-gray-100 p-6">
+              <div key={index} className="flex justify-center items-center min-h-[15vh] lg:min-h-[15vh] h-auto bg-gray-100 p-6">
                 <div className="text-center flex flex-col justify-center items-center w-full">
                   <h2 className="text-4xl lg:text-2xl xl:text-4xl font-medium text-black-600 leading-normal">
                     {item.title}

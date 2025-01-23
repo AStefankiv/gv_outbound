@@ -51,6 +51,24 @@ const Header = () => {
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
       >
+        {/* CTA Section */}
+        <div
+          id="cta-big"
+          className="flex justify-end items-center sm:flex-row flex-col text-center sm:text-right"
+          style={{ padding: "0.5rem" }}
+        >
+          <p className="va-heading" style={{ marginRight: "0.5rem" }}>
+            Is Travel/Work Experience Right For You?
+          </p>
+          <a
+            href="https://cr-gve.virtualadviser.com/?lead_src=w-header"
+            className="py-2 lg:py-2 px-3 lg:px-5 text-black-900 font-semibold rounded-lg bg-orange-500 transition-all outline-none hover:shadow-dark-grey-lg"
+          >
+            Take the Free Quiz
+          </a>
+        </div>
+        {/* End of CTA Section */}
+        
         <nav className="w-full px-6 sm:px-8 lg:px-1 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center sm:jusitfy-start justify-center">
 

@@ -9,7 +9,7 @@ const VolunteeringAndConservation = () => {
 
     <div className="flex flex-col min-h-screen w-full">
       <Header />
-      <main className="flex-grow mt-24 mb-6 w-full">
+      <main className="flex-grow mt-40 mb-6 w-full">
     <div className="w-full mx-auto mt-20 px-6 sm:px-8 lg:px-16" id="countryLinks">
       <div className="text-4xl text-center lg:text-5xl font-medium leading-relaxed text-black-600 mb-10">
       <h1>Volunteering and conservation</h1>

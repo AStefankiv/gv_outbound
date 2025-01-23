@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="flex flex-col min-h-screen w-full">
       <Header />
-      <main className="flex-grow mt-24 mb-6 w-full">
+      <main className="flex-grow mt-40 mb-6 w-full">
         <div className="w-full mt-8 mb-6 px-4 sm:px-4 lg:px-12">
           <div className="flex justify-center mb-8">
             <Image
