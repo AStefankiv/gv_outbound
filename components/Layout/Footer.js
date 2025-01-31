@@ -8,8 +8,8 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="bg-white-300 pt-2 pb-4 sm:pb-1">
-      <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-5 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-12 gap-0">
-        <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
+      <div className="max-w-screen-2xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-5 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-12 gap-0">
+        <div className="row-span-2 sm:col-span-5 col-start-2 col-end-4 sm:col-end-6 flex flex-col items-start ">
           <Link href="/">
             <Image
               src="/assets/GV-Work-Learn-Travel-Logo-Transparent.png"
@@ -34,7 +34,7 @@ const Footer = () => {
               <Instagram className="h-6 w-6" />
             </div>
           </div>
-          <p className="text-gray-400">©{new Date().getFullYear()} - Work - learn - travel</p>
+          <p className="text-gray-400">©{new Date().getFullYear()} - 734 7 Avenue SW ( Suite 360 ) Calgary, AB T2P 3P8</p>
         </div>
         <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-13 flex flex-col">
           <ul className="text-black-500">

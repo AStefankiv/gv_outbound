@@ -189,7 +189,7 @@ const JapanTeachEnglish = () => {
                 className='text-blue-500 underline hover:text-blue-600'>
                 here 
                 </a>{' '}for a summary; contact us for more details</li>
-                <li><strong>Cost:</strong> $1499</li>
+                <li><strong>Cost:</strong> $799</li>
               </ul>
             </div>
 
