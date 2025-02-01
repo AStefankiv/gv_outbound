@@ -4,6 +4,7 @@ import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
+import ERQuizProgramCTA from '../../components/ERQuizProgramCTA';
 
 const JapanTeachEnglish = () => {
 
@@ -165,7 +166,7 @@ const JapanTeachEnglish = () => {
 
       <Header />
 
-      <main className="flex-grow mt-24 mb-6 w-full">
+      <main className="flex-grow mt-40 mb-6 w-full">
         <div className="w-full mt-8 mb-6 px-6 sm:px-4 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Header Section */}
@@ -179,7 +180,12 @@ const JapanTeachEnglish = () => {
               <p className="text-xl leading-relaxed mb-8">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ideal participant for this position has strong English language skills, and is flexible and resilient. Applicants who are accepted will be offered a position in one of the regions of Japan. All contracts include a salary, medical insurance, and accommodations or accommodation assistance. This full-time position leaves your evenings and weekends free to enjoy the full range of Japanese life and culture!
               </p>
-
+              <ERQuizProgramCTA  
+              heading="Is a Travel/Work Experience as an Assistant English Language Teacher Right for You?"
+              subHeading="Take the Global Village English “Teaching English in Japan Readiness Quiz”"
+              quizUrl='https://cr-gve.virtualadviser.com/?lead_src=w-body&heading2=Take%20the%20Global%20Village%20English%20%E2%80%9CTeaching%20English%20in%20Japan%20Readiness%20Quiz%E2%80%9D&heading=Is%20a%20Travel%2FWork%20Experience%20as%20an%20Assistant%20English%20Language%20Teacher%20Right%20for%20You%3F&sectionwrapper-bg=2hQ7iO3JT69yU0EZjxQw'
+              linkText='Get Your Teaching English in Japan Readiness Score Now >>'
+              />
               <ul className="text-lg text-black-500 space-y-4">
                 <li><strong>Location:</strong> Varies; placement in one of the 47 prefectures of Japan</li>
                 <li><strong>Length of stay:</strong> 1 year+</li>

@@ -4,6 +4,7 @@ import Footer from '../../components/Layout/Footer';
 import Header from '../../components/Layout/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
+import ERQuizProgramCTA from '../../components/ERQuizProgramCTA';
 
 const KoreaInternship = () => {
 
@@ -165,7 +166,7 @@ const KoreaInternship = () => {
 
       <Header />
 
-      <main className="flex-grow mt-24 mb-6 w-full">
+      <main className="flex-grow mt-40 mb-6 w-full">
         <div className="w-full mt-8 mb-6 px-6 sm:px-4 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Header Section */}
@@ -179,7 +180,12 @@ const KoreaInternship = () => {
               <p className="text-xl leading-relaxed mb-8">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ideal participant for this internship opportunity is open-minded and ambitious. Your specific internship requests will determine where, when, and what exactly you do, but all participants will be provided with one-to-one consultation and guidance throughout the project, and all necessary information will be provided well in advance. Accommodation is available on request.
               </p>
-
+              <ERQuizProgramCTA  
+              heading="Is an Internship in Korea Right for You?"
+              subHeading="Take the Global Village English “Korean Internship Readiness Quiz”"
+              quizUrl="https://cr-gve.virtualadviser.com/?lead_src=w-body&heading2=Take%20the%20Global%20Village%20English%20%E2%80%9CKorean%20Internship%20Readiness%20Quiz%E2%80%9D&heading=Is%20an%20Internship%20in%20Korea%20Right%20for%20You%3F&sectionwrapper-bg=cSMRgmhnSr2nbeQElPtD"
+              linkText="Get Your Korean Internship Readiness Score Now >>"
+              />
               <ul className="text-lg text-black-500 space-y-4">
                 <li><strong>Location:</strong> Varies; placement in a major South Korean city</li>
                 <li><strong>Length of stay:</strong> 2-6 months</li>
