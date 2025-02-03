@@ -183,7 +183,7 @@ const HongKongInternship = () => {
               <ERQuizProgramCTA  
               heading="Is a Travel/Work Experience in Hospitality Right for You?"
               subHeading="Take the Global Village English “Hospitality Internship Readiness Quiz”"
-              quizUrl="https://cr-gve.https://cr-gve.virtualadviser.com/?lead_src=w-body&heading2=Take%20the%20Global%20Village%20English%20%E2%80%9CHospitality%20Internship%20Readiness%20Quiz%E2%80%9D&heading=Is%20a%20Travel%2FWork%20Experience%20in%20Hospitality%20Right%20for%20You%3F&sectionwrapper-bg=es6FJvP1QoeWkVtQlvk7virtualadviser.com/?lead_src=w-body&heading2=Take%20the%20Global%20Village%20English%20%E2%80%9CTeaching%20English%20in%20Japan%20Readiness%20Quiz%E2%80%9D&heading=Is%20a%20Travel%2FWork%20Experience%20as%20an%20Assistant%20English%20Language%20Teacher%20Right%20for%20You%3F&sectionwrapper-bg=2hQ7iO3JT69yU0EZjxQw"
+              quizUrl="https://cr-gve.virtualadviser.com/?lead_src=w-body&heading2=Take%20the%20Global%20Village%20English%20%E2%80%9CHospitality%20Internship%20Readiness%20Quiz%E2%80%9D&heading=Is%20a%20Travel%2FWork%20Experience%20in%20Hospitality%20Right%20for%20You%3F&sectionwrapper-bg=es6FJvP1QoeWkVtQlvk7"
               linkText="Get Your Hospitality Internship Readiness Score Now >>"
               />
               <ul className="text-lg text-black-500 space-y-4">
