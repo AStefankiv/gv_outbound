@@ -194,6 +194,9 @@ const FranceLanguageAssistant = () => {
                 </a>{' '}for a summary, and contact us for more details</li>
                 <li className="text-xl leading-relaxed mb-4"><strong>Cost:</strong> $2299</li>
               </ul>
+              <marquee className="text-2xl font-semibold text-orange-500 mt-4" direction="left" scrollamount="7">
+                Scholarships up to $1,000 are available for qualifying students! Talk to your advisor about whether you qualify for a scholarship.
+              </marquee>
             </div>
 
             {/* Right Section - HubSpot Form */}
