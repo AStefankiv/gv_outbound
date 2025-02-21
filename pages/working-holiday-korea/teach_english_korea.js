@@ -162,6 +162,14 @@ const KoreaTeachEnglish = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://worklearntravel.ca/working-holiday-korea/teach_english_korea" />
+        
+        {/* Google Tag Manager */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></script>
+        <script>window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+          gtag('config', 'AW-16884794738');
+        </script>
       </Head>
 
       <Header />

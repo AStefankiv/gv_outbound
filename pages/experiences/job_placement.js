@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Head from "next/head";
 import Footer from "../../components/Layout/Footer";
 import Header from "../../components/Layout/Header";
 
@@ -8,6 +9,17 @@ const JobPlacement = () => {
   return (
 
     <div className="flex flex-col min-h-screen w-full">
+
+      <Head>        
+        {/* Google Tag Manager */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></script>
+        <script>window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+          gtag('config', 'AW-16884794738');
+        </script>
+      </Head>
+
       <Header />
       <main className="flex-grow mt-40 mb-6 w-full">
       <div className="w-full mx-auto mt-20 px-6 sm:px-8 lg:px-16" id="countryLinks">

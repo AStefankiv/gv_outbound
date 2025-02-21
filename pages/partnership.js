@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Footer from '../components/Layout/Footer';
 import Header from '../components/Layout/Header';
+import Head from 'next/head';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../components/Layout/ScrollAnimationWrapper";
 
@@ -29,6 +30,24 @@ const Partnership = () => {
     };
 
     document.body.appendChild(script);
+  }, []);
+
+  // Load Google Tag Manager
+  useEffect(() => {
+    const gtagScript = document.createElement("script");
+    gtagScript.async = true;
+    gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=AW-16884794738";
+    document.head.appendChild(gtagScript);
+
+    gtagScript.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-16884794738");
+    };
+
   }, []);
 
   return (
