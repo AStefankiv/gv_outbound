@@ -5,6 +5,7 @@ import Header from '../../components/Layout/Header';
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
 import ERQuizProgramCTA from "../../components/ERQuizProgramCTA";
+import Script from 'next/script';
 
 const HongKongInternship = () => {
 
@@ -164,12 +165,12 @@ const HongKongInternship = () => {
         <link rel="canonical" href="https://worklearntravel.ca/work-opportunities-hong-kong/internship" />
 
         {/* Google Tag Manager */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></script>
-        <script>window.dataLayer = window.dataLayer || [];
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></Script>
+        <Script>window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments)};
           gtag('js', new Date());
           gtag('config', 'AW-16884794738');
-        </script>
+        </Script>
       </Head>
 
       <Header />

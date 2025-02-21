@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 import Image from "next/image";
+import Script from "next/script";
 
 const About = () => {
   return (
@@ -11,12 +12,12 @@ const About = () => {
 
       <Head>
         {/* Google Tag Manager */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></script>
-        <script>window.dataLayer = window.dataLayer || [];
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></Script>
+        <Script>window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments)};
           gtag('js', new Date());
           gtag('config', 'AW-16884794738');
-        </script>
+        </Script>
       </Head>
 
       <Header />

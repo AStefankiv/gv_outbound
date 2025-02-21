@@ -4,6 +4,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Footer from "../../components/Layout/Footer";
 import Header from "../../components/Layout/Header";
+import Script from 'next/script';
 
 const InternationalInternship = () => {
   return (
@@ -11,12 +12,12 @@ const InternationalInternship = () => {
 
       <Head>
         {/* Google Tag Manager */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></script>
-        <script>window.dataLayer = window.dataLayer || [];
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></Script>
+        <Script>window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments)};
           gtag('js', new Date());
           gtag('config', 'AW-16884794738');
-        </script>
+        </Script>
       </Head>
 
       <Header />
