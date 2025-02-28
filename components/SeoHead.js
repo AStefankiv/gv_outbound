@@ -105,34 +105,11 @@ const SeoHead = (props) => {
       </Script>
 
       {/* Google Ads Conversion Tracking */}
-{/* Load Google Ads script before running `gtag_report_conversion` */}
-<Script id="google-ads-conversion" strategy="afterInteractive">
-  {`
-    function gtag_report_conversion(url) {
-      if (typeof gtag !== "function") {
-        console.warn("gtag is not loaded yet!");
-        return false;
-      }
-
-      var callback = function () {
-        if (typeof url !== "undefined") {
-          window.location = url;
-        }
-      };
-
-      gtag("event", "conversion", {
-        send_to: "AW-16884794738/uY75CLi2uKAaEPKKpvM-",
-        value: 1.0,
-        currency: "CAD",
-        event_callback: callback,
-      });
-
-      return false;
-    }
-  `}
-</Script>
-
-
+      <Script id="google-ads-conversion" strategy="afterInteractive">
+        {`
+          function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-16884794738/uY75CLi2uKAaEPKKpvM-', 'value': 1.0, 'currency': 'CAD', 'event_callback': callback }); return false; }
+        `}
+      </Script>
 
       {/* HubSpot Script using next/script */}
       <Script
