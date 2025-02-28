@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 import Script from "next/script";
+import { useEffect } from "react";
 
 const CostaRica = () => {
 
