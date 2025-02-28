@@ -98,7 +98,7 @@ const CostaRica = () => {
               </motion.div>
 
               {/* Submit Button with Conversion Tracking */}
-              <button onClick={() => gtag_report_conversion('https://your-link.com')} className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
+              <button onClick={() => gtag_report_conversion('https://www.worklearntravel.ca/jobs-in-costa-rica')} className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
                 Submit
               </button>
 
