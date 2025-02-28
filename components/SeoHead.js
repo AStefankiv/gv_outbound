@@ -106,26 +106,32 @@ const SeoHead = (props) => {
 
       {/* Google Ads Conversion Tracking */}
 {/* Load Google Ads script before running `gtag_report_conversion` */}
-<Script
-  src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"
-  strategy="afterInteractive"
-/>
-
-<Script id="google-ads-init" strategy="afterInteractive">
+<Script id="google-ads-conversion" strategy="afterInteractive">
   {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    
-    gtag('js', new Date());
+    function gtag_report_conversion(url) {
+      if (typeof gtag !== "function") {
+        console.warn("gtag is not loaded yet!");
+        return false;
+      }
 
-    // Configure Google Analytics & Google Ads
-    gtag('config', 'G-E92RJLF7EE');
-    gtag('config', 'AW-16884794738', {
-      'allow_enhanced_conversions': true,
-      'send_page_view': true
-    });
+      var callback = function () {
+        if (typeof url !== "undefined") {
+          window.location = url;
+        }
+      };
+
+      gtag("event", "conversion", {
+        send_to: "AW-16884794738/uY75CLi2uKAaEPKKpvM-",
+        value: 1.0,
+        currency: "CAD",
+        event_callback: callback,
+      });
+
+      return false;
+    }
   `}
 </Script>
+
 
 
       {/* HubSpot Script using next/script */}
