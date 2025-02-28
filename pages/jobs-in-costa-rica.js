@@ -6,6 +6,16 @@ import Header from "../components/Layout/Header";
 import Script from "next/script";
 
 const CostaRica = () => {
+
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-16884794738');
+    console.log('Google Tag Manager Loaded');
+  }, []);
+  
+
   return (
     <div className="flex flex-col min-h-screen w-full">
 
