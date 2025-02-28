@@ -40,8 +40,8 @@ const SeoHead = (props) => {
         <meta property='og:url' content={`${meta.url}${router.asPath}`} />
         <meta property='og:image' content='/assets/gv_square.png' />
         <link rel='canonical' href={`${meta.url}${router.asPath}`} />
-        <link rel="icon" type="image/svg+xml" href="/favicon/GV-English-Favicon.svg" />{/* search icon */}
-        <link rel="icon" type="image/x-icon" href="/favicon/GV-English-Favicon-48x48.ico" />{/* recommended */}
+        <link rel="icon" type="image/svg+xml" href="/favicon/GV-English-Favicon.svg" />
+        <link rel="icon" type="image/x-icon" href="/favicon/GV-English-Favicon-48x48.ico" />
 
         {/* Open Graph */}
         <meta property='og:type' content={meta.type} />
@@ -60,16 +60,8 @@ const SeoHead = (props) => {
         {meta.date && (
           <>
             <meta property='article:published_time' content={meta.date} />
-            <meta
-              name='publish_date'
-              property='og:publish_date'
-              content={meta.date}
-            />
-            <meta
-              name='author'
-              property='article:author'
-              content={meta.author}
-            />
+            <meta name='publish_date' property='og:publish_date' content={meta.date} />
+            <meta name='author' property='article:author' content={meta.author} />
           </>
         )}
 
@@ -80,10 +72,7 @@ const SeoHead = (props) => {
 
         {/* Windows 8 app icon */}
         <meta name='msapplication-TileColor' content='#F53838' />
-        <meta
-          name='msapplication-TileImage'
-          content='/favicon/ms-icon-144x144.png'
-        />
+        <meta name='msapplication-TileImage' content='/favicon/ms-icon-144x144.png' />
 
         {/* Accent color on supported browser */}
         <meta name='theme-color' content='#F53838' />
@@ -92,7 +81,7 @@ const SeoHead = (props) => {
       {/* Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-E92RJLF7EE"
-        strategy="afterInteractive"
+        strategy="beforeInteractive" // Ensure this script loads earlier
       />
 
       <Script id="gtag-init" strategy="afterInteractive">
@@ -105,40 +94,37 @@ const SeoHead = (props) => {
       </Script>
 
       {/* Google Ads Conversion Tracking */}
-
       <Script
-  src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"
-  strategy="afterInteractive"
-/>
+        src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"
+        strategy="beforeInteractive" // Ensure this script loads earlier
+      />
 
       <Script id="google-ads-conversion" strategy="afterInteractive">
-  {`
-    function gtag_report_conversion(url) {
-      if (typeof gtag !== "function") {
-        console.warn("gtag is not loaded yet!");
-        return false;
-      }
+        {`
+          function gtag_report_conversion(url) {
+            if (typeof window.gtag !== "function") {
+              console.warn("gtag is not defined yet.");
+              return false;
+            }
 
-      var callback = function () {
-        if (typeof url !== "undefined") {
-          window.location = url;
-        }
-      };
+            var callback = function () {
+              if (typeof url !== "undefined") {
+                window.location = url;
+              }
+            };
 
-      gtag("event", "conversion", {
-        send_to: "AW-16884794738/uY75CLi2uKAaEPKKpvM-",
-        value: 1.0,
-        currency: "CAD",
-        event_callback: callback,
-      });
+            window.gtag("event", "conversion", {
+              send_to: "AW-16884794738/uY75CLi2uKAaEPKKpvM-",
+              value: 1.0,
+              currency: "CAD",
+              event_callback: callback,
+            });
 
-      console.log("Conversion event sent to Google Ads");
-      return false;
-    }
-  `}
-</Script>
-
-
+            console.log("Conversion event sent to Google Ads");
+            return false;
+          }
+        `}
+      </Script>
 
       {/* HubSpot Script using next/script */}
       <Script
@@ -147,8 +133,8 @@ const SeoHead = (props) => {
         strategy="afterInteractive"
       />
 
-            {/* Facebook Pixel Code */}
-            <Script id="facebook-pixel" strategy="afterInteractive">
+      {/* Facebook Pixel Code */}
+      <Script id="facebook-pixel" strategy="afterInteractive">
         {`
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -157,7 +143,7 @@ const SeoHead = (props) => {
           n.queue=[];t=b.createElement(e);t.async=!0;
           t.src=v;s=b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https:/connect.facebook.net/en_US/fbevents.js');
+          'https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', '1111232897010087');
           fbq('track', 'PageView');
         `}
@@ -226,7 +212,7 @@ const favicons = [
     rel: 'icon',
     type: 'image/png',
     sizes: '16x16',
-    href: '/public/favicon/favicon-16x16.png',
+    href: '/favicon/favicon-16x16.png',
   },
   {
     rel: 'icon',
@@ -248,7 +234,7 @@ const favicons = [
   },
   {
     rel: 'manifest',
-    href: '/public/favicon/favicon-16x16.png',
+    href: '/favicon/site.webmanifest',
   },
 ];
 
