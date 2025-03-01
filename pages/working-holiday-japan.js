@@ -4,8 +4,28 @@ import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 import Script from 'next/script';
+import { useEffect } from 'react';
 
 const JapanPage = () => {
+
+    // Load Google Tag Manager
+    useEffect(() => {
+      const gtagScript = document.createElement("script");
+      gtagScript.async = true;
+      gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=AW-16884794738";
+      document.head.appendChild(gtagScript);
+  
+      gtagScript.onload = () => {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "AW-16884794738");
+      };
+  
+    }, []);
+
   return (
     <div className="flex flex-col min-h-screen w-full">
 
@@ -21,14 +41,6 @@ const JapanPage = () => {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://worklearntravel.ca/working-holiday-japan" />
         <link rel="apple-touch-icon" href="/favicon/GV-English-Favicon.ico" />
-
-        {/* Google Tag Manager */}
-        {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></Script>
-        <Script>window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)};
-          gtag('js', new Date());
-          gtag('config', 'AW-16884794738');
-        </Script> */}
       </Head>
 
       <Header />

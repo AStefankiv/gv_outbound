@@ -3,8 +3,28 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
+import { useEffect } from "react";
 
 const CostaRica = () => {
+
+    // Load Google Tag Manager
+    useEffect(() => {
+      const gtagScript = document.createElement("script");
+      gtagScript.async = true;
+      gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=AW-16884794738";
+      document.head.appendChild(gtagScript);
+  
+      gtagScript.onload = () => {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "AW-16884794738");
+      };
+  
+    }, []);
+
   return (
     <div className="flex flex-col min-h-screen w-full">
 

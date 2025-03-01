@@ -4,8 +4,28 @@ import { motion } from "framer-motion";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 import Script from 'next/script';
+import { useEffect } from 'react';
 
 const Italy = () => {
+
+    // Load Google Tag Manager
+    useEffect(() => {
+      const gtagScript = document.createElement("script");
+      gtagScript.async = true;
+      gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=AW-16884794738";
+      document.head.appendChild(gtagScript);
+  
+      gtagScript.onload = () => {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "AW-16884794738");
+      };
+  
+    }, []);
+
   return (
     <div className="flex flex-col min-h-screen w-full">
 
@@ -20,14 +40,6 @@ const Italy = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://worklearntravel.ca/italy" />
-                
-        {/* Google Tag Manager */}
-        {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></Script>
-        <Script>window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)};
-          gtag('js', new Date());
-          gtag('config', 'AW-16884794738');
-        </Script> */}
       </Head>
 
       <Header />
