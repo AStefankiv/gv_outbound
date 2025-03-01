@@ -22,12 +22,12 @@ const HongKong = () => {
         <link rel="canonical" href="https://worklearntravel.ca/work-opportunities-hong-kong" />
                 
         {/* Google Tag Manager */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></Script>
+        {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></Script>
         <Script>window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments)};
           gtag('js', new Date());
           gtag('config', 'AW-16884794738');
-        </Script>
+        </Script> */}
       </Head>
 
       <Header />

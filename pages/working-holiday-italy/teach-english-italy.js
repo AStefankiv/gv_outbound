@@ -164,12 +164,12 @@ const ItalyLanguageAssistant = () => {
         <link rel="canonical" href="https://worklearntravel.ca/working-holiday-italy/teach-english-italy" />
         
         {/* Google Tag Manager */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></Script>
+        {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"></Script>
         <Script>window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments)};
           gtag('js', new Date());
           gtag('config', 'AW-16884794738');
-        </Script>
+        </Script> */}
       </Head>
 
       <Header />

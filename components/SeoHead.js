@@ -93,7 +93,7 @@ const SeoHead = (props) => {
         `}
       </Script>
 
-      {/* Google Ads Conversion Tracking */}
+      {/* /* Google Ads Conversion Tracking */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"
         strategy="beforeInteractive" // Ensure this script loads earlier

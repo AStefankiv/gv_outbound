@@ -4,19 +4,19 @@ import "../styles/tailwind.css";
 import "../styles/slick.css";
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      window.dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "AW-16884794738");
-  }, []);
+  // useEffect(() => {
+  //   window.dataLayer = window.dataLayer || [];
+  //   function gtag() {
+  //     window.dataLayer.push(arguments);
+  //   }
+  //   gtag("js", new Date());
+  //   gtag("config", "AW-16884794738");
+  // }, []);
 
   return (
     <>
       {/* Load Google Tag Manager */}
-      <Script
+      {/* <Script
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=AW-16884794738"
       />
@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
           gtag('js', new Date());
           gtag('config', 'AW-16884794738');
         `}
-      </Script>
+      </Script> */}
       <Component {...pageProps} />
     </>
   );
