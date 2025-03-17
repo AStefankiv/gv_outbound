@@ -4,6 +4,8 @@ import Heroicons from "../public/assets/Icon/heroicons_sm-user.svg";
 import Gridicons from "../public/assets/Icon/gridicons_location.svg";
 import Bxbxsserver from "../public/assets/Icon/bx_bxs-server.svg";
 import TravelWork from "../public/assets/Icon/travel_work.svg";
+import { motion } from "framer-motion";
+import Script from "next/script";
 
 const ButtonPrimary = lazy(() => import("./misc/ButtonPrimary"));
 const ScrollAnimationWrapper = lazy(() => import("./Layout/ScrollAnimationWrapper"));
@@ -21,56 +23,92 @@ const Hero = () => {
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Handle client-side mounting
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   useEffect(() => {
+    if (!isMounted) return;
+    
     const interval = setInterval(() => {
       setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
     }, 6000); // Image changes every 6 seconds
+    
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [isMounted, images.length]);
 
   return (
-    <div className="w-full mt-0 px-8 xl:px-16 mx-auto" id="about">
-      <Suspense fallback={<div>Loading...</div>}>
-        <ScrollAnimationWrapper>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-6 sm:py-16">
-            <div className="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-              Global Village Work Learn Travel provides working holidays for Canadians.
-              </h1>
-              <br />
-              <LinkScroll to="experiences" spy={true} smooth={true} duration={1000} offset={-100}>
-                <ButtonPrimary>Yes, I want an exciting international experience!</ButtonPrimary>
-              </LinkScroll>
+    <>
+      <Script 
+        src="https://assets.virtualadviser.com/embed.js" 
+        strategy="lazyOnload"
+        id="virtual-adviser-script"
+      />
+      
+      <div className="w-full mt-0 px-8 xl:px-16 mx-auto" id="about">
+        <Suspense fallback={<div>Loading...</div>}>
+          <ScrollAnimationWrapper>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-6 sm:py-16">
+              <div className="flex flex-col">
+                <div className="flex flex-col justify-center items-start mb-6">
+                  <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal mb-6">
+                    Global Village Work Learn Travel provides working holidays for Canadians.
+                  </h1>
+                  
+                  <div className="text-base sm:text-lg text-black-600 mb-6">
+                    <p className="mb-3">
+                      <span className="font-medium">Travel the world</span> - Beautiful places, new friends, and amazing cultural experiences await you. Make connections that will last a lifetime.
+                    </p>
+                    <p className="mb-3">
+                      <span className="font-medium">Explore new experiences</span> - Discover different cultures and new environments to unlock an entirely fresh outlook on the world.
+                    </p>
+                    <p className="mb-3">
+                      <span className="font-medium">Gain international work experience</span> - Enhance your skills while exploring new cultures and building flexibility, resilience, and positivity.
+                    </p>
+                  </div>
+                  
+                  <LinkScroll to="experiences" spy={true} smooth={true} duration={1000} offset={-100}>
+                    <ButtonPrimary>Yes, I want an exciting international experience!</ButtonPrimary>
+                  </LinkScroll>
+                </div>
+                
+                <div className="relative w-full h-64 md:h-80 overflow-hidden mt-4">
+                  {images.map((image, index) => (
+                    <img
+                      key={index}
+                      src={image.src}
+                      alt={image.name}
+                      loading="lazy"
+                      srcSet={`${image.src}?w=400 400w, ${image.src}?w=800 800w, ${image.src}?w=1200 1200w`}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className={`absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${currentImage === index ? 'opacity-100' : 'opacity-0'}`}
+                      style={{ transition: 'opacity 2s ease-in-out' }}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              <div className="w-full md:w-4/5 lg:w-4/5 xl:w-4/5 mx-auto">
+                <ScrollAnimationWrapper className="w-full justify-end">
+                  <motion.div className="h-full w-full p-4">
+                    {isMounted && (
+                      <div className="va-embed" data-src="https://gtd-multistep-gve.virtualadviser.com"></div>
+                    )}
+                  </motion.div>
+                </ScrollAnimationWrapper>
+              </div>
             </div>
+          </ScrollAnimationWrapper>
+        </Suspense>
 
-            {/* Image Slideshow */}
-            <div className="relative w-full h-96 overflow-hidden flex flex-col items-center">
-              {images.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.src}
-                  alt={image.name}
-                  loading="lazy"
-                  srcSet={`${image.src}?w=400 400w, ${image.src}?w=800 800w, ${image.src}?w=1200 1200w`}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className={`absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${currentImage === index ? 'opacity-100' : 'opacity-0'}`}
-                  style={{ transition: 'opacity 2s ease-in-out' }}
-                />
-              ))}
-            </div>
-          </div>
-        </ScrollAnimationWrapper>
-      </Suspense>
-
-      <div className="relative w-full flex">
-        <Suspense fallback={<div>Loading stats...</div>}>
-          <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-4 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
-
+        <div className="relative w-full flex">
+          <Suspense fallback={<div>Loading stats...</div>}>
+            <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-4 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
               {/* 25 years helping young people */}
-              <div
-                className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
-              >
+              <div className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0">
                 <div className="flex mx-auto w-40 sm:w-auto">
                   <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
                     <Heroicons className="h-6 w-6" />
@@ -126,15 +164,15 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-
-          </ScrollAnimationWrapper>
-        </Suspense>
-        <div
-          className="absolute bg-black-600 opacity-5 w-11/12 rounded-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"
-          style={{ filter: "blur(114px)" }}
-        ></div>
+            </ScrollAnimationWrapper>
+          </Suspense>
+          <div
+            className="absolute bg-black-600 opacity-5 w-11/12 rounded-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"
+            style={{ filter: "blur(114px)" }}
+          ></div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
