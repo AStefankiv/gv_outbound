@@ -70,36 +70,46 @@ const Header = () => {
         {/* End of CTA Section */}
         
         <nav className="w-full px-6 sm:px-8 lg:px-1 mx-auto grid grid-flow-col py-3 sm:py-4">
-          <div className="col-start-1 col-end-2 flex items-center sm:jusitfy-start justify-center">
+          <div className="col-start-1 col-end-2 flex items-center sm:justify-start justify-center">
 
-          <p style={{ display: 'none' }}>
-            Working Holidays for Canadians are available from Global Village Work Learn Travel in a variety of international jobs and experiences.
-          </p>
+            <p style={{ display: 'none' }}>
+              Working Holidays for Canadians are available from Global Village Work Learn Travel in a variety of international jobs and experiences.
+            </p>
 
-            <Link href="/">
+            {/* Added more left padding to the logo */}
+            <Link href="/" className="flex-shrink-0 mr-4 pl-4 sm:pl-6 lg:pl-8">
               <Image
-              src="/assets/GV-Work-Learn-Travel-Logo-Transparent.png"
-              alt="GV Logo"
-              width={974}
-              height={213}
-              className="h-16 w-auto object-contain"
-              priority
-            />
+                src="/assets/GV-Work-Learn-Travel-Logo-Transparent.png"
+                alt="GV Logo"
+                width={974}
+                height={213}
+                className="h-16 w-auto object-contain"
+                priority
+              />
             </Link>
-            <div className="hidden sm:block ml-20">
+            
+            {/* Improved responsive navigation */}
+            <div className="hidden sm:flex space-x-2 md:space-x-4 lg:space-x-6">
               <Link
                 href="/about"
-                className="text-lg px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative font-bold text-center"
+                className="text-base md:text-lg px-2 py-2 cursor-pointer animation-hover inline-block relative font-bold text-center whitespace-nowrap"
               >
                 About
               </Link>
-            </div>
-            <div className="hidden sm:block">
+            
+              <Link
+                href="/book-consultation"
+                className="text-base md:text-lg px-2 py-2 cursor-pointer animation-hover inline-block relative font-bold text-center whitespace-nowrap"
+              >
+                <span className="hidden md:inline">Book a Consultation</span>
+                <span className="inline md:hidden">Book Call</span>
+              </Link>
+            
               <a
                 href="mailto:outbound@gvenglish.com"
-                className="text-lg px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative font-bold text-center"
+                className="text-base md:text-lg px-2 py-2 cursor-pointer animation-hover inline-block relative font-bold text-center whitespace-nowrap"
               >
-                Contact Us
+                Contact
               </a>
             </div>
           </div>
