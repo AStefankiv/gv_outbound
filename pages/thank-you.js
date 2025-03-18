@@ -35,7 +35,7 @@ const ThankYou = () => {
       </Head>
 
       <Header />
-      <main className="flex-grow mt-40 mb-6 w-full">
+      <main className="flex-grow mt-24 sm:mt-40 mb-6 w-full">
         <div className="w-full max-w-4xl mx-auto px-4 py-12">
           <div className="bg-white rounded-lg p-8 text-center">
             <h1 className="text-4xl font-bold mb-6" style={{ color: "#F0A434" }}>Thank You!</h1>

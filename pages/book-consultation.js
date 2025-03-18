@@ -29,7 +29,7 @@ const BookConsultation = () => {
 
       <Header />
       <main className="flex-grow mb-6 w-full">
-        <div className="pt-36 sm:pt-40 md:pt-48 lg:pt-44">
+        <div className="pt-20 sm:pt-40 md:pt-48 lg:pt-44">
           <div className="container mx-auto px-4 sm:px-4 lg:px-12">
             <h1 className="text-3xl font-bold text-center mt-10 sm:mt-8 mb-8">Book an Online Consultation</h1>
             <div className="booking-container">
