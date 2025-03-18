@@ -9,144 +9,20 @@ import Script from 'next/script';
 
 const KoreaInternship = () => {
 
+  // Load external scripts
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "//js.hsforms.net/forms/embed/v2.js";
-    script.async = true;
+    // Create Virtual Adviser script element
+    const vaScript = document.createElement("script");
+    vaScript.src = "https://assets.virtualadviser.com/embed.js";
+    vaScript.async = true;
+    document.body.appendChild(vaScript);
 
-    script.onload = () => {
-      if (window.hbspt) {
-        window.hbspt.forms.create({
-          portalId: process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID,
-          formId: process.env.NEXT_PUBLIC_HUBSPOT_FORM_ID_COUNTRIES,
-          target: "#hubspotForm",
-          onFormReady: function(form) {
-            console.log('onFormReady called');
-
-            setTimeout(() => {
-              // Field internal names
-              const step1Fields = ['firstname', 'lastname', 'email', 'phone'];
-              const step2Fields = ['work_situation', 'situation_satisfied', 'what_change', 'other_programs', 'other_programs_consider', 'how_motivated', 'main_goals'];
-              const step3Fields = ['are_you_a_canadian_citizen_', 'your_age', 'level_of_education', 'finance'];
-
-              const step2RequiredFields = ['work_situation', 'how_motivated'];
-
-              // Function to hide fields by their names
-              const hideFields = (fields) => {
-                fields.forEach(fieldName => {
-                  const fieldElements = form.querySelectorAll(`[name="${fieldName}"]`);
-                  fieldElements.forEach(fieldElement => {
-                    const fieldWrapper = fieldElement.closest('.hs-form-field');
-                    if (fieldWrapper) fieldWrapper.style.display = 'none';
-                  });
-                });
-              };
-
-              // Function to show fields by their names
-              const showFields = (fields) => {
-                fields.forEach(fieldName => {
-                  const fieldElements = form.querySelectorAll(`[name="${fieldName}"]`);
-                  fieldElements.forEach(fieldElement => {
-                    const fieldWrapper = fieldElement.closest('.hs-form-field');
-                    if (fieldWrapper) fieldWrapper.style.display = '';
-                  });
-                });
-              };
-
-              // Initially hide Step 2 and Step 3 fields
-              hideFields([...step2Fields, ...step3Fields]);
-
-              // Function to check if fields are filled
-              const areFieldsFilled = (fields) => {
-                return fields.every(fieldName => {
-                  const fieldElements = form.querySelectorAll(`[name="${fieldName}"]`);
-                  let isFilled = false;
-
-                  fieldElements.forEach(fieldElement => {
-                    if (fieldElement.type === 'radio' || fieldElement.type === 'checkbox') {
-                      if (form.querySelector(`[name="${fieldName}"]:checked`)) {
-                        isFilled = true;
-                      }
-                    } else {
-                      if (fieldElement.value.trim() !== '') {
-                        isFilled = true;
-                      }
-                    }
-                  });
-
-                  return isFilled;
-                });
-              };
-
-              // Function to insert 'Next' button after the last field of a step
-              const insertNextButton = (afterFieldName, stepNumber) => {
-                const fieldElements = form.querySelectorAll(`[name="${afterFieldName}"]`);
-                const lastFieldElement = fieldElements[fieldElements.length - 1];
-                const fieldWrapper = lastFieldElement.closest('.hs-form-field');
-
-                const nextButton = document.createElement('button');
-                nextButton.textContent = 'Next';
-                nextButton.className = `next-button step${stepNumber}-next hs-button primary large`;
-                nextButton.type = 'button';
-
-                fieldWrapper.parentNode.insertBefore(nextButton, fieldWrapper.nextSibling);
-              };
-
-              // Insert 'Next' buttons after Step 1 and Step 2 fields
-              insertNextButton('phone', 1); // After 'phone' field in Step 1
-              insertNextButton('main_goals', 2); // After 'main_goals' field in Step 2
-
-              // Hide the 'Next' button for Step 2 initially
-              const step2NextButton = form.querySelector('.step2-next');
-              if (step2NextButton) step2NextButton.style.display = 'none';
-
-              // Hide the submit button initially
-              const submitButton = form.querySelector('input[type="submit"], button[type="submit"]');
-              if (submitButton) submitButton.style.display = 'none';
-
-              // Attach click event handler to Step 1 'Next' button
-              const step1NextButton = form.querySelector('.step1-next');
-              if (step1NextButton) {
-                step1NextButton.addEventListener('click', function() {
-                  if (areFieldsFilled(step1Fields)) {
-                    // Hide Step 1 fields and 'Next' button
-                    hideFields(step1Fields);
-                    this.style.display = 'none';
-                    // Show Step 2 fields and 'Next' button
-                    showFields(step2Fields);
-                    if (step2NextButton) step2NextButton.style.display = '';
-                  } else {
-                    alert('Please fill in all required fields in Step 1.');
-                  }
-                });
-              }
-
-              // Attach click event handler to Step 2 'Next' button
-              if (step2NextButton) {
-                step2NextButton.addEventListener('click', function() {
-                  if (areFieldsFilled(step2RequiredFields)) {
-                    // Hide Step 2 fields and 'Next' button
-                    hideFields(step2Fields);
-                    this.style.display = 'none';
-                    // Show Step 3 fields and submit button
-                    showFields(step3Fields);
-                    if (submitButton) submitButton.style.display = '';
-                  } else {
-                    alert('Please fill in all required fields in Step 2.');
-                  }
-                });
-              }
-            }, 500); // Adjust the delay if needed
-          },
-          onFormSubmitted: function() {
-            // Display the alert message after successful submission
-            alert('Successfully submitted form');
-          }
-        });
+    // Clean up on unmount
+    return () => {
+      if (document.body.contains(vaScript)) {
+        document.body.removeChild(vaScript);
       }
     };
-
-    document.body.appendChild(script);
   }, []);
 
   return (
@@ -179,7 +55,7 @@ const KoreaInternship = () => {
         <div className="w-full mt-8 mb-6 px-6 sm:px-4 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Header Section */}
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col">
               <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-6">
                 Internships in Korea
               </h1>
@@ -215,10 +91,9 @@ const KoreaInternship = () => {
             <div className="w-full sm:w-3/4 md:w-2/3 lg:w-2/3 xl:w-2/3 mx-auto">
               <ScrollAnimationWrapper className="w-full justify-end">
                 <motion.div className="h-full w-full p-4">
-
-                  {/* HubSpot form */}
-                  <div id="hubspotForm"></div>
-
+                  {/* Begin "🗒️ Get the Details! - Multistep Form" Form Embed */}
+                  <div className="va-embed" data-src="https://gtd-multistep-gve.virtualadviser.com"></div>
+                  {/* /End "🗒️ Get the Details! - Multistep Form" Form Embed */}
                 </motion.div>
               </ScrollAnimationWrapper>
             </div>
