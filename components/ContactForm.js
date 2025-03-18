@@ -1,4 +1,4 @@
-import React, { useMemo, useEffect } from "react";
+import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
@@ -6,6 +6,8 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 const ContactForm = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
+  // HubSpot form integration commented out
+  /*
   useEffect(() => {
     const script = document.createElement('script');
     script.src = "//js.hsforms.net/forms/embed/v2.js";
@@ -40,41 +42,42 @@ const ContactForm = () => {
       document.body.removeChild(script);
     };
   }, []);
+  */
 
   return (
-    <div className="w-full min-h-screen flex items-center mx-auto mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full">
-        {/* Left Column - Introductory Text */}
-        <div className="flex flex-col justify-center text-center lg:text-left">
+    <div className="w-full flex items-center mx-auto mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16">
+      <ScrollAnimationWrapper className="w-full max-w-5xl mx-auto">
+        <motion.div className="flex flex-col justify-center text-center" variants={scrollAnimation}>
           <h2 className="text-2xl sm:text-3xl lg:text-5xl font-medium text-black-600 mb-10">
             Which experience is the best for me?
           </h2>
           <p className="text-base sm:text-lg lg:text-2xl text-black-600">
-          You may not be sure exactly which path to take right now. That’s OK! Our skilled and knowledgeable staff members have plenty of experience in international work opportunities, and they can help you choose an option that will achieve your goals.
+            You may not be sure exactly which path to take right now. That's OK! Our skilled and knowledgeable staff members have plenty of experience in international work opportunities, and they can help you choose an option that will achieve your goals.
           </p>
           <br />
           <p className="text-base sm:text-lg lg:text-2xl text-black-600">
-          Or maybe you’re interested in a destination or an experience that you don’t see here. We can work with you to find the perfect work abroad programs – just fill out the form and let’s talk.
+            Or maybe you're interested in a destination or an experience that you don't see here. We can work with you to find the perfect work abroad programs.
           </p>
-        </div>
+        </motion.div>
+      </ScrollAnimationWrapper>
 
-        {/* Right Column - Contact Form */}
-        <ScrollAnimationWrapper className="flex w-full justify-end">
-          <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
-            <div className="my-12 text-center">
-              <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-4">
-                Send us a message
-              </h1>
-              <p className="text-lg text-black-500 mb-8">
-                We are here to help and answer any question you might have. We look forward to hearing from you.
-              </p>
-            </div>
+      {/* Right Column - Contact Form (commented out for future use)
+      <ScrollAnimationWrapper className="flex w-full justify-end">
+        <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
+          <div className="my-12 text-center">
+            <h1 className="text-4xl lg:text-5xl font-medium leading-relaxed text-black-600 mb-4">
+              Send us a message
+            </h1>
+            <p className="text-lg text-black-500 mb-8">
+              We are here to help and answer any question you might have. We look forward to hearing from you.
+            </p>
+          </div>
 
-            <div id="hubspotForm"></div>
+          <div id="hubspotForm"></div>
 
-          </motion.div>
-        </ScrollAnimationWrapper>
-      </div>
+        </motion.div>
+      </ScrollAnimationWrapper>
+      */}
     </div>
   );
 };
