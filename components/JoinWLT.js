@@ -55,7 +55,7 @@ const JoinWLT = () => {
   };
 
   return (
-    <div className="w-full mt-24 px-0 mx-auto pt-24" id="join-wlt">
+    <div className="w-full mt-24 px-0 mx-auto lg:pt-24" id="join-wlt">
 
       {/* <div style={{ display: 'none' }}>
       <p>Working Holidays for Canadians are available from Global Village Work Learn Travel in a variety of international jobs and experiences.</p>

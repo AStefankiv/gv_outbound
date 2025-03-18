@@ -21,7 +21,7 @@ const About = () => {
       </Head>
 
       <Header />
-      <main className="flex-grow mt-40 mb-6 w-full">
+      <main className="flex-grow mt-24 sm:mt-40 mb-6 w-full">
         <div className="w-full mt-8 mb-6 px-4 sm:px-4 lg:px-12">
           <div className="flex justify-center mb-8">
             <Image
@@ -35,20 +35,20 @@ const About = () => {
             <div>
               <p className="text-lg mb-4">
                 Our team at <strong>Global Village Work Learn Travel</strong> has been enabling international experiences for more than two decades. 
-                As official partners of <strong>International Experience Canada</strong>, we’re dedicated to creating life-changing 
+                As official partners of <strong>International Experience Canada</strong>, we're dedicated to creating life-changing 
                 opportunities for Canadians as they work, learn, and travel all over our amazing world.
               </p>
               <p className="text-lg mb-4">
-                We’re part of the Languages Canada Consortium – a designated recognized organization of the Government of Canada’s 
+                We're part of the Languages Canada Consortium – a designated recognized organization of the Government of Canada's 
                 International Experience Canada (IEC) program. IEC gives young Canadians the opportunity to broaden their perspective 
-                of the world and Canada’s place in it through international work and travel experience.
+                of the world and Canada's place in it through international work and travel experience.
               </p>
               <p className="text-lg mb-4">
                 Through IEC, Canada has negotiated temporary immigration pathways with more than 35 countries and territories that 
                 allow Canadian youth (between ages 18-35) to work while they travel in a partner country or territory. The same 
                 opportunity is provided to young citizens from partner countries and territories (and sometimes other countries) 
                 to come to Canada. This initiative originated over 60 years ago as a cultural exchange program between youth. 
-                With IEC’s current mandate, the Government of Canada remains committed to fostering cultural, economic and social 
+                With IEC's current mandate, the Government of Canada remains committed to fostering cultural, economic and social 
                 exchanges between youth through work and travel opportunities.
               </p>
               <p className="text-lg mb-4">

@@ -174,7 +174,7 @@ const ItalyLanguageAssistant = () => {
 
       <Header />
 
-      <main className="flex-grow mt-40 mb-6 w-full">
+      <main className="flex-grow mt-24 sm:mt-40 mb-6 w-full">
         <div className="w-full mt-8 mb-6 px-6 sm:px-4 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Header Section */}
